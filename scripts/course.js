@@ -3,20 +3,68 @@ document.addEventListener("DOMContentLoaded", function() {
     // Course data array
     const courses = [
         {
-            code: "CSE 121b",
-            name: "JavaScript Language",
+            code: "CSE 111",
+            name: "Programming with Functions",
+            credits: 2,
+            completed: true 
+        },
+        
+        {
+            code: "CSE 210",
+            name: "Programming with Classes",
+            credits: 3,
+            completed: true
+        },
+        
+        {
+            code: "WDD 131",
+            name: "Dynamic Web Development I",
+            credits: 2,
+            completed: true
+        },
+
+        {
+            code: "WDD 130",
+            name: "Web Fundamentals",
+            credits: 2,
+            completed: true
+        },
+
+        {
+            code: "CSE 310",
+            name: "Software Engineering I",
             credits: 3,
             completed: false
         },
         {
-            code: "WDD 230",
-            name: "Web Frontend Development I",
+            code: "CSE 320",
+            name: "Software Engineering II",
             credits: 3,
             completed: false
         },
+        {
+            code: "CSE 330",
+            name: "Database Systems",
+            credits: 3,
+            completed: false
+        },
+        {
+            code: "CSE 340",
+            name: "Web Development I",
+            credits: 4,
+            completed: false
+        },
+        {
+            code: "CSE 341",
+            name: "Web Development II",
+            credits: 4,
+            completed: false
+        },
+
+       
         {
             code: "WDD 231",
-            name: "Web Frontend Development II",
+            name: "Web Frontend Development I",
             credits: 3,
             completed: true
         },
