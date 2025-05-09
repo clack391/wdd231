@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 course homepage for [Your Name] featuring course projects and assignments">
+    <meta name="author" content="[Your Name]">
+    <title>WDD 231 | [Your Name]</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JavaScript Files with defer attribute -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/profile-photo.jpg" alt="Profile photo of [Your Name]">
+        <span>[Your Name]</span>
+        <button id="hamburgerBtn">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul id="primaryNav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="final/index.html">Final</a></li>
+            <li><a href="https://github.com/[your-github-username]">GitHub Profile</a></li>
+            <li><a href="https://linkedin.com/in/[your-linkedin-profile]">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="hero">
+            <h2>WDD 231: Web Frontend Development II</h2>
+            <p>Welcome to my course home page. This page serves as a hub for all my projects and assignments in this course.</p>
+        </section>
+
+        <section class="card-container">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button id="allCourses" class="active">All Courses</button>
+                <button id="wddCourses">WDD Courses</button>
+                <button id="cseCourses">CSE Courses</button>
+            </div>
+            <div id="courses"></div>
+            <p id="totalCredits">Total Credits: 0</p>
+        </section>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I'm a student passionate about web development and design. Through this course, I'm developing skills in HTML, CSS, and JavaScript to create beautiful, responsive, and accessible web applications.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | [Your Name] | [Your State/Country]</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
