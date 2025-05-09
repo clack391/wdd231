@@ -1,0 +1,119 @@
+/* Large screen styles - Media Query */
+@media only screen and (min-width: 768px) {
+    /* Header */
+    header {
+        padding: 1rem 2rem;
+    }
+    
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    header span {
+        font-size: 1.5rem;
+    }
+    
+    /* Navigation */
+    #hamburgerBtn {
+        display: none;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 1rem;
+    }
+    
+    nav ul li {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        border-bottom: none;
+        padding: 1rem 0.5rem;
+    }
+    
+    nav ul li a:hover {
+        padding-left: 0.5rem;
+        background-color: rgba(43, 88, 118, 0.1);
+    }
+    
+    /* Main Content */
+    main {
+        padding: 2rem 0;
+    }
+    
+    .hero {
+        padding: 3rem 2rem;
+    }
+    
+    /* Course Cards */
+    #courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* About Section */
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+        align-items: center;
+    }
+    
+    .about h2 {
+        grid-column: 1 / -1;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    footer p {
+        margin: 0;
+    }
+}
+
+/* Extra large screens */
+@media only screen and (min-width: 1024px) {
+    /* Course Cards */
+    #courses {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Layout */
+    body {
+        padding: 0 2rem;
+    }
+    
+    /* Two-column layout for main content */
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+    
+    main h1 {
+        grid-column: 1 / -1;
+    }
+    
+    .hero {
+        grid-column: 1 / -1;
+    }
+    
+    .card-container {
+        grid-column: 1 / 2;
+    }
+    
+    .about {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        display: block;
+    }
+}

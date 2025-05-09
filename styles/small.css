@@ -1,0 +1,235 @@
+/* Base Styles */
+:root {
+    --primary-color: #1F4056;
+    --secondary-color: #4e4376;
+    --accent-color: #000000;
+    --light-color: #f5f5f5;
+    --dark-color: #333333;
+    --completed-bg: #d7ffd9;
+    --completed-border: #000000;
+    --font-heading: 'Merriweather', serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--dark-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: var(--light-color);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    position: relative;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 0 0 8px 8px;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 2px solid var(--light-color);
+    object-fit: cover;
+}
+
+header span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: var(--font-heading);
+}
+
+/* Navigation */
+#hamburgerBtn {
+    position: absolute;
+    right: 1rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+nav {
+    background-color: var(--light-color);
+    border-radius: 0 0 8px 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+nav ul.responsive {
+    display: block;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(43, 88, 118, 0.1);
+    padding-left: 1.5rem;
+}
+
+nav ul li.active a {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Main Content */
+main {
+    padding: 1rem 0;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    text-align: center;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 2rem 1.5rem;
+}
+
+.hero h2 {
+    color: white;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+    padding: 0.5rem 1rem;
+    background-color: var(--light-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-buttons button.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Course Cards */
+#courses {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.course-card p {
+    margin: 0.5rem 0;
+}
+
+.course-completed {
+    border-color: var(--completed-border);
+    background-color: var(--completed-bg);
+}
+
+.course-completed h3 {
+    color: var(--completed-border);
+}
+
+#totalCredits {
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 8px 8px 0 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: var(--light-color);
+}
