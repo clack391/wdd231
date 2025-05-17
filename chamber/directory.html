@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Directory - Find local businesses and services in our community">
+    <meta name="author" content="Precious Onotu">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:description" content="Find local businesses and services in our community">
+    <meta property="og:image" content="images/chamber-logo.webp">
+    <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/directory.html">
+
+    <title>Business Directory | Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/toggleMenu.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/chamber_logo.svg" alt="Chamber of Commerce Logo">
+                <div class="site-title">
+                    <h1>Lakeside</h1>
+                    <h2>Chamber of Commerce</h2>
+                </div>
+            </div>
+            <div class="social-nav">
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="images/facebook-icon.png" alt="Facebook">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank">
+                        <img src="images/linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <button id="hamburgerBtn" type="button">&#9776;</button>
+            </div>
+        </div>
+        <nav>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li class="active"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date-banner">
+            <span id="currentDate"></span>
+        </div>
+    </header>
+
+    <main class="directory">
+        <h2>Business Directory</h2>
+        <div class="view-controls">
+            <button id="gridBtn" class="active" type="button"><img src="images/grid.png" alt="Grid View"></button>
+            <button id="listBtn" type="button"><img src="images/list.png" alt="List View"></button>
+        </div>
+
+        <div id="members" class="grid"></div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/chamber_logo.svg" alt="Chamber of Commerce Logo">
+                <div class="footer-title">
+                    <h3>Lakeside Chamber of Commerce</h3>
+                    <p>123 Main Street, Lakeside, ST 12345</p>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <p>info@lakesidechamber.org</p>
+                <p>+1 (555) 123-4567</p>
+                <p><a href="https://maps.google.com" target="_blank">Location Map</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Lakeside Chamber | Your Name | WDD 231</p>
+            <p>Last Updated: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
