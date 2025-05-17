@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#1a4b84" />
+  <circle cx="100" cy="100" r="88" fill="#fff" />
+  <circle cx="100" cy="100" r="80" fill="#1a4b84" />
+  
+  <!-- Lake Wave Pattern -->
+  <path d="M40,110 Q70,90 100,110 Q130,130 160,110 L160,140 Q130,160 100,140 Q70,120 40,140 Z" fill="#0c7489" />
+  <path d="M40,135 Q70,115 100,135 Q130,155 160,135 L160,165 Q130,185 100,165 Q70,145 40,165 Z" fill="#06c" />
+  
+  <!-- Sun -->
+  <circle cx="100" cy="70" r="25" fill="#f2f7fb" />
+  
+  <!-- Text Path -->
+  <path id="textCircle" d="M30,100 A70,70 0 1,1 170,100 A70,70 0 1,1 30,100" fill="none" />
+  
+  <!-- Chamber Text -->
+  <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#fff">
+    <textPath href="#textCircle" startOffset="70%">CHAMBER OF COMMERCE</textPath>
+  </text>
+  
+  <!-- Lakeside Text -->
+  <text x="100" y="50" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">LAKESIDE</text>
+  
+  <!-- Established Text -->
+  <text x="100" y="190" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">EST. 1958</text>
+</svg>

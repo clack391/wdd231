@@ -1,0 +1,363 @@
+/* Base CSS for Chamber of Commerce Website */
+/* Using a cool blue/teal color scheme with proper contrast */
+
+/* Global Variables */
+:root {
+    /* Cool blue color palette with good contrast */
+    --primary-color: #1a4b84;       /* Dark blue - primary brand color */
+    --secondary-color: #1D464E;     /* Teal - secondary brand color */
+    --accent-color: #06c;           /* Bright blue - accents */
+    --dark-text: #111;              /* Almost black - for text */
+    --light-text: #fff;             /* White - for text on dark backgrounds */
+    --light-bg: #f2f7fb;            /* Very light blue - background */
+    --medium-bg: #e0eaf4;           /* Light blue - secondary background */
+    --border-color: #ccd9e6;        /* Light blue gray - borders */
+    
+    /* Typography */
+    --heading-font: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    --body-font: 'Open Sans', Arial, sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+}
+
+/* Typography */
+body {
+    font-family: var(--body-font);
+    color: var(--dark-text);
+    line-height: 1.6;
+    background-color: var(--light-bg);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+/* Universal box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Base Layout Structure */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: var(--spacing-md) 0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 var(--spacing-md);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.site-title {
+    text-align: center;
+}
+
+.site-title h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.site-title h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.social-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--secondary-color);
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul li {
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: var(--spacing-md);
+    color: var(--light-text);
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    background-color: #1d343a;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+#hamburgerBtn {
+    font-size: 1.5rem;
+    border: none;
+    background: transparent;
+    color: var(--light-text);
+    cursor: pointer;
+    padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+/* Date Banner */
+.date-banner {
+    background-color: var(--accent-color);
+    padding: var(--spacing-sm);
+    text-align: center;
+    color: var(--light-text);
+    width: 100%;
+}
+
+/* Main Content Areas */
+main {
+    padding: var(--spacing-lg) var(--spacing-md);
+}
+
+main h2 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+/* Directory View Controls */
+.view-controls {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.view-controls button {
+    background-color: var(--medium-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: var(--spacing-sm);
+    cursor: pointer;
+}
+
+.view-controls button.active {
+    background-color: var(--accent-color);
+}
+
+.view-controls button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Directory Members */
+#members {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+}
+
+#members.grid {
+    grid-template-columns: 1fr;
+}
+
+#members.list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+/* Member Cards */
+.member-card {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: var(--spacing-md);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Membership Level Styles */
+.member-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+.gold-member::before {
+    background-color: #d4af37; /* Gold color */
+}
+
+.silver-member::before {
+    background-color: #a8a9ad; /* Silver color */
+}
+
+.member::before {
+    background-color: var(--accent-color); /* Normal membership color */
+}
+
+.member-card img {
+    display: block;
+    margin: 0 auto var(--spacing-md);
+    max-width: 150px;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.member-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    text-align: center;
+}
+
+.member-card p {
+    margin: var(--spacing-xs) 0;
+}
+
+/* List View */
+#members.list .member-card {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    align-items: center;
+}
+
+#members.list .member-card img {
+    grid-row: span 4;
+    margin: 0;
+    max-width: 100px;
+}
+
+#members.list .member-card h3 {
+    text-align: left;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 80px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-title h3 {
+    margin: 0 0 var(--spacing-sm);
+}
+
+.footer-contact {
+    text-align: center;
+}
+
+.footer-contact p {
+    margin: var(--spacing-xs) 0;
+}
+
+.footer-contact a {
+    color: var(--light-text);
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: var(--spacing-md);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: var(--spacing-xs) 0;
+}

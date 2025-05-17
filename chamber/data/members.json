@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Lakeside Tech Solutions",
+    "address": "456 Innovation Way, Lakeside, ST 12345",
+    "phone": "(555) 987-6543",
+    "website": "https://www.laketechsolutions.com",
+    "image": "tech-solutions.png",
+    "membershipLevel": 3,
+    "description": "Providing cutting-edge technology solutions for businesses of all sizes."
+  },
+  {
+    "name": "Blue Wave Cafe",
+    "address": "789 Shoreline Drive, Lakeside, ST 12345",
+    "phone": "(555) 456-7890",
+    "website": "https://www.bluewavecafe.com",
+    "image": "cafe.jpg",
+    "membershipLevel": 2,
+    "description": "Lakefront cafe serving organic coffee and fresh baked goods."
+  },
+  {
+    "name": "Lakeside Community Bank",
+    "address": "123 Main Street, Lakeside, ST 12345",
+    "phone": "(555) 123-4567",
+    "website": "https://www.lakecombank.com",
+    "image": "bank.jpg",
+    "membershipLevel": 3,
+    "description": "Your trusted local financial institution since 1958."
+  },
+  {
+    "name": "Harbor View Inn",
+    "address": "234 Harbor Road, Lakeside, ST 12345",
+    "phone": "(555) 234-5678",
+    "website": "https://www.harborviewinn.com",
+    "image": "inn.jpg",
+    "membershipLevel": 2,
+    "description": "Comfortable lakeside accommodations with stunning views."
+  },
+  {
+    "name": "Lakeside Fitness Center",
+    "address": "567 Health Boulevard, Lakeside, ST 12345",
+    "phone": "(555) 345-6789",
+    "website": "https://www.lakesidefitness.com",
+    "image": "fitness.png",
+    "membershipLevel": 1,
+    "description": "Full-service fitness center featuring state-of-the-art equipment."
+  },
+  {
+    "name": "Fresh Market Grocery",
+    "address": "890 Fresh Avenue, Lakeside, ST 12345",
+    "phone": "(555) 567-8901",
+    "website": "https://www.freshmarketgrocery.com",
+    "image": "grocery.png",
+    "membershipLevel": 2,
+    "description": "Local grocer specializing in locally-sourced produce and goods."
+  },
+  {
+    "name": "Lakeside Auto Repair",
+    "address": "321 Mechanic Street, Lakeside, ST 12345",
+    "phone": "(555) 678-9012",
+    "website": "https://www.lakesideauto.com",
+    "image": "auto.jpg",
+    "membershipLevel": 1,
+    "description": "Expert automotive repairs and maintenance services."
+  },
+  {
+    "name": "Sunset Marina",
+    "address": "432 Dock Road, Lakeside, ST 12345",
+    "phone": "(555) 789-0123",
+    "website": "https://www.sunsetmarina.com",
+    "image": "marina.png",
+    "membershipLevel": 3,
+    "description": "Full-service marina with boat rentals and storage."
+  },
+  {
+    "name": "Lakeside Realty",
+    "address": "654 Property Lane, Lakeside, ST 12345",
+    "phone": "(555) 890-1234",
+    "website": "https://www.lakesiderealty.com",
+    "image": "realty.jpg",
+    "membershipLevel": 2,
+    "description": "Expert real estate services for buyers and sellers."
+  }
+]

@@ -1,0 +1,65 @@
+/* Medium View CSS */
+@media only screen and (min-width: 560px) {
+    /* Header */
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        margin-bottom: 0;
+    }
+    
+    .site-title {
+        text-align: left;
+    }
+    
+    .site-title h1 {
+        font-size: 1.7rem;
+    }
+    
+    .site-title h2 {
+        font-size: 1.2rem;
+    }
+    
+    .social-nav {
+        width: auto;
+    }
+    
+    /* Navigation */
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        flex: 1 1 auto;
+    }
+    
+    #hamburgerBtn {
+        display: none;
+    }
+    
+    /* Directory */
+    #members.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Footer */
+    .footer-top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .footer-logo {
+        flex-direction: row;
+        text-align: left;
+        gap: var(--spacing-md);
+    }
+    
+    .footer-contact {
+        text-align: right;
+    }
+}

@@ -1,0 +1,27 @@
+/* Large View CSS */
+@media only screen and (min-width: 960px) {
+    /* Header */
+    .site-title h1 {
+        font-size: 2rem;
+    }
+    
+    .site-title h2 {
+        font-size: 1.3rem;
+    }
+    
+    /* Main Content */
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    /* Directory */
+    #members.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Footer */
+    footer {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+}
