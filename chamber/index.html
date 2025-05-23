@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakeside Chamber of Commerce - Home</title>
+    <meta name="description" content="Welcome to the Rexburg Chamber of Commerce. Join our thriving business community and discover opportunities for growth and networking.">
+    <meta name="author" content="Precious Onotu">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="images/chamber-logo.webp" alt="Rexburg Chamber of Commerce Logo" class="logo">
+                <div class="header-text">
+                    <h1>Lakeside Chamber</h1>
+                    <p>of Commerce</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation menu">
+                    <span class="visually-hidden">Open navigation menu</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Lakeside Premier Business Community</h2>
+                <p>Join hundreds of local businesses working together to build a stronger economy and vibrant community.</p>
+                <a href="join.html" class="cta-button">Join the Chamber Today</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero.jpg" alt="Lakeside Business District" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Current Events Section -->
+        <section class="current-events">
+            <h2>Current Events</h2>
+            <div class="events-container">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="month">Dec</span>
+                        <span class="day">15</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Annual Business Awards Gala</h3>
+                        <p>Join us for our annual celebration of local business excellence. Network with community leaders and recognize outstanding achievements.</p>
+                        <span class="event-time">6:00 PM - Madison High School</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="month">Dec</span>
+                        <span class="day">22</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Holiday Networking Mixer</h3>
+                        <p>Celebrate the holiday season with fellow chamber members. Light refreshments and door prizes.</p>
+                        <span class="event-time">5:30 PM - Chamber Office</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Local Weather</h2>
+            <div class="weather-container">
+                <div class="current-weather" id="current-weather">
+                    <div class="weather-loading">Loading weather data...</div>
+                </div>
+                <div class="forecast" id="forecast">
+                    <!-- Forecast will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Spotlights Section -->
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div class="spotlights-container" id="spotlights-container">
+                <!-- Spotlights will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Lakeside Chamber of Commerce</h3>
+                <p>123 Main Street<br>
+                Lakeside, ST 12345</p>
+                <p>Phone: (555) 123-4567<br>
+                Email: info@lakesidechamber.org</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="directory.html">Member Directory</a></li>
+                    <li><a href="join.html">Become a Member</a></li>
+                    <li><a href="discover.html">Discover Rexburg</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lakeside Chamber | Precious Onotu</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
