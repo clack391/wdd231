@@ -1,4 +1,45 @@
-/* Reset and Base Styles */
+/* ===== COLOR VARIABLES ===== */
+:root {
+    /* Primary Colors */
+    --primary-blue: #1e3a8a;        /* Darkened from #1e40af */
+    --primary-blue-light: #2563eb;  /* Darkened from #3b82f6 */
+    --primary-blue-dark: #1e293b;   /* Darker variant */
+    
+    /* Accent Colors */
+    --accent-orange: #ea580c;       /* Darkened from #f59e0b */
+    --accent-orange-dark: #c2410c;  /* Darkened from #d97706 */
+    --accent-gold: #d97706;         /* Darkened from #fbbf24 */
+    --accent-gold-text: #78350f;    /* Darkened from #92400e */
+    
+    /* Text Colors */
+    --text-primary: #1f2937;        /* Darkened from #333 */
+    --text-secondary: #4b5563;      /* Darkened from #6b7280 */
+    --text-tertiary: #6b7280;       /* Darkened from #374151 */
+    --text-light: #9ca3af;
+    --text-lighter: #d1d5db;
+    
+    /* Background Colors */
+    --bg-primary: #f8f9fa;
+    --bg-white: #ffffff;
+    --bg-gray-light: #f8fafc;
+    --bg-gray: #f3f4f6;             /* Slightly darker */
+    --bg-dark: #1f2937;
+    --bg-darker: #111827;           /* New darker option */
+    
+    /* Border Colors */
+    --border-light: #e5e7eb;
+    --border-gray: #d1d5db;         /* Darker border */
+    --border-dark: #374151;
+    
+    /* Shadow Colors */
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.15);  /* Slightly darker */
+    --shadow-dark: rgba(0, 0, 0, 0.2);
+    --shadow-orange: rgba(234, 88, 12, 0.3);  /* Updated for new orange */
+    --shadow-orange-hover: rgba(234, 88, 12, 0.4);
+}
+
+/* ===== RESET AND BASE STYLES ===== */
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +49,8 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
 }
 
 img {
@@ -17,15 +58,42 @@ img {
     height: auto;
 }
 
-/* Header Styles */
+/* ===== MAIN H1 STYLING ===== */
+.main-h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 50%, var(--accent-orange) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    position: relative;
+    text-shadow: none;
+}
+
+.main-h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-orange) 100%);
+    border-radius: 2px;
+}
+
+/* ===== HEADER STYLES ===== */
 header {
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    color: var(--bg-white);
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px var(--shadow-light);
 }
 
 .header-container {
@@ -60,7 +128,7 @@ header {
     opacity: 0.9;
 }
 
-/* Navigation Styles */
+/* ===== NAVIGATION STYLES ===== */
 .main-nav {
     position: relative;
 }
@@ -77,7 +145,7 @@ header {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: white;
+    background: var(--bg-white);
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -89,7 +157,7 @@ header {
 }
 
 .nav-menu a {
-    color: white;
+    color: var(--bg-white);
     text-decoration: none;
     font-weight: 500;
     padding: 0.5rem 1rem;
@@ -103,64 +171,64 @@ header {
     transform: translateY(-2px);
 }
 
-/* Main Content */
+/* ===== MAIN CONTENT ===== */
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
 
-/* Hero Section */
+/* ===== HERO SECTION ===== */
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
     margin-bottom: 4rem;
-    background: white;
+    background: var(--bg-white);
     padding: 3rem;
     border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px var(--shadow-light);
 }
 
 .hero-content h2 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #1e40af;
+    color: var(--primary-blue);
     line-height: 1.2;
 }
 
 .hero-content p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: #6b7280;
+    color: var(--text-secondary);
 }
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-orange-dark) 100%);
+    color: var(--bg-white);
     padding: 1rem 2rem;
     text-decoration: none;
     border-radius: 8px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+    box-shadow: 0 4px 15px var(--shadow-orange);
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+    box-shadow: 0 6px 20px var(--shadow-orange-hover);
 }
 
 .hero-image img {
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px var(--shadow-dark);
 }
 
-/* Current Events Section */
+/* ===== CURRENT EVENTS SECTION ===== */
 .current-events {
     margin-bottom: 4rem;
 }
@@ -168,7 +236,7 @@ main {
 .current-events h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #1e40af;
+    color: var(--primary-blue);
     text-align: center;
 }
 
@@ -179,10 +247,10 @@ main {
 }
 
 .event-card {
-    background: white;
+    background: var(--bg-white);
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px var(--shadow-light);
     display: flex;
     gap: 1.5rem;
     transition: transform 0.3s ease;
@@ -193,8 +261,8 @@ main {
 }
 
 .event-date {
-    background: #1e40af;
-    color: white;
+    background: var(--primary-blue);
+    color: var(--bg-white);
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
@@ -215,33 +283,33 @@ main {
 }
 
 .event-details h3 {
-    color: #1e40af;
+    color: var(--primary-blue);
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
 }
 
 .event-details p {
-    color: #6b7280;
+    color: var(--text-secondary);
     margin-bottom: 1rem;
 }
 
 .event-time {
-    color: #f59e0b;
+    color: var(--accent-orange);
     font-weight: 600;
     font-size: 0.9rem;
 }
 
-/* Weather Section */
+/* ===== WEATHER SECTION ===== */
 .weather {
-    background: white;
+    background: var(--bg-white);
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px var(--shadow-light);
     margin-bottom: 4rem;
 }
 
 .weather h2 {
-    color: #1e40af;
+    color: var(--primary-blue);
     margin-bottom: 2rem;
     text-align: center;
     font-size: 2rem;
@@ -257,8 +325,8 @@ main {
 .current-weather {
     text-align: center;
     padding: 1.5rem;
-    background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--primary-blue-light) 0%, var(--primary-blue) 100%);
+    color: var(--bg-white);
     border-radius: 12px;
 }
 
@@ -293,21 +361,21 @@ main {
 }
 
 .forecast-day {
-    background: #f8fafc;
+    background: var(--bg-gray-light);
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
-    border: 2px solid #e5e7eb;
+    border: 2px solid var(--border-light);
     transition: all 0.3s ease;
 }
 
 .forecast-day:hover {
-    border-color: #3b82f6;
+    border-color: var(--primary-blue-light);
     transform: translateY(-2px);
 }
 
 .forecast-day h4 {
-    color: #1e40af;
+    color: var(--primary-blue);
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
 }
@@ -315,16 +383,16 @@ main {
 .forecast-temp {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #374151;
+    color: var(--text-tertiary);
 }
 
-/* Spotlights Section */
+/* ===== SPOTLIGHTS SECTION ===== */
 .spotlights {
     margin-bottom: 4rem;
 }
 
 .spotlights h2 {
-    color: #1e40af;
+    color: var(--primary-blue);
     margin-bottom: 2rem;
     text-align: center;
     font-size: 2rem;
@@ -337,13 +405,13 @@ main {
 }
 
 .spotlight-card {
-    background: white;
+    background: var(--bg-white);
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px var(--shadow-light);
     text-align: center;
     transition: transform 0.3s ease;
-    border-top: 4px solid #f59e0b;
+    border-top: 4px solid var(--accent-orange);
 }
 
 .spotlight-card:hover {
@@ -359,7 +427,7 @@ main {
 }
 
 .spotlight-card h3 {
-    color: #1e40af;
+    color: var(--primary-blue);
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
@@ -374,29 +442,29 @@ main {
 }
 
 .gold {
-    background: #fbbf24;
-    color: #92400e;
+    background: var(--accent-gold);
+    color: var(--accent-gold-text);
 }
 
 .silver {
-    background: #e5e7eb;
-    color: #374151;
+    background: var(--border-light);
+    color: var(--text-tertiary);
 }
 
 .contact-info {
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid var(--border-light);
 }
 
 .contact-info p {
     margin-bottom: 0.5rem;
-    color: #6b7280;
+    color: var(--text-secondary);
     font-size: 0.9rem;
 }
 
 .website-link {
-    color: #3b82f6;
+    color: var(--primary-blue-light);
     text-decoration: none;
     font-weight: 500;
 }
@@ -405,10 +473,10 @@ main {
     text-decoration: underline;
 }
 
-/* Footer Styles */
+/* ===== FOOTER STYLES ===== */
 footer {
-    background: #1f2937;
-    color: white;
+    background: var(--bg-dark);
+    color: var(--bg-white);
     padding: 3rem 0 1rem;
     margin-top: 4rem;
 }
@@ -424,7 +492,7 @@ footer {
 
 .footer-section h3 {
     margin-bottom: 1rem;
-    color: #f59e0b;
+    color: var(--accent-orange);
     font-size: 1.2rem;
 }
 
@@ -437,13 +505,13 @@ footer {
 }
 
 .footer-section a {
-    color: #d1d5db;
+    color: var(--text-lighter);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
-    color: #f59e0b;
+    color: var(--accent-orange);
 }
 
 .social-links {
@@ -463,13 +531,18 @@ footer {
 .footer-bottom {
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid #374151;
+    border-top: 1px solid var(--border-dark);
     text-align: center;
-    color: #9ca3af;
+    color: var(--text-light);
 }
 
-/* Mobile Styles */
+/* ===== MOBILE STYLES ===== */
 @media (max-width: 768px) {
+    .main-h1 {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+
     .hamburger {
         display: flex;
     }
@@ -478,12 +551,12 @@ footer {
         position: absolute;
         top: 100%;
         right: 0;
-        background: #1e40af;
+        background: var(--primary-blue);
         flex-direction: column;
         width: 200px;
         padding: 1rem;
         border-radius: 0 0 8px 8px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 10px var(--shadow-dark);
         transform: translateY(-10px);
         opacity: 0;
         visibility: hidden;
@@ -536,6 +609,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .main-h1 {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+    }
+
     main {
         padding: 1rem;
     }
@@ -551,5 +629,10 @@ footer {
     .weather,
     .spotlights {
         padding: 1.5rem;
+    }
+
+    .main-h1::after {
+        width: 80px;
+        height: 3px;
     }
 }
