@@ -1,20 +1,23 @@
 /* ===== COLOR VARIABLES ===== */
+
 :root {
     /* Primary Colors */
-    --primary-blue: #1e3a8a;        /* Darkened from #1e40af */
-    --primary-blue-light: #2563eb;  /* Darkened from #3b82f6 */
-    --primary-blue-dark: #1e293b;   /* Darker variant */
+    --primary-blue: #1e3a8a;        
+    --primary-blue-light: #2563eb;  
+    --primary-blue-dark: #1e293b;   
+    --primary-blue-accessible: #CDD7F4; 
     
     /* Accent Colors */
-    --accent-orange: #ea580c;       /* Darkened from #f59e0b */
-    --accent-orange-dark: #c2410c;  /* Darkened from #d97706 */
-    --accent-gold: #d97706;         /* Darkened from #fbbf24 */
-    --accent-gold-text: #78350f;    /* Darkened from #92400e */
+    --accent-orange: #ea580c;       
+    --accent-orange-dark: #c2410c;  
+    --accent-orange-accessible: #6F2B06; 
+    --accent-gold: #d97706;         
+    --accent-gold-text: #78350f;    
     
     /* Text Colors */
-    --text-primary: #1f2937;        /* Darkened from #333 */
-    --text-secondary: #4b5563;      /* Darkened from #6b7280 */
-    --text-tertiary: #6b7280;       /* Darkened from #374151 */
+    --text-primary: #1f2937;        
+    --text-secondary: #4b5563;      
+    --text-tertiary: #6b7280;       
     --text-light: #9ca3af;
     --text-lighter: #d1d5db;
     
@@ -22,21 +25,23 @@
     --bg-primary: #f8f9fa;
     --bg-white: #ffffff;
     --bg-gray-light: #f8fafc;
-    --bg-gray: #f3f4f6;             /* Slightly darker */
+    --bg-gray: #f3f4f6;             
     --bg-dark: #1f2937;
-    --bg-darker: #111827;           /* New darker option */
+    --bg-darker: #111827;           
     
     /* Border Colors */
     --border-light: #e5e7eb;
-    --border-gray: #d1d5db;         /* Darker border */
+    --border-gray: #d1d5db;         
     --border-dark: #374151;
     
     /* Shadow Colors */
     --shadow-light: rgba(0, 0, 0, 0.1);
-    --shadow-medium: rgba(0, 0, 0, 0.15);  /* Slightly darker */
+    --shadow-medium: rgba(0, 0, 0, 0.15);  
     --shadow-dark: rgba(0, 0, 0, 0.2);
-    --shadow-orange: rgba(234, 88, 12, 0.3);  /* Updated for new orange */
+    --shadow-orange: rgba(234, 88, 12, 0.3);  
     --shadow-orange-hover: rgba(234, 88, 12, 0.4);
+    --shadow-orange-accessible: rgba(111, 43, 6, 0.3); 
+    --shadow-orange-accessible-hover: rgba(111, 43, 6, 0.4);
 }
 
 /* ===== RESET AND BASE STYLES ===== */
@@ -62,7 +67,7 @@ img {
 .main-h1 {
     font-size: 2.5rem;
     font-weight: 800;
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 50%, var(--accent-orange) 100%);
+    background: linear-gradient(135deg, var(--primary-blue-accessible) 0%, var(--primary-blue-light) 50%, var(--accent-orange) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -207,7 +212,7 @@ main {
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-orange-dark) 100%);
+    background: linear-gradient(135deg, var(--accent-orange-accessible) 0%, var(--accent-orange-accessible) 100%);
     color: var(--bg-white);
     padding: 1rem 2rem;
     text-decoration: none;
@@ -215,12 +220,12 @@ main {
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px var(--shadow-orange);
+    box-shadow: 0 4px 15px var(--shadow-orange-accessible);
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px var(--shadow-orange-hover);
+    box-shadow: 0 6px 20px var(--shadow-orange-accessible-hover);
 }
 
 .hero-image img {
@@ -294,7 +299,7 @@ main {
 }
 
 .event-time {
-    color: var(--accent-orange);
+    color: var(--accent-orange-accessible);
     font-weight: 600;
     font-size: 0.9rem;
 }
@@ -442,8 +447,9 @@ main {
 }
 
 .gold {
-    background: var(--accent-gold);
+    background: var(--bg-white);
     color: var(--accent-gold-text);
+    border: 2px solid var(--accent-gold);
 }
 
 .silver {
