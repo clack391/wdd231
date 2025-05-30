@@ -1,0 +1,293 @@
+/* Responsive styles for larger screens */
+
+@media (min-width: 768px) {
+    /* Header adjustments */
+    .header-content {
+        padding: 0 2rem;
+    }
+    
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    nav ul {
+        padding: 0 2rem;
+        gap: 3rem;
+    }
+    
+    nav a {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    /* Main content adjustments */
+    main {
+        padding: 0 2rem;
+    }
+    
+    .join-section {
+        padding: 3rem;
+    }
+    
+    .join-section h1 {
+        font-size: 3rem;
+    }
+    
+    .join-section > p {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Form container - side by side layout */
+    .form-container {
+        flex-direction: row;
+        gap: 3rem;
+        align-items: flex-start;
+    }
+    
+    .form-wrapper {
+        flex: 2;
+    }
+    
+    .membership-cards {
+        flex: 1;
+        margin-top: 0;
+        position: sticky;
+        top: 2rem;
+    }
+
+    /* Form styling adjustments */
+    form {
+        padding: 2.5rem;
+    }
+    
+    fieldset {
+        padding: 2rem;
+    }
+    
+    legend {
+        font-size: 1.3rem;
+    }
+
+    /* Membership cards grid */
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .membership-card {
+        padding: 2rem;
+    }
+    
+    .membership-card h3 {
+        font-size: 1.6rem;
+    }
+    
+    .price {
+        font-size: 1.4rem;
+    }
+
+    /* Modal adjustments */
+    .modal-content {
+        margin: 5% auto;
+        width: 80%;
+        max-width: 600px;
+        padding: 3rem;
+    }
+    
+    .modal-content h3 {
+        font-size: 2rem;
+    }
+    
+    .modal-content li {
+        padding: 0.75rem 0;
+        font-size: 1.1rem;
+    }
+
+    /* Thank you page adjustments */
+    .thankyou-section {
+        padding: 4rem 3rem;
+    }
+    
+    .thankyou-content h1 {
+        font-size: 3rem;
+    }
+    
+    .summary-card {
+        padding: 2rem;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+    
+    .summary-item {
+        padding: 0.75rem 0;
+        font-size: 1.1rem;
+    }
+    
+    .summary-item strong {
+        min-width: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Large desktop adjustments */
+    .header-content {
+        padding: 0 3rem;
+    }
+    
+    nav ul {
+        padding: 0 3rem;
+        gap: 4rem;
+    }
+    
+    main {
+        padding: 0 3rem;
+    }
+    
+    .join-section {
+        padding: 4rem;
+    }
+    
+    /* Form container with more space */
+    .form-container {
+        gap: 4rem;
+    }
+    
+    .form-wrapper {
+        flex: 1.5;
+    }
+    
+    .membership-cards {
+        flex: 1;
+    }
+
+    /* Two column card layout for very large screens */
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .membership-card {
+        padding: 1.5rem;
+    }
+    
+    .membership-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .price {
+        font-size: 1.2rem;
+    }
+    
+    .info-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Extra large screens */
+    .form-container {
+        gap: 5rem;
+    }
+    
+    .form-wrapper {
+        flex: 2;
+    }
+    
+    .membership-cards {
+        flex: 1.2;
+    }
+    
+    /* Return to single column for cards with more space */
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .membership-card {
+        padding: 2rem;
+    }
+    
+    .membership-card h3 {
+        font-size: 1.6rem;
+    }
+    
+    .price {
+        font-size: 1.4rem;
+    }
+    
+    .info-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .membership-cards,
+    .modal,
+    nav,
+    footer {
+        display: none;
+    }
+    
+    .form-container {
+        flex-direction: column;
+    }
+    
+    .form-wrapper {
+        width: 100%;
+    }
+    
+    form {
+        box-shadow: none;
+        border: 2px solid #333;
+    }
+    
+    .join-section {
+        box-shadow: none;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .membership-card {
+        border-width: 3px;
+    }
+    
+    .submit-btn,
+    .info-btn,
+    .return-home {
+        border: 2px solid #000;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        border-width: 3px;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .membership-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    
+    .modal {
+        animation: none;
+    }
+    
+    .modal-content {
+        animation: none;
+    }
+    
+    * {
+        transition: none !important;
+    }
+}
