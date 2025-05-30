@@ -251,7 +251,7 @@
 }
 
 /* High contrast mode support */
-@media (prefers-contrast: high) {
+@media (prefers-contrast: more) {
     .membership-card {
         border-width: 3px;
     }
