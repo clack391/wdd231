@@ -4,9 +4,9 @@
 /* Global Variables */
 :root {
     /* Cool blue color palette with good contrast */
-    --primary-color: #1a4b84;       /* Dark blue - primary brand color */
+    --primary-color: #123456;       /* Dark blue - primary brand color */
     --secondary-color: #1D464E;     /* Teal - secondary brand color */
-    --accent-color: #06c;           /* Bright blue - accents */
+    --accent-color: #123456;           /* Bright blue - accents */
     --dark-text: #111;              /* Almost black - for text */
     --light-text: #fff;             /* White - for text on dark backgrounds */
     --light-bg: #f2f7fb;            /* Very light blue - background */
