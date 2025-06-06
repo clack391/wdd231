@@ -4,49 +4,49 @@
       "name": "Riverside Valley Nature Center",
       "address": "456 Nature Trail, Riverside Valley, RV 12345",
       "description": "Explore over 200 acres of pristine wilderness with guided tours, educational programs, and wildlife observation areas. Perfect for families and nature enthusiasts.",
-      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop&auto=format&q=80"
+      "image": "images/nature-center.webp"
     },
     {
       "name": "Historic Riverside Mill",
       "address": "789 Mill Road, Riverside Valley, RV 12345",
       "description": "A beautifully preserved 19th-century grist mill showcasing our community's rich agricultural heritage. Features interactive exhibits and artisan demonstrations.",
-      "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=300&h=200&fit=crop&auto=format&q=80"
+      "image": "images/historic-mill.webp"
     },
     {
       "name": "Valley View Golf Course",
       "address": "321 Golf Club Drive, Riverside Valley, RV 12345",
       "description": "Championship 18-hole golf course with stunning mountain views. Includes pro shop, restaurant, and event facilities. Open to public with member privileges available.",
-      "image": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=300&h=200&fit=crop&auto=format&q=80"
+      "image": "images/golf-course.webp"
     },
     {
       "name": "Riverside Farmers Market",
       "address": "Downtown Square, 100 Main Street, Riverside Valley, RV 12345",
       "description": "Weekly farmers market featuring local produce, artisan crafts, and live music. Open Saturdays 8 AM - 2 PM, supporting over 50 local vendors.",
-      "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=300&h=200&fit=crop&auto=format&q=80"
+      "image": "images/farmers-market.webp"
     },
     {
       "name": "Adventure Sports Complex",
       "address": "567 Sports Center Boulevard, Riverside Valley, RV 12345",
       "description": "State-of-the-art facility offering rock climbing, kayak rentals, hiking trails, and seasonal skiing. Equipment rentals and professional instruction available.",
-      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop&auto=format&q=80"
+      "image": "images/adventure-sports.webp"
     },
     {
       "name": "Valley Arts & Culture Center",
       "address": "234 Arts Avenue, Riverside Valley, RV 12345",
       "description": "Community hub for visual and performing arts featuring rotating exhibitions, theater performances, art classes, and cultural events throughout the year.",
-      "image": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=300&h=200&fit=crop&auto=format&q=80"
+      "image": "images/arts-center.webp"
     },
     {
       "name": "Riverside Valley Observatory",
       "address": "890 Stargazer Hill, Riverside Valley, RV 12345",
       "description": "Public observatory with powerful telescopes and planetarium shows. Monthly stargazing events and astronomy education programs for all ages.",
-      "image": "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=300&h=200&fit=crop&auto=format&q=80"
+      "image": "images/observatory.webp"
     },
     {
       "name": "Heritage Walking Trail",
       "address": "Historic District, Central Riverside Valley, RV 12345",
       "description": "Self-guided 2-mile walking tour through historic downtown featuring 15 landmark buildings with QR code information stations and beautiful river views.",
-      "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=300&h=200&fit=crop&auto=format&q=80"
+      "image": "images/walking-trail.webp"
     }
   ]
 }
