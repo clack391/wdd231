@@ -1,0 +1,215 @@
+/* Base CSS for Chamber Website */
+
+/* CSS Variables - included in base for consistency across pages */
+:root {
+    /* Primary Colors */
+    --primary-blue: #123456;        
+    --primary-blue-light: #123456;  
+    --primary-blue-dark: #1e293b;   
+    --primary-blue-accessible: #CDD7F4; 
+    
+    /* Accent Colors */
+    --accent-orange: #ea580c;       
+    --accent-orange-dark: #c2410c;  
+    --accent-orange-accessible: #6F2B06; 
+    --accent-gold: #d97706;         
+    --accent-gold-text: #78350f;    
+    
+    /* Text Colors */
+    --text-primary: #1f2937;        
+    --text-secondary: #4b5563;      
+    --text-tertiary: #6b7280;       
+    --text-light: #9ca3af;
+    --text-lighter: #d1d5db;
+    
+    /* Background Colors */
+    --bg-primary: #f8f9fa;
+    --bg-white: #ffffff;
+    --bg-gray-light: #f8fafc;
+    --bg-gray: #f3f4f6;             
+    --bg-dark: #1f2937;
+    --bg-darker: #111827;           
+    
+    /* Border Colors */
+    --border-light: #e5e7eb;
+    --border-gray: #d1d5db;         
+    --border-dark: #374151;
+    
+    /* Shadow Colors */
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.15);  
+    --shadow-dark: rgba(0, 0, 0, 0.2);
+    --shadow-orange: rgba(234, 88, 12, 0.3);  
+    --shadow-orange-hover: rgba(234, 88, 12, 0.4);
+    --shadow-orange-accessible: rgba(111, 43, 6, 0.3); 
+    --shadow-orange-accessible-hover: rgba(111, 43, 6, 0.4);
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Typography */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.875rem; }
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--accent-orange);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-orange-dark);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-orange);
+    color: var(--bg-white);
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-orange-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px var(--shadow-orange);
+}
+
+.btn-secondary {
+    background-color: var(--primary-blue);
+    color: var(--bg-white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-blue-dark);
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--bg-white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px var(--shadow-light);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px var(--shadow-medium);
+    transform: translateY(-2px);
+}
+
+/* Form Styles */
+input, textarea, select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-gray);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--accent-orange);
+    box-shadow: 0 0 0 3px var(--shadow-orange);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.25rem; }
+    
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    * {
+        background: transparent !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    header, footer, nav {
+        display: none;
+    }
+    
+    .card {
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+    }
+}
