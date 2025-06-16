@@ -1,0 +1,384 @@
+{
+  "properties": [
+    {
+      "id": "1",
+      "address": "123 University Blvd, Rexburg, ID 83440",
+      "price": "650",
+      "type": "rent",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": "800",
+      "neighborhood": "University Area",
+      "distanceToCampus": "0.3 miles",
+      "available": "Available Now",
+      "description": "Cozy 2-bedroom apartment perfect for students. Walking distance to BYU-I campus with modern amenities and utilities included. Recently updated with new appliances and fresh paint throughout.",
+      "amenities": ["Parking", "Laundry", "Internet", "Furnished", "Utilities Included"],
+      "contact": {
+        "phone": "(208) 555-0101",
+        "email": "rentals@universityliving.com"
+      },
+      "image": "property1.jpg"
+    },
+    {
+      "id": "2",
+      "address": "456 Student Lane, Rexburg, ID 83440",
+      "price": "450",
+      "type": "rent",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": "600",
+      "neighborhood": "Campus Area",
+      "distanceToCampus": "0.5 miles",
+      "available": "June 1st",
+      "description": "Affordable studio apartment with all utilities included. Perfect for single students looking for convenience and value. Located in quiet neighborhood with easy access to campus.",
+      "amenities": ["Utilities Included", "Furnished", "Parking", "Study Room", "WiFi"],
+      "contact": {
+        "phone": "(208) 555-0102",
+        "email": "housing@campusapartments.com"
+      },
+      "image": "property2.jpg"
+    },
+    {
+      "id": "3",
+      "address": "789 Family Circle, Rexburg, ID 83440",
+      "price": "285000",
+      "type": "buy",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": "1200",
+      "neighborhood": "Madison District",
+      "distanceToCampus": "1.2 miles",
+      "available": "Available Now",
+      "description": "Beautiful 3-bedroom home perfect for families. Updated kitchen with granite countertops, large backyard with mature trees, and quiet neighborhood setting. Great for faculty or graduate students.",
+      "amenities": ["Garage", "Backyard", "Updated Kitchen", "Storage", "Fireplace"],
+      "contact": {
+        "phone": "(208) 555-0103",
+        "email": "sarah@rexburgrealty.com"
+      },
+      "image": "property3.jpg"
+    },
+    {
+      "id": "4",
+      "address": "321 College Way, Rexburg, ID 83440",
+      "price": "550",
+      "type": "rent",
+      "bedrooms": 2,
+      "bathrooms": 1.5,
+      "sqft": "750",
+      "neighborhood": "University Area",
+      "distanceToCampus": "0.4 miles",
+      "available": "July 15th",
+      "description": "Spacious 2-bedroom townhome with modern appliances. Great for roommates with separate bedrooms and study areas. Private patio and assigned parking space included.",
+      "amenities": ["Dishwasher", "Air Conditioning", "Parking", "Patio", "Washer/Dryer"],
+      "contact": {
+        "phone": "(208) 555-0104",
+        "email": "properties@collegetown.com"
+      },
+      "image": "property4.jpg"
+    },
+    {
+      "id": "5",
+      "address": "654 Downtown Ave, Rexburg, ID 83440",
+      "price": "195000",
+      "type": "buy",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": "900",
+      "neighborhood": "Downtown",
+      "distanceToCampus": "1.8 miles",
+      "available": "Available Now",
+      "description": "Charming downtown condo with historic character. Walking distance to shops and restaurants with modern updates throughout. Perfect for young professionals or graduate students.",
+      "amenities": ["Historic Building", "Downtown Location", "Updated Flooring", "Storage", "Walking Score"],
+      "contact": {
+        "phone": "(208) 555-0105",
+        "email": "homes@downtownrexburg.com"
+      },
+      "image": "property5.jpg"
+    },
+    {
+      "id": "6",
+      "address": "987 Countryside Dr, Rexburg, ID 83440",
+      "price": "1100",
+      "type": "rent",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "sqft": "1600",
+      "neighborhood": "Countryside",
+      "distanceToCampus": "2.1 miles",
+      "available": "August 1st",
+      "description": "Large 4-bedroom house perfect for group living. Spacious kitchen with island, multiple bathrooms, and large common areas. Ideal for 4-6 students sharing costs.",
+      "amenities": ["Large Kitchen", "Multiple Bathrooms", "Parking", "Yard", "Storage", "Basement"],
+      "contact": {
+        "phone": "(208) 555-0106",
+        "email": "rentals@countrysidehomes.com"
+      },
+      "image": "property6.jpg"
+    },
+    {
+      "id": "7",
+      "address": "147 Madison Ave, Rexburg, ID 83440",
+      "price": "325000",
+      "type": "buy",
+      "bedrooms": 4,
+      "bathrooms": 2.5,
+      "sqft": "1800",
+      "neighborhood": "Madison District",
+      "distanceToCampus": "1.5 miles",
+      "available": "Available Now",
+      "description": "Stunning 4-bedroom family home with open floor plan. Master suite with walk-in closet, finished basement with family room, and beautiful landscaping. Perfect for growing families.",
+      "amenities": ["Master Suite", "Finished Basement", "Landscaping", "2-Car Garage", "Open Floor Plan"],
+      "contact": {
+        "phone": "(208) 555-0107",
+        "email": "mike@madisonrealty.com"
+      },
+      "image": "property7.jpg"
+    },
+    {
+      "id": "8",
+      "address": "258 Pine Street, Rexburg, ID 83440",
+      "price": "475",
+      "type": "rent",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": "550",
+      "neighborhood": "Pine District",
+      "distanceToCampus": "0.8 miles",
+      "available": "Available Now",
+      "description": "Cozy 1-bedroom apartment in quiet neighborhood. Perfect for single students who value peace and proximity to campus. Includes all appliances and covered parking.",
+      "amenities": ["Quiet Location", "Parking", "Laundry Access", "Storage", "All Appliances"],
+      "contact": {
+        "phone": "(208) 555-0108",
+        "email": "leasing@pineapartments.com"
+      },
+      "image": "property8.jpg"
+    },
+    {
+      "id": "9",
+      "address": "369 Oak Lane, Rexburg, ID 83440",
+      "price": "750",
+      "type": "rent",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": "1100",
+      "neighborhood": "Oak District",
+      "distanceToCampus": "1.0 miles",
+      "available": "September 1st",
+      "description": "Spacious 3-bedroom duplex with private entrance. Great for small families or students who want extra space. Includes fenced yard and washer/dryer hookups.",
+      "amenities": ["Private Entrance", "Yard", "Parking", "Washer/Dryer Hookups", "Storage Shed"],
+      "contact": {
+        "phone": "(208) 555-0109",
+        "email": "rentals@oaklaneproperties.com"
+      },
+      "image": "property9.jpg"
+    },
+    {
+      "id": "10",
+      "address": "741 Elm Court, Rexburg, ID 83440",
+      "price": "425000",
+      "type": "buy",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "sqft": "2200",
+      "neighborhood": "Elm District",
+      "distanceToCampus": "2.3 miles",
+      "available": "Available Now",
+      "description": "Luxurious 5-bedroom home with modern finishes throughout. Perfect for large families with multiple living areas, gourmet kitchen, and premium amenities. Located in prestigious neighborhood.",
+      "amenities": ["Luxury Finishes", "Multiple Living Areas", "3-Car Garage", "Premium Kitchen", "Master Suite"],
+      "contact": {
+        "phone": "(208) 555-0110",
+        "email": "luxury@elmcourthomes.com"
+      },
+      "image": "property10.jpg"
+    },
+    {
+      "id": "11",
+      "address": "852 Birch Way, Rexburg, ID 83440",
+      "price": "380",
+      "type": "rent",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": "450",
+      "neighborhood": "Birch Area",
+      "distanceToCampus": "0.6 miles",
+      "available": "Available Now",
+      "description": "Affordable studio with efficient layout. Great for budget-conscious students who want to be close to campus. Utilities included and furnished options available.",
+      "amenities": ["Efficient Layout", "Close to Campus", "Parking", "Utilities Included", "Furnished Option"],
+      "contact": {
+        "phone": "(208) 555-0111",
+        "email": "affordable@birchstudios.com"
+      },
+      "image": "property11.jpg"
+    },
+    {
+      "id": "12",
+      "address": "963 Cedar Drive, Rexburg, ID 83440",
+      "price": "850",
+      "type": "rent",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": "1250",
+      "neighborhood": "Cedar Heights",
+      "distanceToCampus": "1.4 miles",
+      "available": "October 1st",
+      "description": "Modern 3-bedroom apartment with upgraded appliances and fixtures. Excellent for students who want contemporary living with amenities like fitness center access and community spaces.",
+      "amenities": ["Modern Appliances", "Air Conditioning", "Balcony", "Fitness Center Access", "Community Room"],
+      "contact": {
+        "phone": "(208) 555-0112",
+        "email": "modern@cedarheights.com"
+      },
+      "image": "property12.jpg"
+    },
+    {
+      "id": "13",
+      "address": "159 Maple Street, Rexburg, ID 83440",
+      "price": "275000",
+      "type": "buy",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": "1350",
+      "neighborhood": "Maple District",
+      "distanceToCampus": "1.7 miles",
+      "available": "Available Now",
+      "description": "Well-maintained 3-bedroom home with recent updates. Perfect starter home with room to grow. Features new roof, updated HVAC, and beautiful hardwood floors throughout.",
+      "amenities": ["Recent Updates", "Fenced Yard", "Single-Car Garage", "Storage Shed", "Hardwood Floors"],
+      "contact": {
+        "phone": "(208) 555-0113",
+        "email": "starter@maplehomes.com"
+      },
+      "image": "property13.jpg"
+    },
+    {
+      "id": "14",
+      "address": "267 Spruce Avenue, Rexburg, ID 83440",
+      "price": "600",
+      "type": "rent",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": "850",
+      "neighborhood": "Spruce Valley",
+      "distanceToCampus": "0.9 miles",
+      "available": "Available Now",
+      "description": "Comfortable 2-bedroom with mountain views. Quiet neighborhood perfect for studying with easy campus access. Features covered parking and private patio with mountain views.",
+      "amenities": ["Mountain Views", "Quiet Neighborhood", "Parking", "Storage", "Private Patio"],
+      "contact": {
+        "phone": "(208) 555-0114",
+        "email": "views@sprucevalley.com"
+      },
+      "image": "property14.jpg"
+    },
+    {
+      "id": "15",
+      "address": "483 Willow Road, Rexburg, ID 83440",
+      "price": "365000",
+      "type": "buy",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "sqft": "1950",
+      "neighborhood": "Willow Creek",
+      "distanceToCampus": "2.0 miles",
+      "available": "Available Now",
+      "description": "Elegant 4-bedroom home with open concept design. Beautiful neighborhood with mature trees and friendly neighbors. Features vaulted ceilings, granite counters, and spacious deck.",
+      "amenities": ["Open Concept", "Mature Trees", "2-Car Garage", "Deck", "Vaulted Ceilings"],
+      "contact": {
+        "phone": "(208) 555-0115",
+        "email": "elegant@willowcreek.com"
+      },
+      "image": "property15.jpg"
+    },
+    {
+      "id": "16",
+      "address": "575 Campus Drive, Rexburg, ID 83440",
+      "price": "525",
+      "type": "rent",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": "700",
+      "neighborhood": "University Area",
+      "distanceToCampus": "0.2 miles",
+      "available": "Winter Semester",
+      "description": "Prime location just steps from BYU-I campus. Perfect for students who want to walk to classes. Shared common areas and study rooms available. Semester lease options available.",
+      "amenities": ["Walking to Campus", "Study Rooms", "Shared Kitchen", "Semester Leases", "Bike Storage"],
+      "contact": {
+        "phone": "(208) 555-0116",
+        "email": "oncampus@studentliving.com"
+      },
+      "image": "property16.jpg"
+    },
+    {
+      "id": "17",
+      "address": "688 Heritage Lane, Rexburg, ID 83440",
+      "price": "315000",
+      "type": "buy",
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "sqft": "1450",
+      "neighborhood": "Heritage District",
+      "distanceToCampus": "1.8 miles",
+      "available": "Available Now",
+      "description": "Beautiful townhome in desirable Heritage District. Features include granite countertops, stainless steel appliances, and attached garage. HOA maintains common areas and landscaping.",
+      "amenities": ["Townhome Style", "Granite Counters", "Stainless Appliances", "Attached Garage", "HOA Maintained"],
+      "contact": {
+        "phone": "(208) 555-0117",
+        "email": "townhomes@heritageliving.com"
+      },
+      "image": "property17.jpg"
+    },
+    {
+      "id": "18",
+      "address": "792 Aspen Court, Rexburg, ID 83440",
+      "price": "775",
+      "type": "rent",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": "1175",
+      "neighborhood": "Aspen Heights",
+      "distanceToCampus": "1.3 miles",
+      "available": "Available Now",
+      "description": "Newer construction 3-bedroom apartment with modern amenities. Great for upper-level students or young professionals. Features include in-unit laundry, dishwasher, and private balcony.",
+      "amenities": ["New Construction", "In-Unit Laundry", "Dishwasher", "Private Balcony", "Central Air"],
+      "contact": {
+        "phone": "(208) 555-0118",
+        "email": "new@aspenheights.com"
+      },
+      "image": "property18.jpg"
+    },
+    {
+      "id": "19",
+      "address": "246 Riverside Drive, Rexburg, ID 83440",
+      "price": "395000",
+      "type": "buy",
+      "bedrooms": 4,
+      "bathrooms": 2.5,
+      "sqft": "1850",
+      "neighborhood": "Riverside",
+      "distanceToCampus": "2.5 miles",
+      "available": "Available Now",
+      "description": "Stunning home along the Teton River with water views. Perfect for those who love nature and outdoor activities. Features include large windows, spacious deck, and river access.",
+      "amenities": ["River Views", "Water Access", "Large Deck", "Natural Setting", "Large Windows"],
+      "contact": {
+        "phone": "(208) 555-0119",
+        "email": "waterfront@riversidehomes.com"
+      },
+      "image": "property19.jpg"
+    },
+    {
+      "id": "20",
+      "address": "357 Technology Way, Rexburg, ID 83440",
+      "price": "425",
+      "type": "rent",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": "525",
+      "neighborhood": "Tech District",
+      "distanceToCampus": "1.1 miles",
+      "available": "Available Now",
+      "description": "Modern efficiency apartment in the growing Tech District. Perfect for tech students or those working in the technology sector. High-speed internet and modern amenities included.",
+      "amenities": ["High-Speed Internet", "Modern Design", "Tech Hub Location", "Security System", "Bike Parking"],
+      "contact": {
+        "phone": "(208) 555-0120",
+        "email": "tech@modernliving.com"
+      },
+      "image": "property20.jpg"
+    }
+  ]
+}

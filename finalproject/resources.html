@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resources and help for buying or renting homes in Rexburg. Find guides, calculators, local services, and frequently asked questions.">
+    <meta name="author" content="Precious Onotu">
+    <meta name="keywords" content="home buying guide, renting tips, mortgage calculator, Rexburg real estate agents, moving services">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Rexburg Home Finder - Property Search">
+    <meta property="og:description" content="Find local businesses and services in our community">
+    <meta property="og:image" content="https://clack391.github.io/wdd231/finalproject/images/logo.webp">
+    <meta property="og:url" content="https://clack391.github.io/wdd231/finalproject/images/logo.webp">
+
+
+    <title>Resources &amp; Help - Rexburg Home Finder</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🏠 Rexburg Home Finder</h1>
+            </div>
+            <nav>
+                <button type="button" class="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Property Search</a></li>
+                    <li><a href="neighborhoods.html">Neighborhood Guide</a></li>
+                    <li><a href="resources.html" class="active" aria-current="page">Resources &amp; Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h2>Resources &amp; Help</h2>
+                <p>Everything you need to know about buying, renting, and moving to Rexburg</p>
+            </div>
+        </section>
+
+        <section class="calculators-section">
+            <div class="container">
+                <h3>Financial Calculators</h3>
+                <div class="calculators-grid">
+                    <div class="calculator-card">
+                        <h4>Mortgage Calculator</h4>
+                        <form id="mortgage-calculator" class="calculator-form">
+                            <div class="form-group">
+                                <label for="home-price">Home Price ($)</label>
+                                <input type="number" id="home-price" name="homePrice" placeholder="250000" min="0">
+                            </div>
+                            <div class="form-group">
+                                <label for="down-payment">Down Payment ($)</label>
+                                <input type="number" id="down-payment" name="downPayment" placeholder="50000" min="0">
+                            </div>
+                            <div class="form-group">
+                                <label for="interest-rate">Interest Rate (%)</label>
+                                <input type="number" id="interest-rate" name="interestRate" placeholder="6.5" step="0.1" min="0" max="20">
+                            </div>
+                            <div class="form-group">
+                                <label for="loan-term">Loan Term (years)</label>
+                                <select id="loan-term" name="loanTerm">
+                                    <option value="15">15 years</option>
+                                    <option value="30" selected>30 years</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="calc-btn">Calculate Payment</button>
+                        </form>
+                        <div id="mortgage-result" class="calculator-result"></div>
+                    </div>
+
+                    <div class="calculator-card">
+                        <h4>Rent Affordability Calculator</h4>
+                        <form id="rent-calculator" class="calculator-form">
+                            <div class="form-group">
+                                <label for="monthly-income">Monthly Income ($)</label>
+                                <input type="number" id="monthly-income" name="monthlyIncome" placeholder="3000" min="0">
+                            </div>
+                            <div class="form-group">
+                                <label for="debt-payments">Monthly Debt Payments ($)</label>
+                                <input type="number" id="debt-payments" name="debtPayments" placeholder="500" min="0">
+                            </div>
+                            <div class="form-group">
+                                <label for="rent-percentage">Max % of Income for Rent</label>
+                                <select id="rent-percentage" name="rentPercentage">
+                                    <option value="25">25% (Conservative)</option>
+                                    <option value="30" selected>30% (Recommended)</option>
+                                    <option value="35">35% (Maximum)</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="calc-btn">Calculate Affordability</button>
+                        </form>
+                        <div id="rent-result" class="calculator-result"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="guides-section">
+            <div class="container">
+                <div class="guides-grid">
+                    <div class="guide-card">
+                        <h3>🏡 First-Time Home Buyer Guide</h3>
+                        <div class="guide-steps">
+                            <div class="step">
+                                <h4>1. Check Your Credit Score</h4>
+                                <p>Aim for a score of 620 or higher for better loan terms.</p>
+                            </div>
+                            <div class="step">
+                                <h4>2. Save for Down Payment</h4>
+                                <p>Plan for 3-20% down payment plus closing costs.</p>
+                            </div>
+                            <div class="step">
+                                <h4>3. Get Pre-approved</h4>
+                                <p>Contact local lenders to understand your budget.</p>
+                            </div>
+                            <div class="step">
+                                <h4>4. Find a Real Estate Agent</h4>
+                                <p>Work with someone who knows the Rexburg market.</p>
+                            </div>
+                            <div class="step">
+                                <h4>5. Start House Hunting</h4>
+                                <p>Use our search tools to find properties in your range.</p>
+                            </div>
+                            <div class="step">
+                                <h4>6. Make an Offer</h4>
+                                <p>Your agent will help negotiate the best terms.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide-card">
+                        <h3>🏠 Renting Tips &amp; Rights</h3>
+                        <div class="guide-content">
+                            <h4>What to Look For:</h4>
+                            <ul>
+                                <li>Check for proper heating and cooling systems</li>
+                                <li>Test all appliances and electrical outlets</li>
+                                <li>Inspect for water damage or pest issues</li>
+                                <li>Verify parking availability and restrictions</li>
+                                <li>Understand utility responsibilities</li>
+                                <li>Review lease terms carefully</li>
+                            </ul>
+
+                            <h4>Your Rights as a Tenant:</h4>
+                            <ul>
+                                <li>Right to a habitable living space</li>
+                                <li>Protection from illegal rent increases</li>
+                                <li>Right to privacy (24-hour notice for entry)</li>
+                                <li>Right to return of security deposit</li>
+                                <li>Protection from discrimination</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <h3>List Your Property</h3>
+                <p>Have a property to list? Fill out this form and we'll get back to you within 24 hours.</p>
+
+                <form id="property-listing-form" class="contact-form" action="form-action.html" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="owner-name">Your Name *</label>
+                            <input type="text" id="owner-name" name="ownerName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="owner-email">Email Address *</label>
+                            <input type="email" id="owner-email" name="ownerEmail" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="owner-phone">Phone Number</label>
+                            <input type="tel" id="owner-phone" name="ownerPhone">
+                        </div>
+                        <div class="form-group">
+                            <label for="listing-type">Listing Type *</label>
+                            <select id="listing-type" name="listingType" required>
+                                <option value="">Select type</option>
+                                <option value="rent">For Rent</option>
+                                <option value="sale">For Sale</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="property-address">Property Address *</label>
+                        <input type="text" id="property-address" name="propertyAddress" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="property-price">Price *</label>
+                            <input type="number" id="property-price" name="propertyPrice" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="property-bedrooms">Bedrooms *</label>
+                            <select id="property-bedrooms" name="propertyBedrooms" required>
+                                <option value="">Select bedrooms</option>
+                                <option value="1">1 Bedroom</option>
+                                <option value="2">2 Bedrooms</option>
+                                <option value="3">3 Bedrooms</option>
+                                <option value="4">4 Bedrooms</option>
+                                <option value="5">5+ Bedrooms</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="property-description">Property Description</label>
+                        <textarea id="property-description" name="propertyDescription" rows="4" placeholder="Describe your property, amenities, and any special features..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit Property Listing</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="local-services-section">
+            <div class="container">
+                <h3>Local Services Directory</h3>
+                <div class="services-grid" id="services-grid">
+                    <!-- Services will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            What's the average rent for students near BYU-I?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Student housing typically ranges from $200-500 per person for shared housing, with private rooms ranging from $400-800 per month. Many students share apartments or houses to reduce costs.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            How close should I live to campus?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Most students prefer to live within 2 miles of campus. There's a free campus shuttle service, and many areas are bike-friendly. Consider your transportation preferences and class schedule.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            What should I know about Idaho winters?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Rexburg winters can be harsh with snow and temperatures below freezing. Look for properties with good heating systems, insulation, and snow removal services. Budget extra for heating costs.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            Are pets allowed in most rentals?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Pet policies vary by property. Many rentals near campus have no-pet policies, while family housing areas are more pet-friendly. Always ask about pet deposits and monthly pet fees.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            What's included in typical rent prices?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>This varies widely. Some properties include utilities (water, electricity, internet), while others require tenants to pay separately. Always clarify what's included before signing a lease.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Rexburg Home Finder</h4>
+                    <p>Helping you find the perfect home in Rexburg, Idaho.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Property Search</a></li>
+                        <li><a href="neighborhoods.html">Neighborhoods</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@rexburghomefinder.com</p>
+                    <p>Phone: (208) 555-0123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rexburg Home Finder. All rights reserved.</p>
+                <p><a href="attributions.html">Attributions</a> | <a href="#video-demo">Video Demo</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/calculators.js"></script>
+    <script type="module" src="scripts/services.js"></script>
+</body>
+</html>
