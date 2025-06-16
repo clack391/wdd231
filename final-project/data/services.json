@@ -1,0 +1,434 @@
+{
+  "services": [
+    {
+      "id": "1",
+      "name": "First American Title Company",
+      "category": "Real Estate Services",
+      "description": "Full-service title and escrow company providing comprehensive real estate transaction services for buyers and sellers in the Rexburg area.",
+      "phone": "(208) 356-4141",
+      "email": "rexburg@firstam.com",
+      "website": "https://www.firstam.com",
+      "address": "52 W Main St, Rexburg, ID 83440",
+      "rating": 4.7,
+      "specialties": ["Title Insurance", "Escrow Services", "Property Records", "Closing Services"],
+      "hours": {
+        "Monday": "8:00 AM - 5:00 PM",
+        "Tuesday": "8:00 AM - 5:00 PM",
+        "Wednesday": "8:00 AM - 5:00 PM",
+        "Thursday": "8:00 AM - 5:00 PM",
+        "Friday": "8:00 AM - 5:00 PM",
+        "Saturday": "Closed",
+        "Sunday": "Closed"
+      },
+      "reviews": [
+        {
+          "author": "Sarah M.",
+          "rating": 5,
+          "comment": "Excellent service throughout our home buying process. Very professional and responsive team."
+        },
+        {
+          "author": "Mike R.",
+          "rating": 4,
+          "comment": "Smooth closing process, though communication could have been better during busy periods."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Mountain West Bank",
+      "category": "Financial Services",
+      "description": "Community bank offering home loans, personal banking, and financial services with local expertise and competitive rates.",
+      "phone": "(208) 356-3541",
+      "email": "rexburg@mwbank.com",
+      "website": "https://www.mountainwestbank.com",
+      "address": "150 W Main St, Rexburg, ID 83440",
+      "rating": 4.5,
+      "specialties": ["Home Mortgages", "Personal Banking", "Student Loans", "Business Banking", "Financial Planning"],
+      "hours": {
+        "Monday": "9:00 AM - 5:00 PM",
+        "Tuesday": "9:00 AM - 5:00 PM",
+        "Wednesday": "9:00 AM - 5:00 PM",
+        "Thursday": "9:00 AM - 5:00 PM",
+        "Friday": "9:00 AM - 6:00 PM",
+        "Saturday": "9:00 AM - 1:00 PM",
+        "Sunday": "Closed"
+      },
+      "reviews": [
+        {
+          "author": "Jennifer L.",
+          "rating": 5,
+          "comment": "Great local bank with personal service. They made my first home loan process easy to understand."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Rexburg Property Management",
+      "category": "Property Management",
+      "description": "Professional property management services for landlords and tenants, specializing in student housing and residential properties.",
+      "phone": "(208) 359-2120",
+      "email": "info@rexburgpm.com",
+      "website": "https://www.rexburgpropertymanagement.com",
+      "address": "75 N 2nd E, Rexburg, ID 83440",
+      "rating": 4.3,
+      "specialties": ["Student Housing", "Tenant Screening", "Maintenance Services", "Rent Collection", "Property Marketing"],
+      "hours": {
+        "Monday": "8:00 AM - 6:00 PM",
+        "Tuesday": "8:00 AM - 6:00 PM",
+        "Wednesday": "8:00 AM - 6:00 PM",
+        "Thursday": "8:00 AM - 6:00 PM",
+        "Friday": "8:00 AM - 6:00 PM",
+        "Saturday": "10:00 AM - 4:00 PM",
+        "Sunday": "Closed"
+      },
+      "reviews": [
+        {
+          "author": "David K.",
+          "rating": 4,
+          "comment": "Good property management company. Responsive to maintenance requests and fair with deposits."
+        },
+        {
+          "author": "Lisa T.",
+          "rating": 4,
+          "comment": "Professional service, though rent prices have increased significantly in recent years."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Madison Memorial Hospital",
+      "category": "Healthcare",
+      "description": "Full-service hospital providing comprehensive healthcare services including emergency care, surgery, and specialty services.",
+      "phone": "(208) 359-6900",
+      "email": "info@madisonhospital.org",
+      "website": "https://www.madisonhospital.org",
+      "address": "450 E Main St, Rexburg, ID 83440",
+      "rating": 4.6,
+      "specialties": ["Emergency Care", "Family Medicine", "Surgery", "Maternity Care", "Orthopedics", "Radiology"],
+      "hours": {
+        "Monday": "24 Hours",
+        "Tuesday": "24 Hours",
+        "Wednesday": "24 Hours",
+        "Thursday": "24 Hours",
+        "Friday": "24 Hours",
+        "Saturday": "24 Hours",
+        "Sunday": "24 Hours"
+      },
+      "reviews": [
+        {
+          "author": "Rachel P.",
+          "rating": 5,
+          "comment": "Excellent emergency care when my son broke his arm. Staff was compassionate and professional."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Rocky Mountain Power",
+      "category": "Utilities",
+      "description": "Electric utility company serving the Rexburg area with reliable power service and energy efficiency programs.",
+      "phone": "(208) 388-2323",
+      "email": "customerservice@rockymountainpower.net",
+      "website": "https://www.rockymountainpower.net",
+      "address": "Service area coverage - no physical office in Rexburg",
+      "rating": 3.8,
+      "specialties": ["Electrical Service", "Power Outage Response", "Energy Efficiency", "Solar Programs", "Business Services"],
+      "hours": {
+        "Monday": "24/7 Customer Service",
+        "Tuesday": "24/7 Customer Service",
+        "Wednesday": "24/7 Customer Service",
+        "Thursday": "24/7 Customer Service",
+        "Friday": "24/7 Customer Service",
+        "Saturday": "24/7 Customer Service",
+        "Sunday": "24/7 Customer Service"
+      },
+      "reviews": [
+        {
+          "author": "Tom H.",
+          "rating": 4,
+          "comment": "Generally reliable service. Quick response to outages during winter storms."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "All Seasons Moving & Storage",
+      "category": "Moving Services",
+      "description": "Professional moving company providing local and long-distance moving services for students and families relocating to Rexburg.",
+      "phone": "(208) 356-9999",
+      "email": "info@allseasonsmoving.com",
+      "website": "https://www.allseasonsmoving.com",
+      "address": "123 Industrial Blvd, Rexburg, ID 83440",
+      "rating": 4.4,
+      "specialties": ["Local Moving", "Long Distance", "Student Moving", "Packing Services", "Storage Solutions"],
+      "hours": {
+        "Monday": "7:00 AM - 7:00 PM",
+        "Tuesday": "7:00 AM - 7:00 PM",
+        "Wednesday": "7:00 AM - 7:00 PM",
+        "Thursday": "7:00 AM - 7:00 PM",
+        "Friday": "7:00 AM - 7:00 PM",
+        "Saturday": "8:00 AM - 5:00 PM",
+        "Sunday": "Closed"
+      },
+      "reviews": [
+        {
+          "author": "Amanda S.",
+          "rating": 5,
+          "comment": "Great moving experience! They were careful with our furniture and very professional."
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Quality Pest Control",
+      "category": "Home Services",
+      "description": "Professional pest control services for residential and commercial properties, specializing in common Idaho pests.",
+      "phone": "(208) 356-7378",
+      "email": "service@qualitypest.com",
+      "website": "https://www.qualitypestcontrol.com",
+      "address": "89 W 7th S, Rexburg, ID 83440",
+      "rating": 4.5,
+      "specialties": ["Ant Control", "Spider Treatment", "Rodent Control", "Wasp Removal", "Preventive Services"],
+      "hours": {
+        "Monday": "8:00 AM - 5:00 PM",
+        "Tuesday": "8:00 AM - 5:00 PM",
+        "Wednesday": "8:00 AM - 5:00 PM",
+        "Thursday": "8:00 AM - 5:00 PM",
+        "Friday": "8:00 AM - 5:00 PM",
+        "Saturday": "By Appointment",
+        "Sunday": "Emergency Only"
+      },
+      "reviews": [
+        {
+          "author": "Chris M.",
+          "rating": 4,
+          "comment": "Effective treatment for our ant problem. Good customer service and reasonable pricing."
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Rexburg Heating & Cooling",
+      "category": "Home Services",
+      "description": "HVAC contractor providing installation, repair, and maintenance services for heating and cooling systems in Rexburg homes.",
+      "phone": "(208) 356-4663",
+      "email": "service@rexburghvac.com",
+      "website": "https://www.rexburgheatingcooling.com",
+      "address": "456 Commerce Way, Rexburg, ID 83440",
+      "rating": 4.7,
+      "specialties": ["HVAC Installation", "Furnace Repair", "AC Maintenance", "Duct Cleaning", "Energy Audits"],
+      "hours": {
+        "Monday": "7:00 AM - 6:00 PM",
+        "Tuesday": "7:00 AM - 6:00 PM",
+        "Wednesday": "7:00 AM - 6:00 PM",
+        "Thursday": "7:00 AM - 6:00 PM",
+        "Friday": "7:00 AM - 6:00 PM",
+        "Saturday": "8:00 AM - 4:00 PM",
+        "Sunday": "Emergency Only"
+      },
+      "reviews": [
+        {
+          "author": "Mary J.",
+          "rating": 5,
+          "comment": "Excellent service! They fixed our furnace quickly and explained everything clearly."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Walmart Supercenter",
+      "category": "Shopping",
+      "description": "Large retail store offering groceries, household items, electronics, and services convenient for student and family needs.",
+      "phone": "(208) 359-3434",
+      "email": "Not available",
+      "website": "https://www.walmart.com",
+      "address": "530 N 2nd E, Rexburg, ID 83440",
+      "rating": 4.1,
+      "specialties": ["Groceries", "Electronics", "Home Goods", "Pharmacy", "Auto Service", "Money Services"],
+      "hours": {
+        "Monday": "6:00 AM - 11:00 PM",
+        "Tuesday": "6:00 AM - 11:00 PM",
+        "Wednesday": "6:00 AM - 11:00 PM",
+        "Thursday": "6:00 AM - 11:00 PM",
+        "Friday": "6:00 AM - 11:00 PM",
+        "Saturday": "6:00 AM - 11:00 PM",
+        "Sunday": "6:00 AM - 11:00 PM"
+      },
+      "reviews": [
+        {
+          "author": "Student K.",
+          "rating": 4,
+          "comment": "Convenient one-stop shopping for everything I need as a student. Good prices too."
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Snow College Physical Therapy",
+      "category": "Healthcare",
+      "description": "Physical therapy clinic providing rehabilitation services for injuries, sports medicine, and wellness programs.",
+      "phone": "(208) 356-9191",
+      "email": "info@snowpt.com",
+      "website": "https://www.snowcollegept.com",
+      "address": "25 Center St, Rexburg, ID 83440",
+      "rating": 4.8,
+      "specialties": ["Sports Medicine", "Injury Rehabilitation", "Post-Surgery Recovery", "Pain Management", "Wellness Programs"],
+      "hours": {
+        "Monday": "7:00 AM - 7:00 PM",
+        "Tuesday": "7:00 AM - 7:00 PM",
+        "Wednesday": "7:00 AM - 7:00 PM",
+        "Thursday": "7:00 AM - 7:00 PM",
+        "Friday": "7:00 AM - 6:00 PM",
+        "Saturday": "8:00 AM - 2:00 PM",
+        "Sunday": "Closed"
+      },
+      "reviews": [
+        {
+          "author": "Alex R.",
+          "rating": 5,
+          "comment": "Great physical therapy after my knee surgery. The staff was knowledgeable and caring."
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Rexburg Internet Services",
+      "category": "Utilities",
+      "description": "Local internet service provider offering high-speed internet and cable services to residential and business customers.",
+      "phone": "(208) 356-7638",
+      "email": "support@rexburginternet.com",
+      "website": "https://www.rexburginternet.com",
+      "address": "200 W Main St, Rexburg, ID 83440",
+      "rating": 4.2,
+      "specialties": ["High-Speed Internet", "Cable TV", "Business Internet", "Technical Support", "Installation Services"],
+      "hours": {
+        "Monday": "8:00 AM - 6:00 PM",
+        "Tuesday": "8:00 AM - 6:00 PM",
+        "Wednesday": "8:00 AM - 6:00 PM",
+        "Thursday": "8:00 AM - 6:00 PM",
+        "Friday": "8:00 AM - 6:00 PM",
+        "Saturday": "9:00 AM - 4:00 PM",
+        "Sunday": "Closed"
+      },
+      "reviews": [
+        {
+          "author": "Student L.",
+          "rating": 4,
+          "comment": "Good internet speeds for online classes. Installation was quick and professional."
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Madison Laundry",
+      "category": "Home Services",
+      "description": "Full-service laundromat and dry cleaning facility providing convenient laundry solutions for students and residents.",
+      "phone": "(208) 356-8888",
+      "email": "info@madisonlaundry.com",
+      "website": "https://www.madisonlaundry.com",
+      "address": "145 E Main St, Rexburg, ID 83440",
+      "rating": 4.0,
+      "specialties": ["Self-Service Laundry", "Wash and Fold", "Dry Cleaning", "Comforter Cleaning", "Stain Removal"],
+      "hours": {
+        "Monday": "6:00 AM - 10:00 PM",
+        "Tuesday": "6:00 AM - 10:00 PM",
+        "Wednesday": "6:00 AM - 10:00 PM",
+        "Thursday": "6:00 AM - 10:00 PM",
+        "Friday": "6:00 AM - 10:00 PM",
+        "Saturday": "6:00 AM - 10:00 PM",
+        "Sunday": "7:00 AM - 9:00 PM"
+      },
+      "reviews": [
+        {
+          "author": "Jessica W.",
+          "rating": 4,
+          "comment": "Clean facilities and reasonable prices. The wash and fold service is convenient for busy students."
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Rexburg Auto Repair",
+      "category": "Automotive",
+      "description": "Full-service auto repair shop providing maintenance and repair services for all vehicle makes and models.",
+      "phone": "(208) 356-5555",
+      "email": "service@rexburgauto.com",
+      "website": "https://www.rexburgautorepair.com",
+      "address": "678 S 2nd W, Rexburg, ID 83440",
+      "rating": 4.6,
+      "specialties": ["Oil Changes", "Brake Service", "Engine Repair", "Transmission", "Tire Service", "Inspection"],
+      "hours": {
+        "Monday": "7:30 AM - 6:00 PM",
+        "Tuesday": "7:30 AM - 6:00 PM",
+        "Wednesday": "7:30 AM - 6:00 PM",
+        "Thursday": "7:30 AM - 6:00 PM",
+        "Friday": "7:30 AM - 6:00 PM",
+        "Saturday": "8:00 AM - 4:00 PM",
+        "Sunday": "Closed"
+      },
+      "reviews": [
+        {
+          "author": "Matt D.",
+          "rating": 5,
+          "comment": "Honest mechanics with fair prices. They fixed my car quickly and explained everything."
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Porter's Craft & Frame",
+      "category": "Shopping",
+      "description": "Local craft store offering art supplies, framing services, and creative materials for students and hobbyists.",
+      "phone": "(208) 356-3231",
+      "email": "info@porterscraft.com",
+      "website": "https://www.porterscraft.com",
+      "address": "165 W Main St, Rexburg, ID 83440",
+      "rating": 4.4,
+      "specialties": ["Art Supplies", "Custom Framing", "Craft Materials", "Scrapbooking", "Party Supplies"],
+      "hours": {
+        "Monday": "9:00 AM - 9:00 PM",
+        "Tuesday": "9:00 AM - 9:00 PM",
+        "Wednesday": "9:00 AM - 9:00 PM",
+        "Thursday": "9:00 AM - 9:00 PM",
+        "Friday": "9:00 AM - 9:00 PM",
+        "Saturday": "9:00 AM - 9:00 PM",
+        "Sunday": "Closed"
+      },
+      "reviews": [
+        {
+          "author": "Emily C.",
+          "rating": 4,
+          "comment": "Great selection of craft supplies and helpful staff. Perfect for school projects."
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Rexburg City Building Department",
+      "category": "Government Services",
+      "description": "Municipal building department handling permits, inspections, and building code compliance for construction and renovation projects.",
+      "phone": "(208) 359-3020",
+      "email": "building@rexburg.org",
+      "website": "https://www.rexburg.org/building",
+      "address": "150 N 1st E, Rexburg, ID 83440",
+      "rating": 3.9,
+      "specialties": ["Building Permits", "Inspections", "Code Compliance", "Zoning Information", "Contractor Licensing"],
+      "hours": {
+        "Monday": "8:00 AM - 5:00 PM",
+        "Tuesday": "8:00 AM - 5:00 PM",
+        "Wednesday": "8:00 AM - 5:00 PM",
+        "Thursday": "8:00 AM - 5:00 PM",
+        "Friday": "8:00 AM - 5:00 PM",
+        "Saturday": "Closed",
+        "Sunday": "Closed"
+      },
+      "reviews": [
+        {
+          "author": "Bob T.",
+          "rating": 4,
+          "comment": "Helpful staff for permit process. Wait times can be long during busy construction seasons."
+        }
+      ]
+    }
+  ]
+}

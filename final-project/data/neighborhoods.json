@@ -1,0 +1,274 @@
+{
+  "neighborhoods": [
+    {
+      "id": "campus-adjacent",
+      "name": "Campus Adjacent",
+      "description": "Prime student housing area directly adjacent to BYU-Idaho campus with easy walking access to classes and campus amenities.",
+      "rentRange": {
+        "min": 350,
+        "max": 550
+      },
+      "avgCommuteTime": "5-10 min walk",
+      "safetyRating": 4.8,
+      "propertyCount": 145,
+      "studentPercentage": 95,
+      "parkingAvailability": "Limited street parking, most complexes provide parking",
+      "publicTransit": "BYU-I shuttle system",
+      "bikeFriendly": true,
+      "highlights": [
+        "Walking distance to all campus buildings",
+        "High concentration of student services",
+        "Active student community atmosphere",
+        "24/7 campus security presence",
+        "Easy access to campus events and activities"
+      ],
+      "amenities": [
+        "BYU-I Campus",
+        "Student Recreation Center",
+        "Campus Library",
+        "Multiple Dining Options",
+        "Campus Health Center",
+        "Student Study Areas",
+        "Campus Bookstore",
+        "Tutoring Centers"
+      ],
+      "utilities": {
+        "electricity": "75-110",
+        "internet": "25-45",
+        "water": "20-35"
+      },
+      "groceryAccess": "Walmart and local markets within 1 mile",
+      "diningOptions": "Campus dining, pizza places, and cafes",
+      "pros": [
+        "No transportation needed for classes",
+        "Immersive student experience",
+        "Lower transportation costs",
+        "Easy access to campus resources",
+        "High walkability score"
+      ],
+      "cons": [
+        "Higher rent prices",
+        "Limited parking availability",
+        "Noise from student activities",
+        "Less family-oriented",
+        "Competitive housing market"
+      ]
+    },
+    {
+      "id": "downtown",
+      "name": "Downtown Rexburg",
+      "description": "Historic downtown area with local businesses, restaurants, and cultural attractions. Mix of students and long-term residents.",
+      "rentRange": {
+        "min": 300,
+        "max": 450
+      },
+      "avgCommuteTime": "10-15 min walk",
+      "safetyRating": 4.5,
+      "propertyCount": 87,
+      "studentPercentage": 70,
+      "parkingAvailability": "Street parking and small lots available",
+      "publicTransit": "Walking and biking, limited bus service",
+      "bikeFriendly": true,
+      "highlights": [
+        "Historic charm and character",
+        "Local restaurants and shops",
+        "Community events and festivals",
+        "Affordable housing options",
+        "Cultural attractions and museums"
+      ],
+      "amenities": [
+        "Legacy Flight Museum",
+        "Rexburg Rapids",
+        "Local Restaurants",
+        "Historic Sites",
+        "Community Center",
+        "Public Library",
+        "Farmers Market",
+        "Art Galleries"
+      ],
+      "utilities": {
+        "electricity": "80-115",
+        "internet": "30-50",
+        "water": "25-40"
+      },
+      "groceryAccess": "Walking distance to several local markets",
+      "diningOptions": "Diverse local restaurants and cafes",
+      "pros": [
+        "Rich history and character",
+        "Community atmosphere",
+        "Local business support",
+        "Affordable rent options",
+        "Cultural activities"
+      ],
+      "cons": [
+        "Older building infrastructure",
+        "Limited modern amenities",
+        "Seasonal tourism crowds",
+        "Fewer chain stores",
+        "Some noise from events"
+      ]
+    },
+    {
+      "id": "westside",
+      "name": "Westside",
+      "description": "Quiet residential area popular with families and graduate students. Features newer developments and mountain views.",
+      "rentRange": {
+        "min": 400,
+        "max": 700
+      },
+      "avgCommuteTime": "15-20 min drive",
+      "safetyRating": 4.9,
+      "propertyCount": 156,
+      "studentPercentage": 45,
+      "parkingAvailability": "Ample parking in driveways and garages",
+      "publicTransit": "Limited, car recommended",
+      "bikeFriendly": true,
+      "highlights": [
+        "Family-friendly neighborhoods",
+        "Newer home construction",
+        "Mountain and valley views",
+        "Quiet residential streets",
+        "Good schools and parks"
+      ],
+      "amenities": [
+        "Porter Park",
+        "Elementary Schools",
+        "Neighborhood Parks",
+        "Walking Trails",
+        "Mountain Views",
+        "Family Recreation Areas",
+        "Quiet Streets",
+        "Modern Developments"
+      ],
+      "utilities": {
+        "electricity": "85-125",
+        "internet": "35-60",
+        "water": "30-45"
+      },
+      "groceryAccess": "5-10 minute drive to major grocery stores",
+      "diningOptions": "Family restaurants and fast food options",
+      "pros": [
+        "Peaceful and quiet",
+        "Family-oriented community",
+        "Beautiful scenery",
+        "Newer housing options",
+        "Good property values"
+      ],
+      "cons": [
+        "Requires transportation",
+        "Limited nightlife",
+        "Higher utility costs",
+        "Less walkable",
+        "Fewer amenities nearby"
+      ]
+    },
+    {
+      "id": "eastside",
+      "name": "Eastside",
+      "description": "Growing area with mix of apartment complexes and single-family homes. Popular with students and young professionals.",
+      "rentRange": {
+        "min": 380,
+        "max": 650
+      },
+      "avgCommuteTime": "12-18 min drive",
+      "safetyRating": 4.6,
+      "propertyCount": 123,
+      "studentPercentage": 65,
+      "parkingAvailability": "Good parking availability",
+      "publicTransit": "Some shuttle service, biking popular",
+      "bikeFriendly": true,
+      "highlights": [
+        "Modern apartment complexes",
+        "Good value for money",
+        "Mix of housing types",
+        "Growing commercial area",
+        "Student and professional mix"
+      ],
+      "amenities": [
+        "Shopping Centers",
+        "Restaurants",
+        "Gas Stations",
+        "Apartment Amenities",
+        "Bike Paths",
+        "Small Parks",
+        "Commercial Services",
+        "Entertainment Options"
+      ],
+      "utilities": {
+        "electricity": "80-120",
+        "internet": "30-55",
+        "water": "25-40"
+      },
+      "groceryAccess": "Multiple options within 2-3 miles",
+      "diningOptions": "Chain restaurants and local eateries",
+      "pros": [
+        "Good value housing",
+        "Modern amenities",
+        "Diverse community",
+        "Growing area",
+        "Convenient shopping"
+      ],
+      "cons": [
+        "Commute to campus required",
+        "Ongoing construction",
+        "Limited public transit",
+        "Traffic during peak times",
+        "Newer area, less established"
+      ]
+    },
+    {
+      "id": "south-rexburg",
+      "name": "South Rexburg",
+      "description": "Established residential area with larger homes and lots. Popular with families and those seeking more space and privacy.",
+      "rentRange": {
+        "min": 450,
+        "max": 800
+      },
+      "avgCommuteTime": "20-25 min drive",
+      "safetyRating": 4.8,
+      "propertyCount": 98,
+      "studentPercentage": 25,
+      "parkingAvailability": "Excellent - large driveways and garages",
+      "publicTransit": "Very limited, car necessary",
+      "bikeFriendly": false,
+      "highlights": [
+        "Larger homes and lots",
+        "Established neighborhoods",
+        "Family-oriented community",
+        "Privacy and space",
+        "Quality school districts"
+      ],
+      "amenities": [
+        "Madison High School",
+        "Community Parks",
+        "Sports Fields",
+        "Playgrounds",
+        "Walking Paths",
+        "Established Trees",
+        "Quiet Neighborhoods",
+        "Family Services"
+      ],
+      "utilities": {
+        "electricity": "90-140",
+        "internet": "35-65",
+        "water": "35-50"
+      },
+      "groceryAccess": "10-15 minute drive to shopping areas",
+      "diningOptions": "Limited local options, drive to downtown or campus area",
+      "pros": [
+        "Spacious properties",
+        "Family-friendly",
+        "Established community",
+        "Good schools",
+        "Privacy and quiet"
+      ],
+      "cons": [
+        "Longer commute required",
+        "Higher housing costs",
+        "Car dependency",
+        "Limited walkability",
+        "Fewer student amenities"
+      ]
+    }
+  ]
+}

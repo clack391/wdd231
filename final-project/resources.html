@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Housing resources and help for Rexburg residents. Find buying guides, renting tips, calculators, and local services for all your housing needs.">
+    <meta name="author" content="Student Name">
+    <meta name="keywords" content="Rexburg housing help, buying guide, renting tips, real estate agents, mortgage calculators">
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Housing Resources & Help - Rexburg Home Finder">
+    <meta property="og:description" content="Housing resources and help for Rexburg residents. Find buying guides, renting tips, calculators, and local services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/resources.html">
+    <meta property="og:image" content="https://yourdomain.com/images/rexburg-resources.jpg">
+    
+    <title>Resources & Help - Rexburg Home Finder</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🏠 Rexburg Home Finder</h1>
+            </div>
+            <nav>
+                <button class="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Property Search</a></li>
+                    <li><a href="neighborhoods.html">Neighborhood Guide</a></li>
+                    <li><a href="resources.html" class="active" aria-current="page">Resources & Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Housing Resources & Help</h2>
+                <p>Everything you need to know about buying, renting, and living in Rexburg</p>
+            </div>
+        </section>
+
+        <section class="calculators-section">
+            <div class="container">
+                <h3>Financial Calculators</h3>
+                <div class="calculators-grid">
+                    <div class="calculator-card">
+                        <h4>Mortgage Calculator</h4>
+                        <form class="calculator-form" id="mortgageCalculator">
+                            <div class="calc-input-group">
+                                <label for="loanAmount">Loan Amount ($)</label>
+                                <input type="number" id="loanAmount" name="loanAmount" placeholder="300000" min="1000" step="1000">
+                            </div>
+                            <div class="calc-input-group">
+                                <label for="interestRate">Annual Interest Rate (%)</label>
+                                <input type="number" id="interestRate" name="interestRate" placeholder="6.5" min="0.1" max="20" step="0.1">
+                            </div>
+                            <div class="calc-input-group">
+                                <label for="loanTerm">Loan Term (years)</label>
+                                <select id="loanTerm" name="loanTerm">
+                                    <option value="15">15 years</option>
+                                    <option value="20">20 years</option>
+                                    <option value="30" selected>30 years</option>
+                                </select>
+                            </div>
+                            <button type="button" class="calc-btn" onclick="calculateMortgage()">Calculate</button>
+                            <div class="calc-result" id="mortgageResult"></div>
+                        </form>
+                    </div>
+
+                    <div class="calculator-card">
+                        <h4>Rent Affordability Calculator</h4>
+                        <form class="calculator-form" id="rentCalculator">
+                            <div class="calc-input-group">
+                                <label for="monthlyIncome">Monthly Income ($)</label>
+                                <input type="number" id="monthlyIncome" name="monthlyIncome" placeholder="4000" min="500" step="100">
+                            </div>
+                            <div class="calc-input-group">
+                                <label for="otherExpenses">Other Monthly Expenses ($)</label>
+                                <input type="number" id="otherExpenses" name="otherExpenses" placeholder="1000" min="0" step="50">
+                            </div>
+                            <div class="calc-input-group">
+                                <label for="rentPercent">Max % of Income for Rent</label>
+                                <select id="rentPercent" name="rentPercent">
+                                    <option value="25">25%</option>
+                                    <option value="30" selected>30%</option>
+                                    <option value="35">35%</option>
+                                </select>
+                            </div>
+                            <button type="button" class="calc-btn" onclick="calculateRentAffordability()">Calculate</button>
+                            <div class="calc-result" id="rentResult"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="guides-section">
+            <div class="container">
+                <h3>Housing Guides</h3>
+                <div class="guides-grid">
+                    <div class="guide-card">
+                        <div class="guide-icon">🏡</div>
+                        <h4>First-Time Home Buying Guide</h4>
+                        <div class="guide-content">
+                            <h5>Steps to Buying Your First Home:</h5>
+                            <ol>
+                                <li><strong>Check Your Credit Score</strong> - Aim for 620+ for conventional loans</li>
+                                <li><strong>Save for Down Payment</strong> - 3-20% of home price</li>
+                                <li><strong>Get Pre-approved</strong> - Know your budget before shopping</li>
+                                <li><strong>Find a Real Estate Agent</strong> - Local expertise matters</li>
+                                <li><strong>Shop for Homes</strong> - Stay within your budget</li>
+                                <li><strong>Make an Offer</strong> - Be prepared to negotiate</li>
+                                <li><strong>Get a Home Inspection</strong> - Protect your investment</li>
+                                <li><strong>Finalize Financing</strong> - Complete loan process</li>
+                                <li><strong>Close on Your Home</strong> - Final walkthrough and signing</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="guide-card">
+                        <div class="guide-icon">🔑</div>
+                        <h4>Renting Tips & Tenant Rights</h4>
+                        <div class="guide-content">
+                            <h5>What to Look for When Renting:</h5>
+                            <ul>
+                                <li><strong>Lease Terms</strong> - Understand all clauses and fees</li>
+                                <li><strong>Security Deposits</strong> - Know Idaho's deposit laws</li>
+                                <li><strong>Maintenance Responsibilities</strong> - Who fixes what?</li>
+                                <li><strong>Utility Arrangements</strong> - What's included vs. separate</li>
+                                <li><strong>Parking & Storage</strong> - Ensure adequate space</li>
+                                <li><strong>Neighborhood Safety</strong> - Visit at different times</li>
+                                <li><strong>Pet Policies</strong> - Understand restrictions and fees</li>
+                            </ul>
+                            
+                            <h5>Idaho Tenant Rights:</h5>
+                            <ul>
+                                <li>Right to habitable living conditions</li>
+                                <li>Right to privacy (24-hour notice for entry)</li>
+                                <li>Right to return of security deposit</li>
+                                <li>Protection from illegal eviction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="container">
+                <h3>Local Services Directory</h3>
+                <div class="services-grid" id="servicesContainer">
+                    <!-- Services will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What's the average rent for student housing in Rexburg?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Student housing in Rexburg typically ranges from $300-600 per month for shared accommodations. Private bedrooms in student complexes average $400-500/month, while shared rooms can be as low as $250-350/month. Most student housing includes utilities and internet.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            How close should I live to BYU-I campus?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Most students prefer to live within 1-2 miles of campus for easy walking or biking. The campus shuttle system also serves many apartment complexes. Living within the "BYU-I approved housing" area ensures you meet university requirements if you're an unmarried student.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What are typical utility costs in Rexburg?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Monthly utilities in Rexburg typically cost: Electricity $80-120, Natural Gas $40-80 (higher in winter), Water/Sewer $30-50, Internet $30-60, and Trash $15-25. Total utilities for a 2-bedroom apartment average $200-350/month depending on usage and season.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do I need a car to live in Rexburg?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>While a car is helpful, it's not absolutely necessary. BYU-I provides free shuttle service to many student housing complexes. The city is bike-friendly, and many students walk or bike to campus. However, a car is convenient for grocery shopping and weekend activities.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What's the best time to look for housing in Rexburg?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>For fall semester, start looking in February-March for the best selection. Spring semester housing becomes available in October-November. Summer housing is often easier to find and may have lower rates. Many leases follow the academic calendar.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Are pets allowed in Rexburg rental properties?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Pet policies vary widely. Many student housing complexes don't allow pets, while family housing is more pet-friendly. Pet deposits typically range from $200-500, with monthly pet rent of $25-50. Always check pet policies before signing a lease.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="emergency-contacts">
+            <div class="container">
+                <h3>Important Contacts</h3>
+                <div class="contacts-grid">
+                    <div class="contact-card emergency">
+                        <h4>Emergency Services</h4>
+                        <p><strong>Emergency:</strong> 911</p>
+                        <p><strong>Non-Emergency Police:</strong> (208) 359-3008</p>
+                        <p><strong>Fire Department:</strong> (208) 359-3063</p>
+                        <p><strong>Poison Control:</strong> 1-800-222-1222</p>
+                    </div>
+                    
+                    <div class="contact-card utilities">
+                        <h4>Utilities</h4>
+                        <p><strong>Rocky Mountain Power:</strong> (208) 388-2323</p>
+                        <p><strong>Intermountain Gas:</strong> (208) 377-6840</p>
+                        <p><strong>City Water:</strong> (208) 359-3020</p>
+                        <p><strong>Waste Management:</strong> (208) 232-3709</p>
+                    </div>
+                    
+                    <div class="contact-card city">
+                        <h4>City Services</h4>
+                        <p><strong>City Hall:</strong> (208) 359-3020</p>
+                        <p><strong>Building Department:</strong> (208) 359-3020</p>
+                        <p><strong>Snow Removal:</strong> (208) 359-3020</p>
+                        <p><strong>Animal Control:</strong> (208) 359-3008</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Service Detail Modal -->
+    <div class="modal" id="serviceModal" role="dialog" aria-labelledby="serviceModalTitle" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="serviceModalTitle">Service Details</h4>
+                <button class="close-modal" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body" id="serviceModalBody">
+                <!-- Modal content will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Rexburg Home Finder</h4>
+                    <p>Helping you find the perfect home in Rexburg, Idaho.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Property Search</a></li>
+                        <li><a href="neighborhoods.html">Neighborhoods</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@rexburghomefinder.com</p>
+                    <p>Phone: (208) 555-0123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rexburg Home Finder. All rights reserved.</p>
+                <p><a href="attributions.html">Attributions</a> | <a href="https://youtube.com/watch?v=demo" target="_blank">Video Demo</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/resources.js"></script>
+</body>
+</html>

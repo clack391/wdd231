@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find houses to buy or rent in Rexburg, Idaho. Search properties by price, bedrooms, and location near BYU-I campus.">
+    <meta name="author" content="Student Name">
+    <meta name="keywords" content="Rexburg housing, BYU-I housing, Idaho rentals, homes for sale">
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Rexburg Home Finder - Property Search">
+    <meta property="og:description" content="Find houses to buy or rent in Rexburg, Idaho. Search properties by price, bedrooms, and location near BYU-I campus.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://yourdomain.com/images/rexburg-homes.jpg">
+    
+    <title>Rexburg Home Finder - Find Your Perfect Home</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🏠 Rexburg Home Finder</h1>
+            </div>
+            <nav>
+                <button class="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active" aria-current="page">Property Search</a></li>
+                    <li><a href="neighborhoods.html">Neighborhood Guide</a></li>
+                    <li><a href="resources.html">Resources & Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Find Your Perfect Home in Rexburg</h2>
+                <p>Discover houses and apartments for rent or purchase near BYU-I campus</p>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <div class="container">
+                <div class="search-form-container">
+                    <h3>Search Properties</h3>
+                    <form class="search-form" id="propertySearchForm">
+                        <div class="form-group">
+                            <label for="propertyType">Property Type</label>
+                            <select id="propertyType" name="propertyType">
+                                <option value="">All Types</option>
+                                <option value="rent">For Rent</option>
+                                <option value="buy">For Sale</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bedrooms">Bedrooms</label>
+                            <select id="bedrooms" name="bedrooms">
+                                <option value="">Any</option>
+                                <option value="1">1 Bedroom</option>
+                                <option value="2">2 Bedrooms</option>
+                                <option value="3">3 Bedrooms</option>
+                                <option value="4">4+ Bedrooms</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="maxPrice">Max Price</label>
+                            <select id="maxPrice" name="maxPrice">
+                                <option value="">Any Price</option>
+                                <option value="800">Under $800</option>
+                                <option value="1200">Under $1,200</option>
+                                <option value="1600">Under $1,600</option>
+                                <option value="2000">Under $2,000</option>
+                                <option value="300000">Under $300,000</option>
+                                <option value="400000">Under $400,000</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="search-btn">Search Properties</button>
+                        <button type="button" class="clear-btn" id="clearFilters">Clear Filters</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="properties-section">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Available Properties</h3>
+                    <div class="view-controls">
+                        <button class="view-btn active" data-view="grid" aria-label="Grid view">📦</button>
+                        <button class="view-btn" data-view="list" aria-label="List view">📋</button>
+                    </div>
+                </div>
+                
+                <div class="loading" id="loadingSpinner">Loading properties...</div>
+                <div class="error-message" id="errorMessage" style="display: none;">
+                    Error loading properties. Please try again later.
+                </div>
+                
+                <div class="properties-grid" id="propertiesContainer">
+                    <!-- Properties will be dynamically loaded here -->
+                </div>
+                
+                <div class="no-results" id="noResults" style="display: none;">
+                    <p>No properties found matching your criteria. Try adjusting your search filters.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <h3>List Your Property</h3>
+                <p>Have a property to rent or sell in Rexburg? Get in touch with us!</p>
+                <form class="contact-form" action="form-action.html" method="GET">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="listingType">Listing Type *</label>
+                            <select id="listingType" name="listingType" required>
+                                <option value="">Select Type</option>
+                                <option value="rent">For Rent</option>
+                                <option value="sale">For Sale</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Property Address *</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Details</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your property..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Listing Request</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Property Detail Modal -->
+    <div class="modal" id="propertyModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="modalTitle">Property Details</h4>
+                <button class="close-modal" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Rexburg Home Finder</h4>
+                    <p>Helping you find the perfect home in Rexburg, Idaho.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Property Search</a></li>
+                        <li><a href="neighborhoods.html">Neighborhoods</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@rexburghomefinder.com</p>
+                    <p>Phone: (208) 555-0123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rexburg Home Finder. All rights reserved.</p>
+                <p><a href="attributions.html">Attributions</a> | <a href="https://youtube.com/watch?v=demo" target="_blank">Video Demo</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Property listing submission confirmation for Rexburg Home Finder.">
+    <meta name="author" content="Student Name">
+    
+    <title>Listing Submitted - Rexburg Home Finder</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🏠 Rexburg Home Finder</h1>
+            </div>
+            <nav>
+                <button class="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Property Search</a></li>
+                    <li><a href="neighborhoods.html">Neighborhood Guide</a></li>
+                    <li><a href="resources.html">Resources & Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-confirmation">
+            <div class="container">
+                <div class="confirmation-card">
+                    <div class="success-icon">✅</div>
+                    <h2>Thank You for Your Submission!</h2>
+                    <p>We've received your property listing request. Our team will review the information and contact you within 24-48 hours.</p>
+                    
+                    <div class="submission-details">
+                        <h3>Submission Details:</h3>
+                        <div class="details-grid" id="submissionDetails">
+                            <!-- Form data will be displayed here via JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="next-steps">
+                        <h3>What happens next?</h3>
+                        <ol>
+                            <li>Our team will review your property information</li>
+                            <li>We may contact you for additional details or photos</li>
+                            <li>Once approved, your listing will appear on our website</li>
+                            <li>We'll provide you with a link to manage your listing</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <a href="index.html" class="btn btn-primary">Back to Property Search</a>
+                        <a href="resources.html" class="btn btn-secondary">View Resources</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Rexburg Home Finder</h4>
+                    <p>Helping you find the perfect home in Rexburg, Idaho.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Property Search</a></li>
+                        <li><a href="neighborhoods.html">Neighborhoods</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@rexburghomefinder.com</p>
+                    <p>Phone: (208) 555-0123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rexburg Home Finder. All rights reserved.</p>
+                <p><a href="attributions.html">Attributions</a> | <a href="https://youtube.com/watch?v=demo" target="_blank">Video Demo</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Display form submission data from URL parameters
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const detailsContainer = document.getElementById('submissionDetails');
+            
+            if (urlParams.size === 0) {
+                detailsContainer.innerHTML = '<p>No submission data found. Please <a href="index.html">submit a new listing request</a>.</p>';
+                return;
+            }
+            
+            const submissionData = [];
+            
+            // Extract and format form data
+            if (urlParams.get('name')) {
+                submissionData.push({ label: 'Name', value: urlParams.get('name') });
+            }
+            if (urlParams.get('email')) {
+                submissionData.push({ label: 'Email', value: urlParams.get('email') });
+            }
+            if (urlParams.get('phone')) {
+                submissionData.push({ label: 'Phone', value: urlParams.get('phone') });
+            }
+            if (urlParams.get('listingType')) {
+                const type = urlParams.get('listingType') === 'rent' ? 'For Rent' : 'For Sale';
+                submissionData.push({ label: 'Listing Type', value: type });
+            }
+            if (urlParams.get('address')) {
+                submissionData.push({ label: 'Property Address', value: urlParams.get('address') });
+            }
+            if (urlParams.get('message')) {
+                submissionData.push({ label: 'Additional Details', value: urlParams.get('message') });
+            }
+            
+            // Generate HTML for submission details
+            if (submissionData.length > 0) {
+                const detailsHTML = submissionData.map(item => `
+                    <div class="detail-item">
+                        <strong>${item.label}:</strong>
+                        <span>${item.value}</span>
+                    </div>
+                `).join('');
+                
+                detailsContainer.innerHTML = detailsHTML;
+            } else {
+                detailsContainer.innerHTML = '<p>No valid submission data found.</p>';
+            }
+            
+            // Add timestamp
+            const timestamp = new Date().toLocaleString();
+            detailsContainer.innerHTML += `
+                <div class="detail-item">
+                    <strong>Submitted:</strong>
+                    <span>${timestamp}</span>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>

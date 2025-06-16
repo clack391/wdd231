@@ -1,0 +1,346 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "address": "123 University Drive, Rexburg, ID",
+      "price": 450,
+      "type": "rent",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": 800,
+      "distanceToCampus": "0.3 miles",
+      "neighborhood": "campus-adjacent",
+      "description": "Cozy 2-bedroom apartment perfect for students. Walking distance to BYU-I campus with modern amenities and study-friendly environment.",
+      "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Laundry", "Internet", "Furnished"],
+      "contact": {
+        "name": "Campus Housing LLC",
+        "phone": "(208) 555-0101",
+        "email": "info@campushousing.com"
+      }
+    },
+    {
+      "id": 2,
+      "address": "456 College Avenue, Rexburg, ID",
+      "price": 320000,
+      "type": "buy",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1200,
+      "distanceToCampus": "0.8 miles",
+      "neighborhood": "downtown",
+      "description": "Beautiful 3-bedroom family home in downtown Rexburg. Recently updated kitchen and bathrooms, large backyard perfect for families.",
+      "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Air Conditioning", "Dishwasher", "Microwave"],
+      "contact": {
+        "name": "Rexburg Realty",
+        "phone": "(208) 555-0102",
+        "email": "sales@rexburgrealty.com"
+      }
+    },
+    {
+      "id": 3,
+      "address": "789 Student Lane, Rexburg, ID",
+      "price": 380,
+      "type": "rent",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 600,
+      "distanceToCampus": "0.2 miles",
+      "neighborhood": "campus-adjacent",
+      "description": "Modern studio apartment with all utilities included. Perfect for single students who want convenience and affordability near campus.",
+      "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=500&h=300&fit=crop",
+      "amenities": ["Internet", "Furnished", "Laundry", "Gym Access"],
+      "contact": {
+        "name": "University Properties",
+        "phone": "(208) 555-0103",
+        "email": "leasing@uniproperties.com"
+      }
+    },
+    {
+      "id": 4,
+      "address": "321 West Main Street, Rexburg, ID",
+      "price": 275000,
+      "type": "buy",
+      "bedrooms": 2,
+      "bathrooms": 1.5,
+      "sqft": 950,
+      "distanceToCampus": "1.2 miles",
+      "neighborhood": "westside",
+      "description": "Charming starter home with original hardwood floors and updated appliances. Quiet neighborhood with mature trees and friendly neighbors.",
+      "image": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Air Conditioning", "Dishwasher"],
+      "contact": {
+        "name": "Century 21 Rexburg",
+        "phone": "(208) 555-0104",
+        "email": "homes@century21rex.com"
+      }
+    },
+    {
+      "id": 5,
+      "address": "654 Eagle Point Drive, Rexburg, ID",
+      "price": 520,
+      "type": "rent",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "sqft": 1400,
+      "distanceToCampus": "1.5 miles",
+      "neighborhood": "eastside",
+      "description": "Spacious 4-bedroom house perfect for roommates. Large living areas, updated kitchen, and private backyard with mountain views.",
+      "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Laundry", "Air Conditioning", "Microwave", "Pet Friendly"],
+      "contact": {
+        "name": "Eagle Point Rentals",
+        "phone": "(208) 555-0105",
+        "email": "rent@eaglepoint.com"
+      }
+    },
+    {
+      "id": 6,
+      "address": "987 South 2nd West, Rexburg, ID",
+      "price": 410000,
+      "type": "buy",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "sqft": 2200,
+      "distanceToCampus": "2.1 miles",
+      "neighborhood": "south-rexburg",
+      "description": "Executive home with open floor plan, master suite, and finished basement. Perfect for families who want space and modern amenities.",
+      "image": "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Air Conditioning", "Dishwasher", "Microwave"],
+      "contact": {
+        "name": "Premier Homes Realty",
+        "phone": "(208) 555-0106",
+        "email": "luxury@premierhomes.com"
+      }
+    },
+    {
+      "id": 7,
+      "address": "147 Campus View Circle, Rexburg, ID",
+      "price": 425,
+      "type": "rent",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": 750,
+      "distanceToCampus": "0.4 miles",
+      "neighborhood": "campus-adjacent",
+      "description": "Popular apartment complex with pool and study rooms. Great for students who want a balance of social life and academic success.",
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Internet", "Furnished", "Pool", "Study Rooms"],
+      "contact": {
+        "name": "Campus View Management",
+        "phone": "(208) 555-0107",
+        "email": "office@campusview.com"
+      }
+    },
+    {
+      "id": 8,
+      "address": "258 Heritage Place, Rexburg, ID",
+      "price": 365000,
+      "type": "buy",
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "sqft": 1650,
+      "distanceToCampus": "1.8 miles",
+      "neighborhood": "south-rexburg",
+      "description": "Beautiful home in newer development with granite countertops, stainless appliances, and two-car garage. Move-in ready condition.",
+      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Air Conditioning", "Dishwasher", "Microwave"],
+      "contact": {
+        "name": "Heritage Homes",
+        "phone": "(208) 555-0108",
+        "email": "sales@heritagehomes.com"
+      }
+    },
+    {
+      "id": 9,
+      "address": "369 Viking Drive, Rexburg, ID",
+      "price": 395,
+      "type": "rent",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1100,
+      "distanceToCampus": "0.7 miles",
+      "neighborhood": "downtown",
+      "description": "Renovated 3-bedroom apartment in historic downtown area. Close to restaurants and shops, perfect for students who enjoy city life.",
+      "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Laundry", "Internet", "Bike Storage"],
+      "contact": {
+        "name": "Downtown Living",
+        "phone": "(208) 555-0109",
+        "email": "lease@downtownliving.com"
+      }
+    },
+    {
+      "id": 10,
+      "address": "741 Mountain View Lane, Rexburg, ID",
+      "price": 290000,
+      "type": "buy",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 1050,
+      "distanceToCampus": "2.3 miles",
+      "neighborhood": "westside",
+      "description": "Cozy home with stunning mountain views and private deck. Perfect for first-time buyers or investors looking for rental property.",
+      "image": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Air Conditioning"],
+      "contact": {
+        "name": "Mountain View Realty",
+        "phone": "(208) 555-0110",
+        "email": "info@mountainviewrealty.com"
+      }
+    },
+    {
+      "id": 11,
+      "address": "852 Scholar Street, Rexburg, ID",
+      "price": 470,
+      "type": "rent",
+      "bedrooms": 2,
+      "bathrooms": 1.5,
+      "sqft": 900,
+      "distanceToCampus": "0.5 miles",
+      "neighborhood": "campus-adjacent",
+      "description": "Modern apartment with in-unit laundry and high-speed internet. Perfect for serious students who need a quiet study environment.",
+      "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Laundry", "Internet", "Furnished", "Study Rooms"],
+      "contact": {
+        "name": "Scholar Housing",
+        "phone": "(208) 555-0111",
+        "email": "apply@scholarhousing.com"
+      }
+    },
+    {
+      "id": 12,
+      "address": "963 Teton Plaza, Rexburg, ID",
+      "price": 485000,
+      "type": "buy",
+      "bedrooms": 5,
+      "bathrooms": 3.5,
+      "sqft": 2800,
+      "distanceToCampus": "2.5 miles",
+      "neighborhood": "eastside",
+      "description": "Luxurious 5-bedroom home with vaulted ceilings, formal dining room, and three-car garage. Perfect for large families or rental investment.",
+      "image": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Air Conditioning", "Dishwasher", "Microwave"],
+      "contact": {
+        "name": "Teton Luxury Homes",
+        "phone": "(208) 555-0112",
+        "email": "luxury@tetonhomes.com"
+      }
+    },
+    {
+      "id": 13,
+      "address": "159 Pioneer Avenue, Rexburg, ID",
+      "price": 340,
+      "type": "rent",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 550,
+      "distanceToCampus": "0.9 miles",
+      "neighborhood": "downtown",
+      "description": "Affordable studio in downtown Rexburg. All utilities included, walking distance to campus and local amenities. Perfect for budget-conscious students.",
+      "image": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=500&h=300&fit=crop",
+      "amenities": ["Internet", "Laundry"],
+      "contact": {
+        "name": "Pioneer Properties",
+        "phone": "(208) 555-0113",
+        "email": "rent@pioneerprops.com"
+      }
+    },
+    {
+      "id": 14,
+      "address": "267 Sunset Ridge, Rexburg, ID",
+      "price": 395000,
+      "type": "buy",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1800,
+      "distanceToCampus": "3.1 miles",
+      "neighborhood": "westside",
+      "description": "Custom home on large lot with panoramic valley views. Open concept living with gourmet kitchen and master suite. Peaceful location.",
+      "image": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Air Conditioning", "Dishwasher", "Microwave"],
+      "contact": {
+        "name": "Sunset Ridge Realty",
+        "phone": "(208) 555-0114",
+        "email": "homes@sunsetridge.com"
+      }
+    },
+    {
+      "id": 15,
+      "address": "428 Discovery Way, Rexburg, ID",
+      "price": 560,
+      "type": "rent",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "sqft": 1600,
+      "distanceToCampus": "1.1 miles",
+      "neighborhood": "eastside",
+      "description": "Premium apartment with luxury finishes and resort-style amenities. Individual bedrooms with private bathrooms, perfect for roommate living.",
+      "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Laundry", "Internet", "Furnished", "Pool", "Gym Access"],
+      "contact": {
+        "name": "Discovery Properties",
+        "phone": "(208) 555-0115",
+        "email": "leasing@discoveryprops.com"
+      }
+    },
+    {
+      "id": 16,
+      "address": "573 Maple Grove Circle, Rexburg, ID",
+      "price": 315000,
+      "type": "buy",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1350,
+      "distanceToCampus": "1.7 miles",
+      "neighborhood": "south-rexburg",
+      "description": "Well-maintained home in established neighborhood. Features include updated flooring, new paint, and mature landscaping. Great value for families.",
+      "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Air Conditioning", "Dishwasher"],
+      "contact": {
+        "name": "Maple Grove Realty",
+        "phone": "(208) 555-0116",
+        "email": "sales@maplegrove.com"
+      }
+    },
+    {
+      "id": 17,
+      "address": "684 Innovation Drive, Rexburg, ID",
+      "price": 485,
+      "type": "rent",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1250,
+      "distanceToCampus": "0.6 miles",
+      "neighborhood": "campus-adjacent",
+      "description": "Brand new apartment complex with smart home technology and modern amenities. High-speed internet and study spaces designed for student success.",
+      "image": "https://images.unsplash.com/photo-1615873968403-89e068629265?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Laundry", "Internet", "Furnished", "Study Rooms", "Gym Access"],
+      "contact": {
+        "name": "Innovation Living",
+        "phone": "(208) 555-0117",
+        "email": "info@innovationliving.com"
+      }
+    },
+    {
+      "id": 18,
+      "address": "795 Harmony Lane, Rexburg, ID",
+      "price": 445000,
+      "type": "buy",
+      "bedrooms": 4,
+      "bathrooms": 2.5,
+      "sqft": 2100,
+      "distanceToCampus": "2.8 miles",
+      "neighborhood": "westside",
+      "description": "Spacious family home with formal living and dining rooms, large kitchen with island, and finished basement recreation room. Perfect for entertaining.",
+      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=500&h=300&fit=crop",
+      "amenities": ["Parking", "Air Conditioning", "Dishwasher", "Microwave"],
+      "contact": {
+        "name": "Harmony Homes",
+        "phone": "(208) 555-0118",
+        "email": "listings@harmonyhomes.com"
+      }
+    }
+  ]
+}
