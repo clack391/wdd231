@@ -7,7 +7,6 @@ export class StorageManager {
         this.isStorageAvailable = this.checkStorageAvailability();
         
         if (!this.isStorageAvailable) {
-            console.warn('Local storage is not available. Using memory storage fallback.');
             this.memoryStorage = new Map();
         }
     }
@@ -40,11 +39,9 @@ export class StorageManager {
                 this.memoryStorage.set(fullKey, serializedValue);
             }
             
-            console.log(`Stored item: ${key}`);
             return true;
             
         } catch (error) {
-            console.error(`Error storing item ${key}:`, error);
             return false;
         }
     }
@@ -68,7 +65,6 @@ export class StorageManager {
             return JSON.parse(serializedValue);
             
         } catch (error) {
-            console.error(`Error retrieving item ${key}:`, error);
             return null;
         }
     }
@@ -84,11 +80,9 @@ export class StorageManager {
                 this.memoryStorage.delete(fullKey);
             }
             
-            console.log(`Removed item: ${key}`);
             return true;
             
         } catch (error) {
-            console.error(`Error removing item ${key}:`, error);
             return false;
         }
     }
@@ -108,11 +102,9 @@ export class StorageManager {
                 this.memoryStorage.clear();
             }
             
-            console.log('Storage cleared');
             return true;
             
         } catch (error) {
-            console.error('Error clearing storage:', error);
             return false;
         }
     }
@@ -134,7 +126,6 @@ export class StorageManager {
             return keys;
             
         } catch (error) {
-            console.error('Error getting storage keys:', error);
             return [];
         }
     }
@@ -197,14 +188,12 @@ export class StorageManager {
             if (!favorites.includes(propertyId)) {
                 favorites.push(propertyId);
                 this.setItem('favorite_properties', favorites);
-                console.log(`Property ${propertyId} added to favorites`);
                 return true;
             }
             
             return false; // Already in favorites
             
         } catch (error) {
-            console.error('Error adding favorite property:', error);
             return false;
         }
     }
@@ -217,14 +206,12 @@ export class StorageManager {
             if (index > -1) {
                 favorites.splice(index, 1);
                 this.setItem('favorite_properties', favorites);
-                console.log(`Property ${propertyId} removed from favorites`);
                 return true;
             }
             
             return false; // Not in favorites
             
         } catch (error) {
-            console.error('Error removing favorite property:', error);
             return false;
         }
     }
@@ -262,7 +249,6 @@ export class StorageManager {
             return this.setItem('viewed_properties', limitedViewed);
             
         } catch (error) {
-            console.error('Error adding viewed property:', error);
             return false;
         }
     }
@@ -294,7 +280,6 @@ export class StorageManager {
             return this.setItem('saved_searches', savedSearches);
             
         } catch (error) {
-            console.error('Error saving search:', error);
             return false;
         }
     }
@@ -311,7 +296,6 @@ export class StorageManager {
             return this.setItem('saved_searches', filteredSearches);
             
         } catch (error) {
-            console.error('Error removing saved search:', error);
             return false;
         }
     }
@@ -334,7 +318,6 @@ export class StorageManager {
             return this.setItem('calculator_history', limitedHistory);
             
         } catch (error) {
-            console.error('Error adding calculator result:', error);
             return false;
         }
     }
@@ -369,7 +352,6 @@ export class StorageManager {
             };
             
         } catch (error) {
-            console.error('Error getting storage stats:', error);
             return null;
         }
     }
@@ -391,7 +373,6 @@ export class StorageManager {
             };
             
         } catch (error) {
-            console.error('Error exporting data:', error);
             return null;
         }
     }
@@ -409,11 +390,9 @@ export class StorageManager {
                 this.setItem(key, data[key]);
             });
             
-            console.log('Data imported successfully');
             return true;
             
         } catch (error) {
-            console.error('Error importing data:', error);
             return false;
         }
     }

@@ -3,7 +3,7 @@
 
 import { PropertyManager } from './propertyManager.js';
 import { ModalController } from './modalController.js';
-import { StorageManager } from './storagemanager.js';
+import { StorageManager } from './storageManager.js';
 
 class RexburgHomeFinder {
     constructor() {
@@ -41,10 +41,7 @@ class RexburgHomeFinder {
             // Initialize lazy loading for images
             this.initLazyLoading();
             
-            console.log('Rexburg Home Finder initialized successfully');
-            
         } catch (error) {
-            console.error('Error initializing application:', error);
             this.showErrorMessage('Failed to load property data. Please refresh the page.');
         }
     }
@@ -120,7 +117,6 @@ class RexburgHomeFinder {
         // Display filtered results
         this.displayProperties();
         
-        console.log('Search filters applied:', this.currentFilters);
     }
 
     displayProperties() {
@@ -168,7 +164,6 @@ class RexburgHomeFinder {
             this.initLazyLoading();
             
         } catch (error) {
-            console.error('Error displaying properties:', error);
             this.showErrorMessage('Error displaying properties. Please try again.');
         }
     }
@@ -214,7 +209,7 @@ class RexburgHomeFinder {
         
         // Using template literals for dynamic content generation
         card.innerHTML = `
-            <div class="property-image" data-src="${property.image}" style="background-color: #f3f4f6; display: flex; align-items: center; justify-content: center; color: #9ca3af; font-size: 0.875rem;">
+            <div class="property-image" data-src="${property.image}" loading="lazy" style="background-color: #f3f4f6; display: flex; align-items: center; justify-content: center; color: #9ca3af; font-size: 0.875rem;">
                 📷 Property Photo
             </div>
             <div class="property-details">
@@ -343,10 +338,8 @@ class RexburgHomeFinder {
                 this.populateSearchForm(savedFilters);
             }
             
-            console.log('User preferences loaded from local storage');
-            
         } catch (error) {
-            console.error('Error loading user preferences:', error);
+            // Error loading user preferences
         }
     }
 

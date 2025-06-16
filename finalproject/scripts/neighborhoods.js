@@ -1,8 +1,8 @@
 // Neighborhoods - handles neighborhood data and interactions
 // ES Module for neighborhood functionality
 
-import { ModalController } from './modalcontroller.js';
-import { StorageManager } from './storagemanager.js';
+import { ModalController } from './modalController.js';
+import { StorageManager } from './storageManager.js';
 
 class NeighborhoodManager {
     constructor() {

@@ -9,8 +9,6 @@ export class PropertyManager {
 
     async loadProperties() {
         try {
-            console.log('Fetching property data...');
-            
             // Use fetch API with error handling
             const response = await fetch(this.dataUrl);
             
@@ -26,15 +24,11 @@ export class PropertyManager {
             }
             
             this.properties = data.properties;
-            console.log(`Successfully loaded ${this.properties.length} properties`);
             
             return this.properties;
             
         } catch (error) {
-            console.error('Error loading properties:', error);
-            
             // Fallback to sample data if fetch fails
-            console.log('Loading fallback property data...');
             this.properties = this.getFallbackProperties();
             
             return this.properties;

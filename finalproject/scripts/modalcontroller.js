@@ -37,8 +37,6 @@ export class ModalController {
                 e.stopPropagation();
             });
         }
-
-        console.log(`Modal "${modalId}" initialized`);
     }
 
     showModal(modalId) {
@@ -66,8 +64,6 @@ export class ModalController {
 
         // Focus management - focus first focusable element in modal
         this.focusFirstElement(modal);
-
-        console.log(`Modal "${modalId}" shown`);
     }
 
     hideModal(modalId) {
@@ -95,8 +91,6 @@ export class ModalController {
             this.previousFocus.focus();
             this.previousFocus = null;
         }
-
-        console.log(`Modal "${modalId}" hidden`);
     }
 
     handleKeydown(e) {
