@@ -219,7 +219,11 @@ class PropertySearchApp {
     createPropertyCard(property) {
         return `
             <div class="property-card" data-property-id="${property.id}">
-                <img src="${property.image}" alt="${property.title}" class="property-image" loading="lazy">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3C/svg%3E" 
+                     data-src="${property.image}" 
+                     alt="${property.title}" 
+                     class="property-image lazy" 
+                     loading="lazy">
                 <div class="property-details">
                     <div class="property-type">${property.type === 'rent' ? 'For Rent' : 'For Sale'}</div>
                     <div class="property-price">$${property.price.toLocaleString()}${property.type === 'rent' ? '/month' : ''}</div>
@@ -236,13 +240,13 @@ class PropertySearchApp {
     }
 
     lazyLoadImages() {
-        const images = document.querySelectorAll('img[loading="lazy"]');
+        const images = document.querySelectorAll('img.lazy[data-src]');
         if ('IntersectionObserver' in window) {
             const imageObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         const img = entry.target;
-                        img.src = img.src; // Trigger loading
+                        img.src = img.dataset.src;
                         img.classList.remove('lazy');
                         observer.unobserve(img);
                     }
@@ -250,6 +254,12 @@ class PropertySearchApp {
             });
 
             images.forEach(img => imageObserver.observe(img));
+        } else {
+            // Fallback for browsers without IntersectionObserver
+            images.forEach(img => {
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+            });
         }
     }
 
