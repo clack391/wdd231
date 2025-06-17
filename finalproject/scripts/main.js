@@ -15,6 +15,7 @@ class RexburgHomeFinder {
         this.currentFilters = {};
         this.currentSort = 'price-low';
         
+        // Call the async init method after construction
         this.init();
     }
 
@@ -337,7 +338,6 @@ class RexburgHomeFinder {
                 this.currentFilters = savedFilters;
                 this.populateSearchForm(savedFilters);
             }
-            
         } catch (error) {
             // Error loading user preferences
         }
