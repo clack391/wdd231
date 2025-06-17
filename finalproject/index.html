@@ -6,19 +6,19 @@
     <meta name="description" content="Find the perfect home to buy or rent in Rexburg, Idaho. Browse properties near BYU-I campus with photos, details, and contact information.">
     <meta name="author" content="Precious Onotu">
     <meta name="keywords" content="Rexburg homes, BYU-I housing, Idaho real estate, student housing, rent, buy">
-    
+
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Rexburg Home Finder - Property Search">
     <meta property="og:description" content="Find the perfect home to buy or rent in Rexburg, Idaho. Browse properties near BYU-I campus with photos, details, and contact information.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yourdomain.com">
     <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
-    
+
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Rexburg Home Finder - Property Search">
     <meta name="twitter:description" content="Find the perfect home to buy or rent in Rexburg, Idaho near BYU-I campus.">
-    
+
     <title>Property Search - Rexburg Home Finder</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA2563AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////ADWutQA1rrUA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wA1rrUANa61ADWutQD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8ANa61ADWutQA1rrUANa61AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////ADWutQA1rrUANa61ADWutQA1rrUA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wA1rrUANa61ADWutQA1rrUANa61ADWutQD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8ANa61ADWutQA1rrUANa61ADWutQA1rrUANa61AP///wD///8A////AP///wD///8A////AP///wD///8A////ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUA////AP///wD///8A////AP///wD///8A////AP///wA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQD///8A////AP///wD///8A////AP///wD///8ANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61AP///wD///8A////AP///wD///8A////ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUA////AP///wD///8A////AP///wA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQD///8A////AP///wD///8ANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61AP///wD///8A////ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUA////AP///wA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A">
     <link rel="stylesheet" href="styles/main.css">
@@ -30,7 +30,7 @@
                 <span class="logo-text">🏠 Rexburg Home Finder</span>
             </div>
             <nav>
-                <button class="hamburger" aria-label="Toggle navigation menu">
+                <button type="button" class="hamburger" aria-label="Toggle navigation menu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -38,7 +38,7 @@
                 <ul class="nav-links">
                     <li><a href="index.html" class="active" aria-current="page">Property Search</a></li>
                     <li><a href="neighborhoods.html">Neighborhood Guide</a></li>
-                    <li><a href="resources.html">Resources & Help</a></li>
+                    <li><a href="resources.html">Resources &amp; Help</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,7 +46,7 @@
 
     <main>
         <h1>Rexburg Home Finder - Property Search</h1>
-        
+
         <section class="hero">
             <div class="container">
                 <h2>Find Your Perfect Home in Rexburg</h2>
@@ -114,18 +114,18 @@
                 </div>
 
                 <div class="load-more">
-                    <button id="load-more-btn" class="btn-secondary">Load More Properties</button>
+                    <button id="load-more-btn" class="btn-secondary" type="button">Load More Properties</button>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Property Details Modal -->
-    <div id="property-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+    <div id="property-modal" class="modal" role="dialog" aria-labelledby="modal-title">
         <div class="modal-content">
             <div class="modal-header">
                 <h3 id="modal-title">Property Details</h3>
-                <button class="modal-close" aria-label="Close modal">&times;</button>
+                <button type="button" class="modal-close" aria-label="Close modal">&times;</button>
             </div>
             <div class="modal-body" id="modal-body">
                 <!-- Property details will be loaded here -->
