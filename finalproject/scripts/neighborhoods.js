@@ -21,10 +21,8 @@ class NeighborhoodManager {
             this.displayNeighborhoods();
             this.modalController.initModal('neighborhood-modal');
             
-            console.log('Neighborhood manager initialized');
-            
         } catch (error) {
-            console.error('Error initializing neighborhood manager:', error);
+            // Error initializing neighborhood manager
         }
     }
 
@@ -34,10 +32,7 @@ class NeighborhoodManager {
             // For this demo, we'll use static data
             this.neighborhoods = this.getNeighborhoodData();
             
-            console.log(`Loaded ${this.neighborhoods.length} neighborhoods`);
-            
         } catch (error) {
-            console.error('Error loading neighborhoods:', error);
             this.neighborhoods = [];
         }
     }
@@ -91,8 +86,6 @@ class NeighborhoodManager {
             const neighborhoodCard = this.createNeighborhoodCard(neighborhood);
             neighborhoodsGrid.appendChild(neighborhoodCard);
         });
-
-        console.log(`Displayed ${filteredNeighborhoods.length} neighborhoods`);
     }
 
     filterNeighborhoods() {

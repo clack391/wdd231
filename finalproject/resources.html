@@ -16,7 +16,7 @@
     
     <title>Resources & Help - Rexburg Home Finder</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA2563AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////ADWutQA1rrUA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wA1rrUANa61ADWutQD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8ANa61ADWutQA1rrUANa61AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////ADWutQA1rrUANa61ADWutQA1rrUA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wA1rrUANa61ADWutQA1rrUANa61ADWutQD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8ANa61ADWutQA1rrUANa61ADWutQA1rrUANa61AP///wD///8A////AP///wD///8A////AP///wD///8A////ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUA////AP///wD///8A////AP///wD///8A////AP///wA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQD///8A////AP///wD///8A////AP///wD///8ANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61AP///wD///8A////AP///wD///8A////ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUA////AP///wD///8A////AP///wA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQD///8A////AP///wD///8ANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61AP///wD///8A////ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUA////AP///wA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61ADWutQA1rrUANa61AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header>
@@ -328,7 +328,25 @@
     </footer>
 
     <script type="module" src="scripts/main.js"></script>
-    <script type="module" src="scripts/calculators.js"></script>
-    <script type="module" src="scripts/services.js"></script>
+    <script type="module">
+        // Only load calculators and services scripts if elements exist
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                if (document.getElementById('mortgage-calculator') || document.getElementById('rent-calculator')) {
+                    await import('./scripts/calculators.js');
+                }
+            } catch (error) {
+                // Calculators script not available
+            }
+            
+            try {
+                if (document.getElementById('services-grid')) {
+                    await import('./scripts/services.js');
+                }
+            } catch (error) {
+                // Services script not available
+            }
+        });
+    </script>
 </body>
 </html>

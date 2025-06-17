@@ -1,7 +1,7 @@
 // Services - handles local services data and display
 // ES Module for local services functionality
 
-import { StorageManager } from './storagemanager.js';
+import { StorageManager } from './storageManager.js';
 
 class ServicesManager {
     constructor() {
@@ -14,9 +14,8 @@ class ServicesManager {
         try {
             await this.loadServices();
             this.displayServices();
-            console.log('Services manager initialized');
         } catch (error) {
-            console.error('Error initializing services manager:', error);
+            // Error initializing services manager
         }
     }
 
@@ -25,9 +24,7 @@ class ServicesManager {
             // In a real application, this would fetch from an API
             // For this demo, we'll use static data
             this.services = this.getServicesData();
-            console.log(`Loaded ${this.services.length} services`);
         } catch (error) {
-            console.error('Error loading services:', error);
             this.services = [];
         }
     }
@@ -48,8 +45,6 @@ class ServicesManager {
             const categorySection = this.createCategorySection(category, categoryServices);
             servicesGrid.appendChild(categorySection);
         });
-
-        console.log('Services displayed successfully');
     }
 
     groupServicesByCategory() {
@@ -159,8 +154,6 @@ class ServicesManager {
         // Keep only last 100 interactions
         const limitedInteractions = interactions.slice(-100);
         this.storageManager.setItem('service_interactions', limitedInteractions);
-
-        console.log('Service interaction tracked:', interaction);
     }
 
     // Method to get popular services based on interactions

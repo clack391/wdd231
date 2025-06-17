@@ -1,7 +1,7 @@
 // Form Action - handles form submission display and data processing
 // ES Module for form response functionality
 
-import { StorageManager } from './storagemanager.js';
+import { StorageManager } from './storageManager.js';
 
 class FormActionHandler {
     constructor() {
@@ -13,9 +13,7 @@ class FormActionHandler {
         try {
             this.displaySubmissionData();
             this.initActionButtons();
-            console.log('Form action handler initialized');
         } catch (error) {
-            console.error('Error initializing form action handler:', error);
             this.showErrorState();
         }
     }
@@ -25,7 +23,6 @@ class FormActionHandler {
         const dataDisplay = document.querySelector('.data-display');
         
         if (!dataDisplay) {
-            console.warn('Data display element not found');
             return;
         }
 
@@ -43,8 +40,6 @@ class FormActionHandler {
 
         // Save submission to local storage for tracking
         this.saveSubmissionRecord(submittedData);
-
-        console.log('Submission data displayed:', submittedData);
     }
 
     getSubmissionData() {
@@ -67,7 +62,6 @@ class FormActionHandler {
             return formData;
 
         } catch (error) {
-            console.error('Error getting submission data:', error);
             return this.getMockSubmissionData();
         }
     }
@@ -156,10 +150,8 @@ class FormActionHandler {
             this.storageManager.setItem('property_submissions', limitedSubmissions);
             this.storageManager.setItem('latest_submission', submissionData);
 
-            console.log('Submission record saved:', record);
-
         } catch (error) {
-            console.error('Error saving submission record:', error);
+            // Error saving submission record
         }
     }
 
@@ -170,7 +162,6 @@ class FormActionHandler {
         actionButtons.forEach(button => {
             button.addEventListener('click', (e) => {
                 const action = e.target.textContent.trim();
-                console.log(`User clicked: ${action}`);
                 
                 // Track user actions
                 this.trackUserAction(action);
@@ -194,7 +185,7 @@ class FormActionHandler {
             this.storageManager.setItem('user_actions', limitedActions);
 
         } catch (error) {
-            console.error('Error tracking user action:', error);
+            // Error tracking user action
         }
     }
 
@@ -286,10 +277,8 @@ class FormActionHandler {
             link.download = `rexburg_submissions_${new Date().toISOString().split('T')[0]}.json`;
             link.click();
             
-            console.log('Submissions exported successfully');
-            
         } catch (error) {
-            console.error('Error exporting submissions:', error);
+            // Error exporting submissions
         }
     }
 
@@ -308,12 +297,10 @@ class FormActionHandler {
             this.storageManager.setItem('property_submissions', recentSubmissions);
             
             const removed = submissions.length - recentSubmissions.length;
-            console.log(`Cleared ${removed} old submissions`);
             
             return removed;
 
         } catch (error) {
-            console.error('Error clearing old submissions:', error);
             return 0;
         }
     }

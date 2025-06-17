@@ -15,7 +15,6 @@ class RexburgHomeFinder {
         this.currentFilters = {};
         this.currentSort = 'price-low';
         
-        // Call the async init method after construction
         this.init();
     }
 
@@ -311,8 +310,10 @@ class RexburgHomeFinder {
     }
 
     initModals() {
-        // Initialize property modal
-        this.modalController.initModal('property-modal');
+        // Initialize property modal only if it exists (on property search page)
+        if (document.getElementById('property-modal')) {
+            this.modalController.initModal('property-modal');
+        }
         
         // Initialize neighborhood modal if on neighborhoods page
         if (document.getElementById('neighborhood-modal')) {
@@ -338,6 +339,7 @@ class RexburgHomeFinder {
                 this.currentFilters = savedFilters;
                 this.populateSearchForm(savedFilters);
             }
+            
         } catch (error) {
             // Error loading user preferences
         }

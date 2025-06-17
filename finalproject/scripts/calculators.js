@@ -1,7 +1,7 @@
 // Calculators - handles mortgage and rent affordability calculators
 // ES Module for financial calculation functionality
 
-import { StorageManager } from './storagemanager.js';
+import { StorageManager } from './storageManager.js';
 
 class CalculatorManager {
     constructor() {
@@ -12,7 +12,6 @@ class CalculatorManager {
     init() {
         this.initMortgageCalculator();
         this.initRentCalculator();
-        console.log('Calculator manager initialized');
     }
 
     initMortgageCalculator() {
@@ -108,10 +107,7 @@ class CalculatorManager {
             const inputs = { homePrice, downPayment, interestRate, loanTerm };
             this.storageManager.addCalculatorResult('mortgage', inputs, results);
 
-            console.log('Mortgage calculation completed', results);
-
         } catch (error) {
-            console.error('Error calculating mortgage:', error);
             this.showCalculatorError('mortgage-result', 'Error calculating mortgage payment. Please check your inputs.');
         }
     }
@@ -162,10 +158,7 @@ class CalculatorManager {
             const inputs = { monthlyIncome, debtPayments, rentPercentage };
             this.storageManager.addCalculatorResult('rent', inputs, results);
 
-            console.log('Rent affordability calculation completed', results);
-
         } catch (error) {
-            console.error('Error calculating rent affordability:', error);
             this.showCalculatorError('rent-result', 'Error calculating rent affordability. Please check your inputs.');
         }
     }
