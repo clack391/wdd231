@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get help with buying or renting in Rexburg. Find local real estate agents, mortgage lenders, calculators, and expert tips for home hunters.">
+    <meta name="author" content="Precious Onotu">
+    <meta property="og:title" content="Resources & Help - Rexburg Home Finder">
+    <meta property="og:description" content="Essential resources and tools for buying or renting homes in Rexburg, Idaho">
+    <meta property="og:image" content="https://clack391.github.io/wdd231/finalproject/images/logo.webp">
+    <meta property="og:url" content="https://clack391.github.io/wdd231/finalproject/resources.html">
+    <title>Resources & Help - Rexburg Home Finder</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🏠 Rexburg Home Finder</h1>
+            </div>
+            <nav>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Property Search</a></li>
+                    <li><a href="neighborhoods.html">Neighborhood Guide</a></li>
+                    <li><a href="resources.html" class="active">Resources & Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Resources & Help</h1>
+                <p>Everything you need to know about buying or renting in Rexburg</p>
+            </div>
+        </section>
+
+        <section class="guides-section">
+            <div class="container">
+                <h2>Getting Started Guides</h2>
+                <div class="guides-grid">
+                    <div class="guide-card">
+                        <h3>First-Time Home Buying</h3>
+                        <div class="guide-content">
+                            <div class="guide-steps">
+                                <div class="step">
+                                    <h4>1. Check Your Credit</h4>
+                                    <p>Review your credit score and history. Aim for 620+ for conventional loans.</p>
+                                </div>
+                                <div class="step">
+                                    <h4>2. Save for Down Payment</h4>
+                                    <p>Plan for 3-20% down payment plus closing costs (2-5% of home price).</p>
+                                </div>
+                                <div class="step">
+                                    <h4>3. Get Pre-approved</h4>
+                                    <p>Obtain pre-approval letter from a lender to show sellers you're serious.</p>
+                                </div>
+                                <div class="step">
+                                    <h4>4. Find a Realtor</h4>
+                                    <p>Choose an experienced local agent who knows the Rexburg market.</p>
+                                </div>
+                                <div class="step">
+                                    <h4>5. Start Shopping</h4>
+                                    <p>Use our property search to find homes within your budget and preferences.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guide-card">
+                        <h3>Renting Tips</h3>
+                        <div class="guide-content">
+                            <ul>
+                                <li>Read the lease agreement carefully before signing</li>
+                                <li>Document existing damage with photos</li>
+                                <li>Understand your rights as a tenant in Idaho</li>
+                                <li>Budget for security deposit (usually 1-2 months rent)</li>
+                                <li>Check if utilities are included in rent</li>
+                                <li>Ask about pet policies if you have pets</li>
+                                <li>Verify parking arrangements and guest policies</li>
+                                <li>Keep copies of all rental documents</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="local-services-section">
+            <div class="container">
+                <h2>Local Services</h2>
+                <div class="services-grid" id="servicesGrid">
+                    <!-- Services will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="calculators-section">
+            <div class="container">
+                <h2>Financial Calculators</h2>
+                <div class="calculators-grid">
+                    <div class="calculator-card">
+                        <h3>Mortgage Calculator</h3>
+                        <form class="calculator-form" id="mortgageCalculator">
+                            <div class="form-group">
+                                <label for="loanAmount">Loan Amount ($)</label>
+                                <input type="number" id="loanAmount" name="loanAmount" placeholder="200000" min="1000" max="1000000">
+                            </div>
+                            <div class="form-group">
+                                <label for="interestRate">Interest Rate (%)</label>
+                                <input type="number" id="interestRate" name="interestRate" placeholder="6.5" min="0.1" max="15" step="0.1">
+                            </div>
+                            <div class="form-group">
+                                <label for="loanTerm">Loan Term (years)</label>
+                                <select id="loanTerm" name="loanTerm">
+                                    <option value="15">15 years</option>
+                                    <option value="20">20 years</option>
+                                    <option value="30" selected>30 years</option>
+                                </select>
+                            </div>
+                            <button type="button" class="calc-btn" onclick="calculateMortgage()">Calculate Payment</button>
+                            <div class="calculator-result" id="mortgageResult"></div>
+                        </form>
+                    </div>
+                    <div class="calculator-card">
+                        <h3>Rent Affordability</h3>
+                        <form class="calculator-form" id="rentCalculator">
+                            <div class="form-group">
+                                <label for="monthlyIncome">Monthly Income ($)</label>
+                                <input type="number" id="monthlyIncome" name="monthlyIncome" placeholder="3000" min="500" max="20000">
+                            </div>
+                            <div class="form-group">
+                                <label for="debtPayments">Monthly Debt Payments ($)</label>
+                                <input type="number" id="debtPayments" name="debtPayments" placeholder="500" min="0" max="5000">
+                            </div>
+                            <div class="form-group">
+                                <label for="affordabilityRule">Affordability Rule</label>
+                                <select id="affordabilityRule" name="affordabilityRule">
+                                    <option value="30">30% of gross income</option>
+                                    <option value="25">25% of gross income (conservative)</option>
+                                </select>
+                            </div>
+                            <button type="button" class="calc-btn" onclick="calculateRentAffordability()">Calculate Affordability</button>
+                            <div class="calculator-result" id="rentResult"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list" id="faqList">
+                    <!-- FAQ items will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <h2>Need More Help?</h2>
+                <p>Contact us for personalized assistance with your home search.</p>
+                <form class="contact-form" action="form-response.html" method="GET">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="helpType">How can we help?</label>
+                        <select id="helpType" name="helpType" required>
+                            <option value="">Select an option</option>
+                            <option value="buying">I want to buy a home</option>
+                            <option value="renting">I'm looking for a rental</option>
+                            <option value="selling">I want to sell/list my property</option>
+                            <option value="general">General questions</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your needs..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Rexburg Home Finder</h4>
+                    <p>Your trusted partner in finding the perfect home in Rexburg, Idaho.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Property Search</a></li>
+                        <li><a href="neighborhoods.html">Neighborhoods</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@rexburghomefinder.com</p>
+                    <p>Phone: (208) 555-0123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rexburg Home Finder. All rights reserved.</p>
+                <a href="https://youtu.be/your-demo-video" target="_blank">Video Demo</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/resources.js"></script>
+</body>
+</html>

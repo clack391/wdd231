@@ -1,0 +1,104 @@
+{
+  "faqs": [
+    {
+      "id": 1,
+      "question": "What's the average rent for student housing near BYU-I?",
+      "answer": "Student housing near BYU-I typically ranges from $400-800 per month for shared apartments. Private rooms in shared housing average $500-650, while studio apartments range from $650-900. Prices vary based on distance from campus, amenities, and housing quality."
+    },
+    {
+      "id": 2,
+      "question": "How far in advance should I start looking for housing?",
+      "answer": "For fall semester, start looking in February-March. For winter semester, begin your search in October-November. Summer housing searches should start in March-April. Early searching gives you the best selection and often better prices."
+    },
+    {
+      "id": 3,
+      "question": "What documents do I need to rent an apartment?",
+      "answer": "Typically you'll need: valid photo ID, proof of income or financial aid, rental application, application fee ($25-50), security deposit (usually one month's rent), and sometimes a co-signer if you're a student without income history."
+    },
+    {
+      "id": 4,
+      "question": "Are utilities typically included in rent?",
+      "answer": "It varies by property. Some include all utilities, others include just water/sewer. Expect to pay $80-150/month for utilities not included in rent. Always ask what's included before signing a lease."
+    },
+    {
+      "id": 5,
+      "question": "What's the typical security deposit?",
+      "answer": "Security deposits in Rexburg typically range from $200-500, or equivalent to one month's rent. Some properties offer reduced deposits for good credit or longer lease terms. Deposits are refundable if you leave the property in good condition."
+    },
+    {
+      "id": 6,
+      "question": "Can I break my lease if I need to leave early?",
+      "answer": "Lease breaking policies vary by landlord. Some allow early termination with 30-60 days notice and a fee. Others require you to find a replacement tenant. Always read your lease carefully and discuss options with your landlord."
+    },
+    {
+      "id": 7,
+      "question": "What should I know about buying a home in Rexburg?",
+      "answer": "Rexburg's housing market is influenced by the university calendar. Consider proximity to campus, property taxes (around 0.75% annually), seasonal market fluctuations, and potential for rental income if you plan to rent to students."
+    },
+    {
+      "id": 8,
+      "question": "Are pets allowed in most rentals?",
+      "answer": "Pet policies vary widely. Many student housing complexes don't allow pets, while some private rentals do with additional deposits ($200-500) and monthly pet rent ($25-50). Always confirm pet policies before applying."
+    },
+    {
+      "id": 9,
+      "question": "What's the best time of year to buy a home in Rexburg?",
+      "answer": "Spring and early summer typically offer the most inventory and best weather for house hunting. However, you may find better deals in fall/winter when there's less competition. The university schedule affects market timing significantly."
+    },
+    {
+      "id": 10,
+      "question": "How much should I budget for moving expenses?",
+      "answer": "Budget $500-1500 for moving expenses including: truck rental ($200-400), professional movers ($300-800), security deposits ($200-800), utility connections ($100-300), and miscellaneous costs like boxes and cleaning supplies."
+    },
+    {
+      "id": 11,
+      "question": "What neighborhoods are best for families with children?",
+      "answer": "Porter Park Area, Nature Park Vicinity, and South Rexburg are excellent for families. These areas offer good schools, parks, quiet streets, and family-oriented communities. They're a bit farther from campus but provide better family amenities."
+    },
+    {
+      "id": 12,
+      "question": "Is renter's insurance required?",
+      "answer": "While not legally required, many landlords now require renter's insurance as part of the lease agreement. It's inexpensive ($15-30/month) and protects your personal belongings and provides liability coverage."
+    },
+    {
+      "id": 13,
+      "question": "What should I look for during a property viewing?",
+      "answer": "Check water pressure, test all appliances, inspect for damage or wear, verify adequate storage, test heating/cooling, check cell phone reception, and assess noise levels. Take photos and notes to compare properties later."
+    },
+    {
+      "id": 14,
+      "question": "How do I find a reliable landlord or property manager?",
+      "answer": "Research online reviews, ask current/former tenants about their experience, verify business licenses, check Better Business Bureau ratings, and trust your instincts during interactions. Good landlords are responsive and professional."
+    },
+    {
+      "id": 15,
+      "question": "What's included in a typical lease agreement?",
+      "answer": "Lease agreements typically include: rental amount and due date, lease duration, security deposit terms, utility responsibilities, pet policies, maintenance responsibilities, parking arrangements, and rules about guests and subletting."
+    },
+    {
+      "id": 16,
+      "question": "Can I negotiate rent prices?",
+      "answer": "In Rexburg's competitive student market, negotiation is limited but possible. You might negotiate for longer lease terms, included utilities, waived fees, or property improvements. Landlords are more flexible during slower rental periods."
+    },
+    {
+      "id": 17,
+      "question": "What happens if my roommate wants to move out early?",
+      "answer": "This depends on your lease structure. If you're all on one lease, you're jointly responsible for the full rent. If you have separate leases, their departure shouldn't affect you legally. Always clarify this before signing."
+    },
+    {
+      "id": 18,
+      "question": "How do I prepare for a rental application?",
+      "answer": "Gather required documents in advance: ID, proof of income, references, bank statements, and application fees. Be ready to apply immediately for desirable properties as they go quickly in Rexburg's competitive market."
+    },
+    {
+      "id": 19,
+      "question": "What are my rights as a tenant in Idaho?",
+      "answer": "Idaho tenant rights include: habitable living conditions, privacy (24-hour notice for entry), return of security deposit within 21 days, and protection from discrimination. Familiarize yourself with Idaho's Residential Landlord Tenant Act."
+    },
+    {
+      "id": 20,
+      "question": "Should I consider buying instead of renting?",
+      "answer": "Consider buying if you'll be in Rexburg for 3+ years, have stable income, saved for down payment and closing costs, and want to build equity. Renting offers more flexibility for students with uncertain post-graduation plans."
+    }
+  ]
+}

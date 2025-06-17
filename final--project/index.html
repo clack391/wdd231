@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find the perfect home to buy or rent in Rexburg, Idaho. Browse properties near BYU-I campus with photos, details, and contact information.">
+    <meta name="author" content="Precious Onotu">
+    <meta property="og:title" content="Rexburg Home Finder - Property Search">
+    <meta property="og:description" content="Find local businesses and services in our community">
+    <meta property="og:image" content="https://clack391.github.io/wdd231/finalproject/images/logo.webp">
+    <meta property="og:url" content="https://clack391.github.io/wdd231/finalproject/">
+    <title>Property Search - Rexburg Home Finder</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🏠 Rexburg Home Finder</h1>
+            </div>
+            <nav>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Property Search</a></li>
+                    <li><a href="neighborhoods.html">Neighborhood Guide</a></li>
+                    <li><a href="resources.html">Resources & Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Find Your Perfect Home in Rexburg</h1>
+                <p>Discover quality rentals and homes for sale near BYU-I campus</p>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <div class="container">
+                <form class="search-form" id="propertySearchForm">
+                    <h2>Search Properties</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="propertyType">Property Type</label>
+                            <select id="propertyType" name="propertyType">
+                                <option value="all">All Types</option>
+                                <option value="rent">For Rent</option>
+                                <option value="buy">For Sale</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="priceRange">Max Price</label>
+                            <select id="priceRange" name="priceRange">
+                                <option value="all">Any Price</option>
+                                <option value="500">Under $500</option>
+                                <option value="800">Under $800</option>
+                                <option value="1200">Under $1,200</option>
+                                <option value="200000">Under $200,000</option>
+                                <option value="300000">Under $300,000</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="bedrooms">Bedrooms</label>
+                            <select id="bedrooms" name="bedrooms">
+                                <option value="all">Any</option>
+                                <option value="1">1+</option>
+                                <option value="2">2+</option>
+                                <option value="3">3+</option>
+                                <option value="4">4+</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="search-btn">Search Properties</button>
+                    </div>
+                </form>
+
+                <div class="filter-sort">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-type="all">All</button>
+                        <button class="filter-btn" data-type="rent">Rent</button>
+                        <button class="filter-btn" data-type="buy">Buy</button>
+                    </div>
+                    <div class="sort-options">
+                        <label for="sortBy">Sort by:</label>
+                        <select id="sortBy">
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="bedrooms">Bedrooms</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="results-count">
+                    <span id="resultsCount">Loading properties...</span>
+                </div>
+
+                <div class="properties-grid" id="propertiesGrid">
+                    <!-- Properties will be loaded here by JavaScript -->
+                </div>
+
+                <button class="load-more hidden" id="loadMoreBtn">Load More Properties</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Property Detail Modal -->
+    <div class="modal" id="propertyModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Property Details</h3>
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Rexburg Home Finder</h4>
+                    <p>Your trusted partner in finding the perfect home in Rexburg, Idaho.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Property Search</a></li>
+                        <li><a href="neighborhoods.html">Neighborhoods</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@rexburghomefinder.com</p>
+                    <p>Phone: (208) 555-0123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rexburg Home Finder. All rights reserved.</p>
+                <a href="https://youtu.be/your-demo-video" target="_blank">Video Demo</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

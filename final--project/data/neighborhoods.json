@@ -1,0 +1,274 @@
+{
+  "neighborhoods": [
+    {
+      "id": 1,
+      "name": "Campus View District",
+      "category": "campus",
+      "description": "Prime location for students with easy walking access to BYU-I campus and academic buildings.",
+      "distanceToCampus": "0.2 miles",
+      "averageRent": "$500-800/month",
+      "safetyRating": 5,
+      "walkability": 9,
+      "tags": ["Student Housing", "Walking Distance", "Safe"],
+      "highlights": [
+        "5-minute walk to campus",
+        "24/7 security patrols",
+        "Study-friendly environment",
+        "Bike storage available"
+      ],
+      "amenities": ["Campus Shuttle", "Study Rooms", "Laundry", "Parking"]
+    },
+    {
+      "id": 2,
+      "name": "University Heights",
+      "category": "campus",
+      "description": "Popular student neighborhood with modern apartments and excellent campus connectivity.",
+      "distanceToCampus": "0.5 miles",
+      "averageRent": "$600-950/month",
+      "safetyRating": 4,
+      "walkability": 8,
+      "tags": ["Modern Apartments", "Student Life", "Transit Access"],
+      "highlights": [
+        "Modern apartment complexes",
+        "Active student community",
+        "Regular bus service to campus",
+        "Recreation facilities nearby"
+      ],
+      "amenities": ["Fitness Center", "Pool", "Bus Stop", "Shopping"]
+    },
+    {
+      "id": 3,
+      "name": "Historic Downtown",
+      "category": "downtown",
+      "description": "Charming downtown area with local businesses, restaurants, and cultural attractions.",
+      "distanceToCampus": "1.2 miles",
+      "averageRent": "$700-1200/month",
+      "safetyRating": 4,
+      "walkability": 7,
+      "tags": ["Historic", "Entertainment", "Dining"],
+      "highlights": [
+        "Historic buildings and architecture",
+        "Local restaurants and cafes",
+        "Cultural events and festivals",
+        "Art galleries and shops"
+      ],
+      "amenities": ["Restaurants", "Shopping", "Banks", "Post Office"]
+    },
+    {
+      "id": 4,
+      "name": "Porter Park Area",
+      "category": "residential",
+      "description": "Family-friendly residential neighborhood with parks, schools, and quiet streets.",
+      "distanceToCampus": "1.8 miles",
+      "averageRent": "$800-1400/month",
+      "safetyRating": 5,
+      "walkability": 6,
+      "tags": ["Family Friendly", "Parks", "Quiet"],
+      "highlights": [
+        "Large family homes available",
+        "Excellent schools nearby",
+        "Porter Park recreation facilities",
+        "Safe, quiet streets"
+      ],
+      "amenities": ["Parks", "Schools", "Playground", "Sports Fields"]
+    },
+    {
+      "id": 5,
+      "name": "Yellowstone Highway Corridor",
+      "category": "residential",
+      "description": "Convenient location with easy access to shopping, dining, and highway transportation.",
+      "distanceToCampus": "2.0 miles",
+      "averageRent": "$650-1100/month",
+      "safetyRating": 4,
+      "walkability": 5,
+      "tags": ["Convenient", "Shopping", "Transit"],
+      "highlights": [
+        "Close to major shopping centers",
+        "Easy highway access",
+        "Variety of dining options",
+        "Good for commuters"
+      ],
+      "amenities": ["Walmart", "Gas Stations", "Fast Food", "Auto Services"]
+    },
+    {
+      "id": 6,
+      "name": "Nature Park Vicinity",
+      "category": "residential",
+      "description": "Peaceful area near Rexburg's Nature Park with walking trails and outdoor recreation.",
+      "distanceToCampus": "1.5 miles",
+      "averageRent": "$750-1300/month",
+      "safetyRating": 5,
+      "walkability": 7,
+      "tags": ["Nature", "Peaceful", "Recreation"],
+      "highlights": [
+        "Adjacent to Nature Park",
+        "Walking and biking trails",
+        "Wildlife viewing opportunities",
+        "Peaceful, natural setting"
+      ],
+      "amenities": ["Nature Park", "Trails", "Picnic Areas", "Wildlife"]
+    },
+    {
+      "id": 7,
+      "name": "West Campus District",
+      "category": "campus",
+      "description": "Growing area west of campus with new developments and student housing options.",
+      "distanceToCampus": "0.8 miles",
+      "averageRent": "$550-900/month",
+      "safetyRating": 4,
+      "walkability": 7,
+      "tags": ["New Development", "Affordable", "Growing"],
+      "highlights": [
+        "Newer housing developments",
+        "Competitive rental prices",
+        "Growing student population",
+        "Good bike routes to campus"
+      ],
+      "amenities": ["New Construction", "Bike Paths", "Grocery", "Pharmacy"]
+    },
+    {
+      "id": 8,
+      "name": "South Rexburg",
+      "category": "residential",
+      "description": "Established residential area with a mix of homes and apartments, good for families.",
+      "distanceToCampus": "2.5 miles",
+      "averageRent": "$700-1250/month",
+      "safetyRating": 4,
+      "walkability": 6,
+      "tags": ["Established", "Mixed Housing", "Family Area"],
+      "highlights": [
+        "Mix of houses and apartments",
+        "Established neighborhood",
+        "Good for families",
+        "Reasonable commute to campus"
+      ],
+      "amenities": ["Elementary School", "Library Branch", "Community Center", "Parks"]
+    },
+    {
+      "id": 9,
+      "name": "Nordic Village",
+      "category": "campus",
+      "description": "Popular student housing complex with modern amenities and active community life.",
+      "distanceToCampus": "0.6 miles",
+      "averageRent": "$650-850/month",
+      "safetyRating": 5,
+      "walkability": 8,
+      "tags": ["Student Complex", "Modern", "Community"],
+      "highlights": [
+        "Modern student apartments",
+        "Active social community",
+        "Study areas and tutoring",
+        "Regular campus shuttle"
+      ],
+      "amenities": ["Pool", "Gym", "Study Rooms", "Shuttle"]
+    },
+    {
+      "id": 10,
+      "name": "Riverside District",
+      "category": "residential",
+      "description": "Quiet residential area near the river with scenic views and peaceful atmosphere.",
+      "distanceToCampus": "1.9 miles",
+      "averageRent": "$750-1200/month",
+      "safetyRating": 5,
+      "walkability": 6,
+      "tags": ["Scenic", "Quiet", "River Access"],
+      "highlights": [
+        "River access and views",
+        "Peaceful, quiet environment",
+        "Walking paths along water",
+        "Good fishing spots"
+      ],
+      "amenities": ["River Access", "Walking Paths", "Fishing", "Parks"]
+    },
+    {
+      "id": 11,
+      "name": "East Rexburg",
+      "category": "residential",
+      "description": "Growing residential area with new subdivisions and family-oriented communities.",
+      "distanceToCampus": "2.3 miles",
+      "averageRent": "$700-1350/month",
+      "safetyRating": 4,
+      "walkability": 5,
+      "tags": ["New Subdivisions", "Family Oriented", "Growing"],
+      "highlights": [
+        "New home construction",
+        "Family-friendly neighborhoods",
+        "Good schools in area",
+        "Growing retail options"
+      ],
+      "amenities": ["New Schools", "Shopping Centers", "Parks", "Medical"]
+    },
+    {
+      "id": 12,
+      "name": "College Avenue Corridor",
+      "category": "campus",
+      "description": "Busy corridor connecting campus to downtown with mixed residential and commercial.",
+      "distanceToCampus": "0.7 miles",
+      "averageRent": "$575-825/month",
+      "safetyRating": 4,
+      "walkability": 8,
+      "tags": ["Mixed Use", "Transit", "Convenient"],
+      "highlights": [
+        "Easy campus access",
+        "Bus route connections",
+        "Walking to restaurants",
+        "Mix of housing options"
+      ],
+      "amenities": ["Bus Routes", "Restaurants", "Shopping", "Services"]
+    },
+    {
+      "id": 13,
+      "name": "Sunset Heights",
+      "category": "residential",
+      "description": "Elevated neighborhood with mountain views and newer home construction.",
+      "distanceToCampus": "2.1 miles",
+      "averageRent": "$800-1450/month",
+      "safetyRating": 5,
+      "walkability": 5,
+      "tags": ["Mountain Views", "Newer Homes", "Upscale"],
+      "highlights": [
+        "Beautiful mountain views",
+        "Newer construction homes",
+        "Quiet, upscale area",
+        "Great sunset views"
+      ],
+      "amenities": ["Mountain Views", "New Construction", "Parks", "Golf Course"]
+    },
+    {
+      "id": 14,
+      "name": "Madison Commons",
+      "category": "residential",
+      "description": "Mixed residential and retail area with convenient shopping and dining options.",
+      "distanceToCampus": "1.7 miles",
+      "averageRent": "$650-1150/month",
+      "safetyRating": 4,
+      "walkability": 7,
+      "tags": ["Mixed Use", "Shopping", "Convenient"],
+      "highlights": [
+        "Shopping and dining nearby",
+        "Good transit connections",
+        "Mix of apartments and homes",
+        "Convenient daily errands"
+      ],
+      "amenities": ["Shopping", "Restaurants", "Transit", "Services"]
+    },
+    {
+      "id": 15,
+      "name": "Farmington Estates",
+      "category": "residential",
+      "description": "Newer subdivision with larger lots and modern homes for families.",
+      "distanceToCampus": "2.8 miles",
+      "averageRent": "$950-1650/month",
+      "safetyRating": 5,
+      "walkability": 4,
+      "tags": ["New Subdivision", "Large Lots", "Family Homes"],
+      "highlights": [
+        "Larger lot sizes",
+        "Modern home designs",
+        "Family-oriented community",
+        "Quiet cul-de-sacs"
+      ],
+      "amenities": ["Large Lots", "Playgrounds", "Community Center", "Walking Trails"]
+    }
+  ]
+}

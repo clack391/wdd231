@@ -1,0 +1,184 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "Mountain View Realty",
+      "category": "Real Estate Agent",
+      "description": "Experienced real estate professionals specializing in Rexburg area properties and student housing.",
+      "phone": "(208) 555-0100",
+      "email": "info@mountainviewrealty.com",
+      "website": "https://mountainviewrealty.com",
+      "specialties": ["Student Housing", "First-time Buyers", "Investment Properties"]
+    },
+    {
+      "id": 2,
+      "name": "Idaho Central Credit Union",
+      "category": "Mortgage Lender",
+      "description": "Local credit union offering competitive mortgage rates and personalized service for home buyers.",
+      "phone": "(208) 555-0200",
+      "email": "mortgage@idcu.com",
+      "website": "https://idcu.com",
+      "specialties": ["First-time Buyer Programs", "Competitive Rates", "Local Service"]
+    },
+    {
+      "id": 3,
+      "name": "Rexburg Moving Solutions",
+      "category": "Moving Company",
+      "description": "Professional moving services for local and long-distance moves, including student relocations.",
+      "phone": "(208) 555-0300",
+      "email": "bookings@rexburgmoving.com",
+      "website": null,
+      "specialties": ["Local Moves", "Student Moves", "Packing Services"]
+    },
+    {
+      "id": 4,
+      "name": "Heritage Title Company",
+      "category": "Title Company",
+      "description": "Comprehensive title and escrow services for residential and commercial real estate transactions.",
+      "phone": "(208) 555-0400",
+      "email": "orders@heritagetitle.com",
+      "website": "https://heritagetitle.com",
+      "specialties": ["Title Insurance", "Escrow Services", "Commercial Transactions"]
+    },
+    {
+      "id": 5,
+      "name": "Precision Home Inspections",
+      "category": "Home Inspector",
+      "description": "Thorough home inspections to help buyers make informed decisions about their property purchase.",
+      "phone": "(208) 555-0500",
+      "email": "schedule@precisioninspections.com",
+      "website": "https://precisioninspections.com",
+      "specialties": ["Residential Inspections", "Same-day Reports", "Buyer Education"]
+    },
+    {
+      "id": 6,
+      "name": "Rexburg Insurance Agency",
+      "category": "Insurance Agent",
+      "description": "Complete insurance solutions including homeowners, renters, and property insurance coverage.",
+      "phone": "(208) 555-0600",
+      "email": "quotes@rexburginsurance.com",
+      "website": "https://rexburginsurance.com",
+      "specialties": ["Homeowners Insurance", "Renters Insurance", "Property Coverage"]
+    },
+    {
+      "id": 7,
+      "name": "First Security Bank",
+      "category": "Mortgage Lender",
+      "description": "Full-service bank with mortgage lending, construction loans, and financial planning services.",
+      "phone": "(208) 555-0700",
+      "email": "lending@firstsecurity.com",
+      "website": "https://firstsecurity.com",
+      "specialties": ["Construction Loans", "Refinancing", "Investment Property Loans"]
+    },
+    {
+      "id": 8,
+      "name": "Teton Ridge Realty",
+      "category": "Real Estate Agent",
+      "description": "Boutique real estate firm focusing on luxury homes and mountain properties in the Rexburg area.",
+      "phone": "(208) 555-0800",
+      "email": "luxury@tetonridgerealty.com",
+      "website": "https://tetonridgerealty.com",
+      "specialties": ["Luxury Homes", "Mountain Properties", "Land Sales"]
+    },
+    {
+      "id": 9,
+      "name": "Quick Move Movers",
+      "category": "Moving Company",
+      "description": "Fast and reliable moving company specializing in student moves and apartment relocations.",
+      "phone": "(208) 555-0900",
+      "email": "book@quickmovemovers.com",
+      "website": "https://quickmovemovers.com",
+      "specialties": ["Student Moves", "Same Day Service", "Storage Solutions"]
+    },
+    {
+      "id": 10,
+      "name": "Madison County Abstract",
+      "category": "Title Company",
+      "description": "Local title company with deep knowledge of Madison County property records and history.",
+      "phone": "(208) 555-1000",
+      "email": "orders@madisoncountyabstract.com",
+      "website": "https://madisoncountyabstract.com",
+      "specialties": ["Local Expertise", "Quick Turnaround", "Research Services"]
+    },
+    {
+      "id": 11,
+      "name": "Eagle Eye Inspections",
+      "category": "Home Inspector",
+      "description": "Certified home inspector providing detailed reports and thermal imaging services.",
+      "phone": "(208) 555-1100",
+      "email": "inspect@eagleeyeinspections.com",
+      "website": "https://eagleeyeinspections.com",
+      "specialties": ["Thermal Imaging", "Detailed Reports", "Commercial Inspections"]
+    },
+    {
+      "id": 12,
+      "name": "Shield Insurance Group",
+      "category": "Insurance Agent",
+      "description": "Independent insurance agency representing multiple carriers for the best coverage options.",
+      "phone": "(208) 555-1200",
+      "email": "quotes@shieldinsgroup.com",
+      "website": "https://shieldinsgroup.com",
+      "specialties": ["Multiple Carriers", "Competitive Quotes", "Business Insurance"]
+    },
+    {
+      "id": 13,
+      "name": "Campus Properties Management",
+      "category": "Property Manager",
+      "description": "Professional property management services for landlords and rental property owners.",
+      "phone": "(208) 555-1300",
+      "email": "manage@campusproperties.com",
+      "website": "https://campusproperties.com",
+      "specialties": ["Student Housing", "Maintenance Services", "Rent Collection"]
+    },
+    {
+      "id": 14,
+      "name": "Yellowstone Mortgage",
+      "category": "Mortgage Lender",
+      "description": "Specialized mortgage broker helping clients find the best loan programs and rates.",
+      "phone": "(208) 555-1400",
+      "email": "loans@yellowstonemortgage.com",
+      "website": "https://yellowstonemortgage.com",
+      "specialties": ["Loan Brokerage", "Program Matching", "Credit Repair"]
+    },
+    {
+      "id": 15,
+      "name": "Elite Cleaning Services",
+      "category": "Cleaning Service",
+      "description": "Professional cleaning services for move-in/move-out and regular home maintenance.",
+      "phone": "(208) 555-1500",
+      "email": "book@elitecleaning.com",
+      "website": "https://elitecleaning.com",
+      "specialties": ["Move-out Cleaning", "Deep Cleaning", "Regular Maintenance"]
+    },
+    {
+      "id": 16,
+      "name": "Rexburg Handyman Services",
+      "category": "Handyman",
+      "description": "Reliable handyman services for home repairs, maintenance, and small renovation projects.",
+      "phone": "(208) 555-1600",
+      "email": "fix@rexburghandyman.com",
+      "website": null,
+      "specialties": ["Home Repairs", "Maintenance", "Small Renovations"]
+    },
+    {
+      "id": 17,
+      "name": "Madison Property Law",
+      "category": "Real Estate Attorney",
+      "description": "Legal services specializing in real estate transactions, contracts, and property disputes.",
+      "phone": "(208) 555-1700",
+      "email": "legal@madisonpropertylaw.com",
+      "website": "https://madisonpropertylaw.com",
+      "specialties": ["Contract Review", "Property Disputes", "Transaction Legal"]
+    },
+    {
+      "id": 18,
+      "name": "Snake River Storage",
+      "category": "Storage Facility",
+      "description": "Secure storage units in various sizes for students and residents needing extra space.",
+      "phone": "(208) 555-1800",
+      "email": "rent@snakeriverstore.com",
+      "website": "https://snakeriverstore.com",
+      "specialties": ["Student Storage", "Climate Controlled", "24-hour Access"]
+    }
+  ]
+}

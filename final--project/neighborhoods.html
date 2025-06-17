@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Rexburg neighborhoods near BYU-I campus. Find information about local amenities, safety, schools, and cost of living in different areas.">
+    <meta name="author" content="Precious Onotu">
+    <meta property="og:title" content="Rexburg Neighborhood Guide - Home Finder">
+    <meta property="og:description" content="Discover the best neighborhoods in Rexburg with detailed information about amenities and lifestyle">
+    <meta property="og:image" content="https://clack391.github.io/wdd231/finalproject/images/logo.webp">
+    <meta property="og:url" content="https://clack391.github.io/wdd231/finalproject/neighborhoods.html">
+    <title>Neighborhood Guide - Rexburg Home Finder</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🏠 Rexburg Home Finder</h1>
+            </div>
+            <nav>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Property Search</a></li>
+                    <li><a href="neighborhoods.html" class="active">Neighborhood Guide</a></li>
+                    <li><a href="resources.html">Resources & Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Rexburg Neighborhood Guide</h1>
+                <p>Discover the perfect area to call home near BYU-I campus</p>
+            </div>
+        </section>
+
+        <section class="neighborhood-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Areas</button>
+                    <button class="filter-btn" data-filter="campus">Near Campus</button>
+                    <button class="filter-btn" data-filter="downtown">Downtown</button>
+                    <button class="filter-btn" data-filter="residential">Residential</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="neighborhoods-section">
+            <div class="container">
+                <div class="neighborhoods-grid" id="neighborhoodsGrid">
+                    <!-- Neighborhoods will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="amenities-section">
+            <div class="container">
+                <h2>Local Amenities</h2>
+                <div class="amenities-grid">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🏫</div>
+                        <h4>Education</h4>
+                        <ul>
+                            <li>BYU-Idaho Campus - 5 min walk</li>
+                            <li>Madison High School - 2 miles</li>
+                            <li>Elementary Schools - Various locations</li>
+                        </ul>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🛒</div>
+                        <h4>Shopping</h4>
+                        <ul>
+                            <li>Walmart Supercenter - 1.5 miles</li>
+                            <li>Broulim's Fresh Foods - 0.8 miles</li>
+                            <li>Porter Park Shopping - 2 miles</li>
+                        </ul>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🍽️</div>
+                        <h4>Dining</h4>
+                        <ul>
+                            <li>Craigo's Pizza - 0.5 miles</li>
+                            <li>Costa Vida - 1 mile</li>
+                            <li>Local cafes and restaurants</li>
+                        </ul>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🏥</div>
+                        <h4>Healthcare</h4>
+                        <ul>
+                            <li>Madison Memorial Hospital - 2 miles</li>
+                            <li>BYU-I Health Center - On campus</li>
+                            <li>Various clinics and pharmacies</li>
+                        </ul>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🚌</div>
+                        <h4>Transportation</h4>
+                        <ul>
+                            <li>BYUI Shuttle Service</li>
+                            <li>City Bus Routes</li>
+                            <li>Bike-friendly paths</li>
+                        </ul>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🏞️</div>
+                        <h4>Recreation</h4>
+                        <ul>
+                            <li>Porter Park - Sports facilities</li>
+                            <li>Nature Park - Walking trails</li>
+                            <li>BYU-I Recreation Center</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cost-living-section">
+            <div class="container">
+                <h2>Cost of Living</h2>
+                <div class="cost-grid">
+                    <div class="cost-card">
+                        <h4>Average Utilities</h4>
+                        <div class="cost-item">
+                            <span>Electricity</span>
+                            <span>$80-120/month</span>
+                        </div>
+                        <div class="cost-item">
+                            <span>Gas</span>
+                            <span>$40-80/month</span>
+                        </div>
+                        <div class="cost-item">
+                            <span>Internet</span>
+                            <span>$50-80/month</span>
+                        </div>
+                        <div class="cost-item">
+                            <span>Water/Sewer</span>
+                            <span>$30-50/month</span>
+                        </div>
+                    </div>
+                    <div class="cost-card">
+                        <h4>Property Taxes</h4>
+                        <div class="cost-item">
+                            <span>Average Rate</span>
+                            <span>0.75% annually</span>
+                        </div>
+                        <div class="cost-item">
+                            <span>$200k Home</span>
+                            <span>~$1,500/year</span>
+                        </div>
+                        <div class="cost-item">
+                            <span>$300k Home</span>
+                            <span>~$2,250/year</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Rexburg Home Finder</h4>
+                    <p>Your trusted partner in finding the perfect home in Rexburg, Idaho.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Property Search</a></li>
+                        <li><a href="neighborhoods.html">Neighborhoods</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@rexburghomefinder.com</p>
+                    <p>Phone: (208) 555-0123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rexburg Home Finder. All rights reserved.</p>
+                <a href="https://youtu.be/your-demo-video" target="_blank">Video Demo</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/neighborhoods.js"></script>
+</body>
+</html>

@@ -1,0 +1,584 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "title": "Campus View Apartment",
+      "type": "rent",
+      "price": 650,
+      "address": "123 University Blvd, Rexburg, ID 83440",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": 900,
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop",
+      "distanceToCampus": "0.3 mi",
+      "description": "Modern apartment close to BYU-I campus with all the amenities students need. Features updated kitchen, spacious living area, and dedicated study spaces.",
+      "features": [
+        "Air conditioning",
+        "Dishwasher", 
+        "Laundry hookups",
+        "Study nook",
+        "High-speed internet ready",
+        "Bike storage"
+      ],
+      "contact": {
+        "phone": "(208) 555-0123",
+        "email": "agent1@rexburghomes.com"
+      },
+      "yearBuilt": 2018,
+      "parking": 1,
+      "petFriendly": false,
+      "furnished": false
+    },
+    {
+      "id": 2,
+      "title": "Family Home Near Campus",
+      "type": "buy",
+      "price": 225000,
+      "address": "456 Campus Drive, Rexburg, ID 83440",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1200,
+      "image": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=400&h=300&fit=crop",
+      "distanceToCampus": "0.8 mi",
+      "description": "Beautiful family home in quiet neighborhood with mature landscaping and updated interior. Perfect for growing families or as an investment property.",
+      "features": [
+        "2-car garage",
+        "Fenced backyard",
+        "Updated kitchen",
+        "Hardwood floors",
+        "Fireplace",
+        "Storage shed"
+      ],
+      "contact": {
+        "phone": "(208) 555-0124",
+        "email": "sales@rexburghomes.com"
+      },
+      "yearBuilt": 2005,
+      "parking": 2,
+      "petFriendly": true,
+      "furnished": false
+    },
+    {
+      "id": 3,
+      "title": "Student Studio Apartment",
+      "type": "rent",
+      "price": 450,
+      "address": "789 Viking Drive, Rexburg, ID 83440",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 500,
+      "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop",
+      "distanceToCampus": "0.2 mi",
+      "description": "Cozy studio apartment perfect for students. Efficiently designed with everything you need in a convenient location.",
+      "features": [
+        "Murphy bed",
+        "Kitchenette",
+        "Study desk",
+        "High-speed internet",
+        "Utilities included",
+        "Security access"
+      ],
+      "contact": {
+        "phone": "(208) 555-0125",
+        "email": "leasing@campusview.com"
+      },
+      "yearBuilt": 2020,
+      "parking": 0,
+      "petFriendly": false,
+      "furnished": true
+    },
+    {
+      "id": 4,
+      "title": "Spacious Family House",
+      "type": "buy",
+      "price": 285000,
+      "address": "321 Porter Park Rd, Rexburg, ID 83440",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "sqft": 1800,
+      "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&h=300&fit=crop",
+      "distanceToCampus": "1.5 mi",
+      "description": "Spacious family home with room to grow. Features large bedrooms, open floor plan, and beautiful yard space.",
+      "features": [
+        "Open floor plan",
+        "Master suite",
+        "Walk-in closets",
+        "Patio deck",
+        "Sprinkler system",
+        "3-car garage"
+      ],
+      "contact": {
+        "phone": "(208) 555-0126",
+        "email": "homes@porterparkrealty.com"
+      },
+      "yearBuilt": 2010,
+      "parking": 3,
+      "petFriendly": true,
+      "furnished": false
+    },
+    {
+      "id": 5,
+      "title": "Modern Shared Housing",
+      "type": "rent",
+      "price": 525,
+      "address": "654 Main Street, Rexburg, ID 83440",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 750,
+      "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop",
+      "distanceToCampus": "1.0 mi",
+      "description": "Private bedroom and bathroom in modern shared house. Great for students who want privacy with shared common areas.",
+      "features": [
+        "Private bedroom/bath",
+        "Shared kitchen",
+        "Living room access",
+        "Washer/dryer",
+        "Parking space",
+        "Yard access"
+      ],
+      "contact": {
+        "phone": "(208) 555-0127",
+        "email": "info@mainstreethousing.com"
+      },
+      "yearBuilt": 2015,
+      "parking": 1,
+      "petFriendly": false,
+      "furnished": false
+    },
+    {
+      "id": 6,
+      "title": "Cozy Starter Home",
+      "type": "buy",
+      "price": 175000,
+      "address": "987 First East, Rexburg, ID 83440",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": 950,
+      "image": "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=400&h=300&fit=crop",
+      "distanceToCampus": "1.2 mi",
+      "description": "Perfect starter home for first-time buyers. Well-maintained with character and charm in established neighborhood.",
+      "features": [
+        "Original hardwood",
+        "Updated bathroom",
+        "Large windows",
+        "Basement storage",
+        "Garden space",
+        "Covered porch"
+      ],
+      "contact": {
+        "phone": "(208) 555-0128",
+        "email": "starter@rexburghomes.com"
+      },
+      "yearBuilt": 1995,
+      "parking": 1,
+      "petFriendly": true,
+      "furnished": false
+    },
+    {
+      "id": 7,
+      "title": "University Heights Condo",
+      "type": "rent",
+      "price": 750,
+      "address": "147 College Avenue, Rexburg, ID 83440",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 1100,
+      "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=300&fit=crop",
+      "distanceToCampus": "0.6 mi",
+      "description": "Modern condo in popular University Heights complex. Perfect for students or young professionals.",
+      "features": [
+        "In-unit laundry",
+        "Balcony",
+        "Granite counters",
+        "Stainless appliances",
+        "Pool access",
+        "Fitness center"
+      ],
+      "contact": {
+        "phone": "(208) 555-0129",
+        "email": "leasing@uheights.com"
+      },
+      "yearBuilt": 2017,
+      "parking": 1,
+      "petFriendly": false,
+      "furnished": false
+    },
+    {
+      "id": 8,
+      "title": "Investment Property Special",
+      "type": "buy",
+      "price": 195000,
+      "address": "258 Second West, Rexburg, ID 83440",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1150,
+      "image": "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=400&h=300&fit=crop",
+      "distanceToCampus": "1.0 mi",
+      "description": "Great investment opportunity! Currently rented, showing good returns. Well-maintained property in student-friendly area.",
+      "features": [
+        "Currently rented",
+        "Good rental history",
+        "Student-friendly location",
+        "Separate laundry room",
+        "Off-street parking",
+        "Low maintenance yard"
+      ],
+      "contact": {
+        "phone": "(208) 555-0130",
+        "email": "investment@rexburgproperties.com"
+      },
+      "yearBuilt": 2000,
+      "parking": 2,
+      "petFriendly": true,
+      "furnished": false
+    },
+    {
+      "id": 9,
+      "title": "Affordable Student Room",
+      "type": "rent",
+      "price": 375,
+      "address": "369 Stadium Way, Rexburg, ID 83440",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 400,
+      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop",
+      "distanceToCampus": "0.4 mi",
+      "description": "Budget-friendly option for students. Private room with shared common areas in house near campus.",
+      "features": [
+        "Private room",
+        "Shared kitchen",
+        "Internet included",
+        "Utilities included",
+        "Study area",
+        "Bike storage"
+      ],
+      "contact": {
+        "phone": "(208) 555-0131",
+        "email": "budget@stadiumhousing.com"
+      },
+      "yearBuilt": 2012,
+      "parking": 0,
+      "petFriendly": false,
+      "furnished": true
+    },
+    {
+      "id": 10,
+      "title": "Executive Family Home",
+      "type": "buy",
+      "price": 350000,
+      "address": "741 Yellowstone Hwy, Rexburg, ID 83440",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "sqft": 2200,
+      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop",
+      "distanceToCampus": "2.0 mi",
+      "description": "Executive home with premium finishes and spacious layout. Perfect for families who want luxury and space.",
+      "features": [
+        "Vaulted ceilings",
+        "Gourmet kitchen",
+        "Master suite",
+        "Finished basement",
+        "3-car garage",
+        "Landscaped yard"
+      ],
+      "contact": {
+        "phone": "(208) 555-0132",
+        "email": "luxury@rexburgelite.com"
+      },
+      "yearBuilt": 2019,
+      "parking": 3,
+      "petFriendly": true,
+      "furnished": false
+    },
+    {
+      "id": 11,
+      "title": "Graduate Student Apartment",
+      "type": "rent",
+      "price": 695,
+      "address": "852 Third North, Rexburg, ID 83440",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 800,
+      "image": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=400&h=300&fit=crop",
+      "distanceToCampus": "0.7 mi",
+      "description": "Quiet apartment perfect for graduate students or young professionals. Private and peaceful environment.",
+      "features": [
+        "Quiet location",
+        "Home office space",
+        "Updated appliances",
+        "Private entrance",
+        "Garden view",
+        "Storage unit"
+      ],
+      "contact": {
+        "phone": "(208) 555-0133",
+        "email": "quiet@rexburgapts.com"
+      },
+      "yearBuilt": 2016,
+      "parking": 1,
+      "petFriendly": true,
+      "furnished": false
+    },
+    {
+      "id": 12,
+      "title": "Downtown Loft",
+      "type": "rent",
+      "price": 850,
+      "address": "963 Center Street, Rexburg, ID 83440",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": 1000,
+      "image": "https://images.unsplash.com/photo-1502672023488-70e25813eb80?w=400&h=300&fit=crop",
+      "distanceToCampus": "1.3 mi",
+      "description": "Unique downtown loft with character and charm. High ceilings and urban feel in the heart of Rexburg.",
+      "features": [
+        "High ceilings",
+        "Exposed brick",
+        "Downtown location",
+        "Walking to shops",
+        "Historic building",
+        "Large windows"
+      ],
+      "contact": {
+        "phone": "(208) 555-0134",
+        "email": "loft@downtownrexburg.com"
+      },
+      "yearBuilt": 1925,
+      "parking": 0,
+      "petFriendly": false,
+      "furnished": false
+    },
+    {
+      "id": 13,
+      "title": "Nature Park Home",
+      "type": "buy",
+      "price": 265000,
+      "address": "159 Nature Drive, Rexburg, ID 83440",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1400,
+      "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop",
+      "distanceToCampus": "1.6 mi",
+      "description": "Beautiful home adjacent to Nature Park with walking trails and wildlife viewing. Perfect for nature lovers.",
+      "features": [
+        "Park adjacent",
+        "Nature views",
+        "Walking trails nearby",
+        "Peaceful setting",
+        "Updated kitchen",
+        "Deck overlooks park"
+      ],
+      "contact": {
+        "phone": "(208) 555-0135",
+        "email": "nature@rexburgpark.com"
+      },
+      "yearBuilt": 2008,
+      "parking": 2,
+      "petFriendly": true,
+      "furnished": false
+    },
+    {
+      "id": 14,
+      "title": "Shared Student House",
+      "type": "rent",
+      "price": 425,
+      "address": "753 Viking Drive, Rexburg, ID 83440",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 600,
+      "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop",
+      "distanceToCampus": "0.5 mi",
+      "description": "Private room in shared student house. Great way to meet people while having your own space.",
+      "features": [
+        "Private room/bath",
+        "Shared living areas",
+        "Student community",
+        "Study groups",
+        "Game room",
+        "Yard space"
+      ],
+      "contact": {
+        "phone": "(208) 555-0136",
+        "email": "shared@vikinghousing.com"
+      },
+      "yearBuilt": 2013,
+      "parking": 1,
+      "petFriendly": false,
+      "furnished": true
+    },
+    {
+      "id": 15,
+      "title": "New Construction Home",
+      "type": "buy",
+      "price": 315000,
+      "address": "486 West Campus, Rexburg, ID 83440",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "sqft": 1900,
+      "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=400&h=300&fit=crop",
+      "distanceToCampus": "0.9 mi",
+      "description": "Brand new construction with modern amenities and energy-efficient features. Move-in ready!",
+      "features": [
+        "New construction",
+        "Energy efficient",
+        "Modern appliances",
+        "Smart home ready",
+        "Warranty included",
+        "Contemporary design"
+      ],
+      "contact": {
+        "phone": "(208) 555-0137",
+        "email": "new@modernrexburg.com"
+      },
+      "yearBuilt": 2024,
+      "parking": 2,
+      "petFriendly": true,
+      "furnished": false
+    },
+    {
+      "id": 16,
+      "title": "Summer Rental Special",
+      "type": "rent",
+      "price": 550,
+      "address": "672 Summer Lane, Rexburg, ID 83440",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": 850,
+      "image": "https://images.unsplash.com/photo-1558618666-fbd8c1d05d78?w=400&h=300&fit=crop",
+      "distanceToCampus": "1.1 mi",
+      "description": "Perfect for summer semester or year-round living. Flexible lease terms available.",
+      "features": [
+        "Flexible lease terms",
+        "Summer availability",
+        "Air conditioning",
+        "Patio space",
+        "Parking included",
+        "Pet-friendly"
+      ],
+      "contact": {
+        "phone": "(208) 555-0138",
+        "email": "summer@flexlease.com"
+      },
+      "yearBuilt": 2011,
+      "parking": 1,
+      "petFriendly": true,
+      "furnished": false
+    },
+    {
+      "id": 17,
+      "title": "Historic Character Home",
+      "type": "buy",
+      "price": 240000,
+      "address": "394 Historic Street, Rexburg, ID 83440",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1300,
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop",
+      "distanceToCampus": "1.4 mi",
+      "description": "Charming historic home with original character features and modern updates. Full of personality!",
+      "features": [
+        "Historic character",
+        "Original features",
+        "Modern updates",
+        "Unique layout",
+        "Period details",
+        "Mature trees"
+      ],
+      "contact": {
+        "phone": "(208) 555-0139",
+        "email": "historic@characterhomes.com"
+      },
+      "yearBuilt": 1940,
+      "parking": 1,
+      "petFriendly": true,
+      "furnished": false
+    },
+    {
+      "id": 18,
+      "title": "Premium Student Complex",
+      "type": "rent",
+      "price": 825,
+      "address": "815 Premium Plaza, Rexburg, ID 83440",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 1200,
+      "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop",
+      "distanceToCampus": "0.4 mi",
+      "description": "Luxury student living with resort-style amenities. The best in student housing!",
+      "features": [
+        "Resort-style pool",
+        "Fitness center",
+        "Study lounges",
+        "Game room",
+        "Private bedrooms",
+        "Shuttle service"
+      ],
+      "contact": {
+        "phone": "(208) 555-0140",
+        "email": "premium@luxstudent.com"
+      },
+      "yearBuilt": 2021,
+      "parking": 1,
+      "petFriendly": false,
+      "furnished": true
+    },
+    {
+      "id": 19,
+      "title": "Affordable Family Home",
+      "type": "buy",
+      "price": 185000,
+      "address": "527 Budget Boulevard, Rexburg, ID 83440",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1100,
+      "image": "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=400&h=300&fit=crop",
+      "distanceToCampus": "2.2 mi",
+      "description": "Great value for families! Well-maintained home in quiet neighborhood with good schools nearby.",
+      "features": [
+        "Great value",
+        "Family neighborhood",
+        "Good schools nearby",
+        "Large lot",
+        "Single level",
+        "Move-in ready"
+      ],
+      "contact": {
+        "phone": "(208) 555-0141",
+        "email": "value@affordablehomes.com"
+      },
+      "yearBuilt": 1998,
+      "parking": 2,
+      "petFriendly": true,
+      "furnished": false
+    },
+    {
+      "id": 20,
+      "title": "Close-to-Campus Studio",
+      "type": "rent",
+      "price": 495,
+      "address": "248 Campus Corner, Rexburg, ID 83440",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 450,
+      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop",
+      "distanceToCampus": "0.1 mi",
+      "description": "Can't get closer to campus! Perfect for students who want to walk to class in just minutes.",
+      "features": [
+        "Steps from campus",
+        "Efficient layout",
+        "Built-in furniture",
+        "High-speed internet",
+        "Security access",
+        "Maintenance included"
+      ],
+      "contact": {
+        "phone": "(208) 555-0142",
+        "email": "campus@superclosestudios.com"
+      },
+      "yearBuilt": 2019,
+      "parking": 0,
+      "petFriendly": false,
+      "furnished": true
+    }
+  ]
+}
