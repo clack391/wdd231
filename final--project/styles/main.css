@@ -50,7 +50,7 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-/* Layout */
+/* Core Layout */
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -58,6 +58,9 @@ a:hover, a:focus {
 }
 
 /* Utilities */
+.hidden { display: none; }
+.show { display: block; }
+.text-center { text-align: center; }
 .sr-only {
     position: absolute;
     width: 1px;
@@ -69,10 +72,6 @@ a:hover, a:focus {
     white-space: nowrap;
     border: 0;
 }
-
-.hidden { display: none; }
-.show { display: block; }
-.text-center { text-align: center; }
 
 /* Header */
 header {
@@ -97,7 +96,7 @@ header .container {
     color: var(--primary-color);
 }
 
-/* Navigation */
+/* Navigation - keeping original classes for HTML compatibility */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -138,21 +137,30 @@ header .container {
     color: var(--text-white);
 }
 
+/* Sections */
+.section {
+    padding: 3rem 0;
+}
+
+.section-alt {
+    background-color: var(--bg-light);
+}
+
 /* Hero */
-.hero, .page-hero {
+.hero {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
     color: var(--text-white);
     padding: 4rem 0;
     text-align: center;
 }
 
-.hero h1, .hero h2, .page-hero h1 {
+.hero h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.hero p, .page-hero p {
+.hero p {
     font-size: 1.25rem;
     opacity: 0.9;
 }
@@ -191,8 +199,8 @@ input:focus, select:focus, textarea:focus {
     border-color: var(--primary-color);
 }
 
-/* All Buttons */
-.btn, .search-btn, .filter-btn, .calc-btn, .submit-btn, .load-more {
+/* Universal Button System */
+.btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     border: none;
@@ -206,16 +214,70 @@ input:focus, select:focus, textarea:focus {
     color: var(--text-white);
 }
 
-.btn:hover, .search-btn:hover, .submit-btn:hover, .load-more:hover,
-.btn:focus, .search-btn:focus, .submit-btn:focus, .load-more:focus {
+.btn:hover, .btn:focus {
+    background-color: var(--primary-light);
+    text-decoration: none;
+}
+
+.btn-outline {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    border: 2px solid var(--border-color);
+}
+
+.btn-outline:hover, .btn-outline:focus, .btn-outline.active {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    border-color: var(--primary-color);
+}
+
+.btn-alt {
+    background-color: var(--secondary-color);
+    width: 100%;
+}
+
+.btn-alt:hover, .btn-alt:focus {
+    background-color: var(--accent-color);
+}
+
+.btn-center {
+    display: block;
+    margin: 2rem auto;
+}
+
+/* Alias classes for existing HTML compatibility */
+.search-btn, .submit-btn, .load-more { 
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+.search-btn:hover, .submit-btn:hover, .load-more:hover,
+.search-btn:focus, .submit-btn:focus, .load-more:focus {
     background-color: var(--primary-light);
     text-decoration: none;
 }
 
 .filter-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
     background-color: var(--bg-light);
     color: var(--text-dark);
-    border: 2px solid var(--border-color);
 }
 
 .filter-btn.active, .filter-btn:hover, .filter-btn:focus {
@@ -225,7 +287,17 @@ input:focus, select:focus, textarea:focus {
 }
 
 .calc-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
     background-color: var(--secondary-color);
+    color: var(--text-white);
     width: 100%;
 }
 
@@ -238,7 +310,7 @@ input:focus, select:focus, textarea:focus {
     margin: 2rem auto;
 }
 
-/* Search Section */
+/* Search Section - keeping for HTML compatibility */
 .search-section {
     padding: 3rem 0;
     background-color: var(--bg-light);
@@ -257,7 +329,7 @@ input:focus, select:focus, textarea:focus {
     color: var(--text-dark);
 }
 
-/* Filter Controls */
+/* Filter Controls - keeping for HTML compatibility */
 .filter-sort {
     display: flex;
     justify-content: space-between;
@@ -285,20 +357,54 @@ input:focus, select:focus, textarea:focus {
     color: var(--text-light);
 }
 
-/* All Grids */
-.properties-grid, .neighborhoods-grid, .amenities-grid, .services-grid, .guides-grid, .calculators-grid, .cost-grid {
+/* Universal Grid System */
+.grid {
     display: grid;
     gap: 1.5rem;
     margin-bottom: 2rem;
 }
 
-.properties-grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
-.neighborhoods-grid { grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
-.amenities-grid, .services-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-.guides-grid, .calculators-grid { grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; }
-.cost-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.grid-sm { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+.grid-md { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.grid-lg { grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+.grid-xl { grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; }
 
-/* All Cards */
+/* Alias classes for existing HTML compatibility */
+.properties-grid { display: grid; gap: 1.5rem; margin-bottom: 2rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.neighborhoods-grid { display: grid; gap: 2rem; margin-bottom: 3rem; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); }
+.amenities-grid, .services-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.guides-grid, .calculators-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); }
+.cost-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
+/* Universal Card System */
+.card {
+    background: var(--bg-white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-clickable {
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+}
+
+.card-alt {
+    background: var(--bg-light);
+}
+
+.card-center {
+    text-align: center;
+}
+
+/* Alias classes for existing HTML compatibility */
 .property-card, .neighborhood-card, .amenity-card, .cost-card, .guide-card, .service-card, .calculator-card {
     background: var(--bg-white);
     border-radius: var(--radius);
@@ -308,8 +414,8 @@ input:focus, select:focus, textarea:focus {
 }
 
 .property-card, .neighborhood-card {
-    overflow: hidden;
     cursor: pointer;
+    overflow: hidden;
     padding: 0;
 }
 
@@ -322,7 +428,7 @@ input:focus, select:focus, textarea:focus {
 .amenity-card { text-align: center; background-color: var(--bg-light); }
 .guide-card, .calculator-card { background: var(--bg-light); }
 
-/* Property Elements */
+/* Property Elements - keeping for HTML compatibility */
 .property-details {
     padding: 1.5rem;
 }
@@ -364,7 +470,7 @@ input:focus, select:focus, textarea:focus {
     margin-bottom: 1rem;
 }
 
-/* Modal */
+/* Modal - keeping for HTML compatibility */
 .modal {
     display: none;
     position: fixed;
@@ -415,7 +521,7 @@ input:focus, select:focus, textarea:focus {
     padding: 1.5rem;
 }
 
-/* Footer */
+/* Footer - keeping for HTML compatibility */
 footer {
     background-color: var(--bg-dark);
     color: var(--text-white);
@@ -475,24 +581,25 @@ footer {
     .hamburger { display: flex; }
     .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg-white); box-shadow: var(--shadow); padding: 1rem; gap: 0.5rem; }
     .nav-links.active { display: flex; }
-    .hero h1, .page-hero h1 { font-size: 2rem; }
-    .hero p, .page-hero p { font-size: 1rem; }
+    .hero h1 { font-size: 2rem; }
+    .hero p { font-size: 1rem; }
     .form-row, .filter-sort { grid-template-columns: 1fr; flex-direction: column; align-items: stretch; }
+    .grid, .grid-sm, .grid-md, .grid-lg, .grid-xl,
     .properties-grid, .neighborhoods-grid, .guides-grid, .calculators-grid, .amenities-grid { grid-template-columns: 1fr; }
     .footer-bottom { flex-direction: column; text-align: center; }
 }
 
 @media (max-width: 480px) {
     .container { padding: 0 0.5rem; }
-    .hero, .page-hero { padding: 2rem 0; }
+    .hero { padding: 2rem 0; }
     .search-form { padding: 1rem; }
     .modal-content { max-width: 95%; }
 }
 
 @media print {
     .hamburger, .nav-links, .search-section, .modal { display: none; }
-    .hero, .page-hero { background: none; color: var(--text-dark); }
-    .property-card, .neighborhood-card { break-inside: avoid; }
+    .hero { background: none; color: var(--text-dark); }
+    .card, .property-card, .neighborhood-card { break-inside: avoid; }
 }
 
 @media (prefers-reduced-motion: reduce) {
