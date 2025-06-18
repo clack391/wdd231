@@ -191,7 +191,7 @@ input:focus, select:focus, textarea:focus {
     border-color: var(--primary-color);
 }
 
-/* Buttons */
+/* All Buttons */
 .btn, .search-btn, .filter-btn, .calc-btn, .submit-btn, .load-more {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -257,7 +257,7 @@ input:focus, select:focus, textarea:focus {
     color: var(--text-dark);
 }
 
-/* Filter and Sort */
+/* Filter Controls */
 .filter-sort {
     display: flex;
     justify-content: space-between;
@@ -285,49 +285,32 @@ input:focus, select:focus, textarea:focus {
     color: var(--text-light);
 }
 
-/* Grids */
+/* All Grids */
 .properties-grid, .neighborhoods-grid, .amenities-grid, .services-grid, .guides-grid, .calculators-grid, .cost-grid {
     display: grid;
     gap: 1.5rem;
     margin-bottom: 2rem;
 }
 
-.properties-grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
+.properties-grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.neighborhoods-grid { grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+.amenities-grid, .services-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+.guides-grid, .calculators-grid { grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; }
+.cost-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
 
-.neighborhoods-grid {
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.amenities-grid, .services-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.guides-grid, .calculators-grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-}
-
-.cost-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-/* Cards */
+/* All Cards */
 .property-card, .neighborhood-card, .amenity-card, .cost-card, .guide-card, .service-card, .calculator-card {
     background: var(--bg-white);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.5rem;
 }
 
 .property-card, .neighborhood-card {
     overflow: hidden;
     cursor: pointer;
+    padding: 0;
 }
 
 .property-card:hover, .neighborhood-card:hover {
@@ -335,15 +318,15 @@ input:focus, select:focus, textarea:focus {
     box-shadow: var(--shadow-lg);
 }
 
-.property-details, .amenity-card, .cost-card, .guide-card, .service-card, .calculator-card {
+.neighborhood-card { padding: 2rem; }
+.amenity-card { text-align: center; background-color: var(--bg-light); }
+.guide-card, .calculator-card { background: var(--bg-light); }
+
+/* Property Elements */
+.property-details {
     padding: 1.5rem;
 }
 
-.neighborhood-card {
-    padding: 2rem;
-}
-
-/* Property Specific */
 .property-image {
     width: 100%;
     height: 200px;
@@ -408,6 +391,30 @@ input:focus, select:focus, textarea:focus {
     position: relative;
 }
 
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-light);
+}
+
+.modal-close:hover, .modal-close:focus {
+    color: var(--text-dark);
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
 /* Footer */
 footer {
     background-color: var(--bg-dark);
@@ -415,38 +422,70 @@ footer {
     padding: 3rem 0 1rem;
 }
 
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: var(--text-white);
+    opacity: 0.8;
+}
+
+.footer-section a:hover, .footer-section a:focus {
+    opacity: 1;
+}
+
+.footer-section p {
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #374151;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-bottom a {
+    color: var(--primary-light);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hamburger { display: flex; }
-    
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: var(--bg-white);
-        box-shadow: var(--shadow);
-        padding: 1rem;
-        gap: 0.5rem;
-    }
-    
+    .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg-white); box-shadow: var(--shadow); padding: 1rem; gap: 0.5rem; }
     .nav-links.active { display: flex; }
-    
     .hero h1, .page-hero h1 { font-size: 2rem; }
     .hero p, .page-hero p { font-size: 1rem; }
-    
-    .form-row { grid-template-columns: 1fr; }
-    .filter-sort { flex-direction: column; align-items: stretch; }
-    .properties-grid, .neighborhoods-grid, .guides-grid, .calculators-grid { grid-template-columns: 1fr; }
+    .form-row, .filter-sort { grid-template-columns: 1fr; flex-direction: column; align-items: stretch; }
+    .properties-grid, .neighborhoods-grid, .guides-grid, .calculators-grid, .amenities-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; text-align: center; }
 }
 
 @media (max-width: 480px) {
     .container { padding: 0 0.5rem; }
     .hero, .page-hero { padding: 2rem 0; }
     .search-form { padding: 1rem; }
-    .amenities-grid { grid-template-columns: 1fr; }
     .modal-content { max-width: 95%; }
 }
 
@@ -457,9 +496,5 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
+    * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
