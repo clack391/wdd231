@@ -137,21 +137,21 @@ header .container {
     color: var(--text-white);
 }
 
-/* Hero - Merged hero and page-hero */
-.hero {
+/* Hero Sections */
+.hero, .page-hero {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
     color: var(--text-white);
     padding: 4rem 0;
     text-align: center;
 }
 
-.hero h1 {
+.hero h1, .page-hero h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.hero p {
+.hero p, .page-hero p {
     font-size: 1.25rem;
     opacity: 0.9;
 }
@@ -286,8 +286,8 @@ button:focus, .btn:focus, .search-btn:focus, .submit-btn:focus, .load-more:focus
     color: var(--text-light);
 }
 
-/* All Grids - Consolidated with specific overrides */
-[class*="-grid"] {
+/* All Grids - Explicit classes + pattern matching */
+.properties-grid, .neighborhoods-grid, .amenities-grid, .services-grid, .guides-grid, .calculators-grid, .cost-grid, [class*="-grid"] {
     display: grid;
     gap: 1.5rem;
     margin-bottom: 2rem;
@@ -299,8 +299,8 @@ button:focus, .btn:focus, .search-btn:focus, .submit-btn:focus, .load-more:focus
 .guides-grid, .calculators-grid { grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; }
 .cost-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
 
-/* All Cards - Consolidated with specific overrides */
-[class*="-card"] {
+/* All Cards - Explicit classes + pattern matching */
+.property-card, .neighborhood-card, .amenity-card, .cost-card, .guide-card, .service-card, .calculator-card, [class*="-card"] {
     background: var(--bg-white);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
@@ -553,10 +553,10 @@ footer {
     .hamburger { display: flex; }
     .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg-white); box-shadow: var(--shadow); padding: 1rem; gap: 0.5rem; }
     .nav-links.active { display: flex; }
-    .hero h1 { font-size: 2rem; }
-    .hero p { font-size: 1rem; }
+    .hero h1, .page-hero h1 { font-size: 2rem; }
+    .hero p, .page-hero p { font-size: 1rem; }
     .form-row, .filter-sort, .neighborhood-filters { grid-template-columns: 1fr; flex-direction: column; align-items: stretch; }
-    [class*="-grid"] { grid-template-columns: 1fr; }
+    .properties-grid, .neighborhoods-grid, .amenities-grid, .services-grid, .guides-grid, .calculators-grid, .cost-grid, [class*="-grid"] { grid-template-columns: 1fr; }
     .footer-bottom { flex-direction: column; text-align: center; }
 }
 
@@ -569,8 +569,8 @@ footer {
 
 @media print {
     .hamburger, .nav-links, .search-section, .modal { display: none; }
-    .hero { background: none; color: var(--text-dark); }
-    [class*="-card"] { break-inside: avoid; }
+    .hero, .page-hero { background: none; color: var(--text-dark); }
+    .property-card, .neighborhood-card, .cost-card, [class*="-card"] { break-inside: avoid; }
 }
 
 @media (prefers-reduced-motion: reduce) {
