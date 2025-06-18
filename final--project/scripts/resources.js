@@ -1,5 +1,4 @@
 // Resources page functionality
-
 import { StorageManager } from './modules/storage-manager.js';
 
 class ResourcesApp {
@@ -89,130 +88,6 @@ class ResourcesApp {
         if (contactForm) {
             this.setupFormHandling(contactForm);
         }
-
-        // Calculator button event listeners
-        this.setupCalculatorEventListeners();
-
-        // Service card interactions
-        this.setupServiceCardListeners();
-
-        // General button interactions
-        this.setupGeneralButtonListeners();
-    }
-
-    setupCalculatorEventListeners() {
-        // Mortgage calculator button
-        const mortgageBtn = document.getElementById('calculateMortgageBtn') || 
-                           document.querySelector('[data-action="calculate-mortgage"]') ||
-                           document.querySelector('.mortgage-calculate-btn');
-        
-        if (mortgageBtn) {
-            mortgageBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.calculateMortgage();
-            });
-        }
-
-        // Rent affordability calculator button
-        const rentBtn = document.getElementById('calculateRentBtn') || 
-                       document.querySelector('[data-action="calculate-rent"]') ||
-                       document.querySelector('.rent-calculate-btn');
-        
-        if (rentBtn) {
-            rentBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.calculateRentAffordability();
-            });
-        }
-
-        // Calculator reset buttons
-        const resetButtons = document.querySelectorAll('[data-action="reset-calculator"]');
-        resetButtons.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.resetCalculator(btn.dataset.calculator);
-            });
-        });
-
-        // Calculator input auto-save
-        const calculatorInputs = document.querySelectorAll('.calculator input');
-        calculatorInputs.forEach(input => {
-            input.addEventListener('input', () => {
-                this.saveCalculatorValues();
-            });
-        });
-    }
-
-    setupServiceCardListeners() {
-        // Use event delegation for dynamically created service cards
-        document.addEventListener('click', (e) => {
-            // Phone number clicks
-            if (e.target.matches('a[href^="tel:"]')) {
-                this.trackServiceInteraction('phone', e.target.href);
-            }
-            
-            // Email clicks
-            if (e.target.matches('a[href^="mailto:"]')) {
-                this.trackServiceInteraction('email', e.target.href);
-            }
-            
-            // Website clicks
-            if (e.target.matches('.service-card a[target="_blank"]')) {
-                this.trackServiceInteraction('website', e.target.href);
-            }
-        });
-    }
-
-    setupGeneralButtonListeners() {
-        // Copy-to-clipboard functionality
-        const copyButtons = document.querySelectorAll('[data-action="copy"]');
-        copyButtons.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.copyToClipboard(btn.dataset.text || btn.textContent);
-            });
-        });
-
-        // Smooth scroll links
-        const scrollLinks = document.querySelectorAll('a[href^="#"]');
-        scrollLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                const targetId = link.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                
-                if (targetElement) {
-                    e.preventDefault();
-                    this.smoothScrollTo(targetElement);
-                }
-            });
-        });
-
-        // Modal triggers
-        const modalTriggers = document.querySelectorAll('[data-modal]');
-        modalTriggers.forEach(trigger => {
-            trigger.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.openModal(trigger.dataset.modal);
-            });
-        });
-
-        // Close modal buttons
-        const closeModalButtons = document.querySelectorAll('[data-action="close-modal"]');
-        closeModalButtons.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.closeModal();
-            });
-        });
-
-        // Print functionality
-        const printButtons = document.querySelectorAll('[data-action="print"]');
-        printButtons.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                window.print();
-            });
-        });
     }
 
     setupFormHandling(form) {
@@ -240,191 +115,6 @@ class ResourcesApp {
         });
     }
 
-    // Calculator methods (moved from global functions)
-    calculateMortgage() {
-        const loanAmount = parseFloat(document.getElementById('loanAmount')?.value || 0);
-        const interestRate = parseFloat(document.getElementById('interestRate')?.value || 0);
-        const loanTerm = parseInt(document.getElementById('loanTerm')?.value || 0);
-        
-        if (!loanAmount || !interestRate || !loanTerm) {
-            this.showNotification('Please fill in all fields', 'error');
-            return;
-        }
-        
-        // Save values for future use
-        this.storageManager.setUserPreference('lastLoanAmount', loanAmount);
-        this.storageManager.setUserPreference('lastInterestRate', interestRate);
-        
-        const monthlyRate = interestRate / 100 / 12;
-        const numPayments = loanTerm * 12;
-        
-        const monthlyPayment = loanAmount * (monthlyRate * Math.pow(1 + monthlyRate, numPayments)) / 
-                              (Math.pow(1 + monthlyRate, numPayments) - 1);
-        
-        const totalPaid = monthlyPayment * numPayments;
-        const totalInterest = totalPaid - loanAmount;
-        
-        const result = document.getElementById('mortgageResult');
-        if (result) {
-            result.innerHTML = `
-                <h4>Monthly Payment: $${monthlyPayment.toFixed(2)}</h4>
-                <p>Total Amount Paid: $${totalPaid.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
-                <p>Total Interest: $${totalInterest.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
-            `;
-            result.classList.add('show');
-        }
-
-        // Track calculator usage
-        this.storageManager.incrementCounter('mortgageCalculatorUsage');
-    }
-
-    calculateRentAffordability() {
-        const monthlyIncome = parseFloat(document.getElementById('monthlyIncome')?.value || 0);
-        const debtPayments = parseFloat(document.getElementById('debtPayments')?.value || 0);
-        const affordabilityRule = parseInt(document.getElementById('affordabilityRule')?.value || 30);
-        
-        if (!monthlyIncome) {
-            this.showNotification('Please enter your monthly income', 'error');
-            return;
-        }
-        
-        // Save values for future use
-        this.storageManager.setUserPreference('lastIncome', monthlyIncome);
-        
-        const maxRent = (monthlyIncome * affordabilityRule / 100) - debtPayments;
-        const remainingIncome = monthlyIncome - maxRent - debtPayments;
-        
-        const result = document.getElementById('rentResult');
-        if (result) {
-            result.innerHTML = `
-                <h4>Maximum Affordable Rent: $${Math.max(0, maxRent).toFixed(2)}</h4>
-                <p>Monthly Income: $${monthlyIncome.toFixed(2)}</p>
-                <p>Debt Payments: $${debtPayments.toFixed(2)}</p>
-                <p>Remaining Income: $${remainingIncome.toFixed(2)}</p>
-                ${maxRent <= 0 ? '<p style="color: var(--accent-color);"><strong>Warning:</strong> Current debt payments exceed recommended rent budget.</p>' : ''}
-            `;
-            result.classList.add('show');
-        }
-
-        // Track calculator usage
-        this.storageManager.incrementCounter('rentCalculatorUsage');
-    }
-
-    resetCalculator(calculatorType) {
-        if (calculatorType === 'mortgage') {
-            const inputs = ['loanAmount', 'interestRate', 'loanTerm'];
-            inputs.forEach(id => {
-                const input = document.getElementById(id);
-                if (input) input.value = '';
-            });
-            
-            const result = document.getElementById('mortgageResult');
-            if (result) {
-                result.innerHTML = '';
-                result.classList.remove('show');
-            }
-        } else if (calculatorType === 'rent') {
-            const inputs = ['monthlyIncome', 'debtPayments', 'affordabilityRule'];
-            inputs.forEach(id => {
-                const input = document.getElementById(id);
-                if (input && id !== 'affordabilityRule') input.value = '';
-            });
-            
-            const result = document.getElementById('rentResult');
-            if (result) {
-                result.innerHTML = '';
-                result.classList.remove('show');
-            }
-        }
-    }
-
-    saveCalculatorValues() {
-        const loanAmount = document.getElementById('loanAmount')?.value;
-        const interestRate = document.getElementById('interestRate')?.value;
-        const monthlyIncome = document.getElementById('monthlyIncome')?.value;
-        
-        if (loanAmount) this.storageManager.setUserPreference('lastLoanAmount', loanAmount);
-        if (interestRate) this.storageManager.setUserPreference('lastInterestRate', interestRate);
-        if (monthlyIncome) this.storageManager.setUserPreference('lastIncome', monthlyIncome);
-    }
-
-    // Utility methods
-    trackServiceInteraction(type, target) {
-        this.storageManager.incrementCounter(`serviceInteractions_${type}`);
-        console.log(`Service interaction tracked: ${type} - ${target}`);
-    }
-
-    copyToClipboard(text) {
-        navigator.clipboard.writeText(text).then(() => {
-            this.showNotification('Copied to clipboard!', 'success');
-        }).catch(() => {
-            this.showNotification('Failed to copy to clipboard', 'error');
-        });
-    }
-
-    smoothScrollTo(element) {
-        element.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    }
-
-    openModal(modalId) {
-        const modal = document.getElementById(modalId);
-        if (modal) {
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-    }
-
-    closeModal() {
-        const activeModal = document.querySelector('.modal.active');
-        if (activeModal) {
-            activeModal.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-    }
-
-    showNotification(message, type = 'info') {
-        // Create notification element if it doesn't exist
-        let notification = document.getElementById('notification');
-        if (!notification) {
-            notification = document.createElement('div');
-            notification.id = 'notification';
-            notification.style.cssText = `
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                padding: 1rem 1.5rem;
-                border-radius: 4px;
-                color: white;
-                font-weight: 500;
-                z-index: 10000;
-                transform: translateX(100%);
-                transition: transform 0.3s ease;
-            `;
-            document.body.appendChild(notification);
-        }
-
-        // Set notification style based on type
-        const colors = {
-            success: '#10b981',
-            error: '#ef4444',
-            warning: '#f59e0b',
-            info: '#3b82f6'
-        };
-        
-        notification.style.backgroundColor = colors[type] || colors.info;
-        notification.textContent = message;
-        notification.style.transform = 'translateX(0)';
-
-        // Auto-hide notification
-        setTimeout(() => {
-            notification.style.transform = 'translateX(100%)';
-        }, 3000);
-    }
-
-    // Existing methods remain the same...
     saveFormData(form) {
         const formData = new FormData(form);
         const data = {};
@@ -503,6 +193,7 @@ class ResourcesApp {
     toggleFAQ(questionElement) {
         const faqItem = questionElement.closest('.faq-item');
         const answer = faqItem.querySelector('.faq-answer');
+        const icon = questionElement.querySelector('.faq-icon');
         
         const isExpanded = questionElement.getAttribute('aria-expanded') === 'true';
         
@@ -524,6 +215,9 @@ class ResourcesApp {
     }
 
     setupCalculators() {
+        // Mortgage calculator is handled by global functions
+        // Rent affordability calculator is handled by global functions
+        
         // Load calculator preferences
         const savedLoanAmount = this.storageManager.getUserPreference('lastLoanAmount');
         const savedInterestRate = this.storageManager.getUserPreference('lastInterestRate');
@@ -717,6 +411,68 @@ class ResourcesApp {
         ];
     }
 }
+
+// Global calculator functions (required by HTML)
+window.calculateMortgage = function() {
+    const loanAmount = parseFloat(document.getElementById('loanAmount').value);
+    const interestRate = parseFloat(document.getElementById('interestRate').value);
+    const loanTerm = parseInt(document.getElementById('loanTerm').value);
+    
+    if (!loanAmount || !interestRate || !loanTerm) {
+        alert('Please fill in all fields');
+        return;
+    }
+    
+    // Save values for future use
+    const storage = new StorageManager();
+    storage.setUserPreference('lastLoanAmount', loanAmount);
+    storage.setUserPreference('lastInterestRate', interestRate);
+    
+    const monthlyRate = interestRate / 100 / 12;
+    const numPayments = loanTerm * 12;
+    
+    const monthlyPayment = loanAmount * (monthlyRate * Math.pow(1 + monthlyRate, numPayments)) / 
+                          (Math.pow(1 + monthlyRate, numPayments) - 1);
+    
+    const totalPaid = monthlyPayment * numPayments;
+    const totalInterest = totalPaid - loanAmount;
+    
+    const result = document.getElementById('mortgageResult');
+    result.innerHTML = `
+        <h4>Monthly Payment: $${monthlyPayment.toFixed(2)}</h4>
+        <p>Total Amount Paid: $${totalPaid.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
+        <p>Total Interest: $${totalInterest.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
+    `;
+    result.classList.add('show');
+};
+
+window.calculateRentAffordability = function() {
+    const monthlyIncome = parseFloat(document.getElementById('monthlyIncome').value);
+    const debtPayments = parseFloat(document.getElementById('debtPayments').value) || 0;
+    const affordabilityRule = parseInt(document.getElementById('affordabilityRule').value);
+    
+    if (!monthlyIncome) {
+        alert('Please enter your monthly income');
+        return;
+    }
+    
+    // Save values for future use
+    const storage = new StorageManager();
+    storage.setUserPreference('lastIncome', monthlyIncome);
+    
+    const maxRent = (monthlyIncome * affordabilityRule / 100) - debtPayments;
+    const remainingIncome = monthlyIncome - maxRent - debtPayments;
+    
+    const result = document.getElementById('rentResult');
+    result.innerHTML = `
+        <h4>Maximum Affordable Rent: $${Math.max(0, maxRent).toFixed(2)}</h4>
+        <p>Monthly Income: $${monthlyIncome.toFixed(2)}</p>
+        <p>Debt Payments: $${debtPayments.toFixed(2)}</p>
+        <p>Remaining Income: $${remainingIncome.toFixed(2)}</p>
+        ${maxRent <= 0 ? '<p style="color: var(--accent-color);"><strong>Warning:</strong> Current debt payments exceed recommended rent budget.</p>' : ''}
+    `;
+    result.classList.add('show');
+};
 
 // Initialize the app when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
