@@ -38,7 +38,7 @@
       "bedrooms": 3,
       "bathrooms": 2,
       "sqft": 1200,
-      "image": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=400&h=300&fit=crop",
+      "image": "images/grocery.png",
       "distanceToCampus": "0.8 mi",
       "description": "Beautiful family home in quiet neighborhood with mature landscaping and updated interior. Perfect for growing families or as an investment property.",
       "features": [
